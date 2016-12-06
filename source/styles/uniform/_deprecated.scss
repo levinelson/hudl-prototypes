@@ -1,0 +1,472 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Deprecated
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+.#{$css-prefix}display--normal { font-weight: $font-weight-reg; }
+
+// Text Buttons
+// --------------------------------------------
+// Deprecated v0.8.0
+// These are now called minimal buttons
+
+.#{$css-prefix}btn--text {
+  @include button-minimal(secondary);
+  // @include class-deprecation('uni-btn--text', 'uni-btn--minimal');
+}
+
+.#{$css-prefix}btn--text--primary {
+  @include button-minimal(primary);
+  // @include class-deprecation('uni-btn--text--primary', 'uni-btn--primary--minimal');
+}
+
+.#{$css-prefix}btn--text--secondary {
+  @include button-minimal(secondary);
+  // @include class-deprecation('uni-btn--text--secondary', 'uni-btn--secondary--minimal');
+}
+
+.#{$css-prefix}btn--text--danger {
+  @include button-minimal(destroy);
+  // @include class-deprecation('uni-btn--text--danger', 'uni-btn--destroy--minimal');
+}
+
+.#{$css-prefix}btn--text--confirm {
+  @include button-minimal(success);
+  // @include class-deprecation('uni-btn--text--confirm', 'uni-btn--secondary--success');
+}
+
+
+.#{$css-prefix}btn--text--cancel {
+  @include button-minimal(cancel);
+  font-weight: normal;
+  // @include class-deprecation('uni-btn--text--cancel', 'uni-btn--cancel');
+}
+
+
+
+
+
+
+//  Buttons
+// --------------------------------------------
+// Deprecated v0.8.0
+// Changed to uni-btn--destroy
+
+.#{$css-prefix}btn--danger { @include button(destroy); }
+
+
+
+// Legacy Paragraphs
+// --------------------------------------------
+// Deprecated v0.8.0
+
+.#{$css-prefix}text--xsmall {
+  font-size: 0.75rem;
+  font-family: $font-body;
+  // @include class-deprecation('uni-text--xsmall', 'uni-text--small');
+}
+
+
+
+
+
+
+// Legacy Headings
+// --------------------------------------------
+// Deprecated v0.8.0
+
+.#{$css-prefix}display--h1 {
+  font-weight: $font-weight-bold;
+  font-size: 3rem;
+  font-family: $font-display;
+  // @include class-deprecation('uni-display--h1', 'uni-headline--1');
+}
+
+.#{$css-prefix}display--h2 {
+  font-weight: $font-weight-bold;
+  font-size: 2.5rem;
+  font-family: $font-display;
+  // @include class-deprecation('uni-display--h2', 'uni-headline--2');
+}
+
+.#{$css-prefix}display--h3 {
+  font-weight: $font-weight-bold;
+  font-size: 2rem;
+  font-family: $font-display;
+  // @include class-deprecation('uni-display--h3', 'uni-headline--3');
+}
+
+.#{$css-prefix}display--h4 {
+  font-weight: $font-weight-bold;
+  font-size: 1.5rem;
+  font-family: $font-display;
+  // @include class-deprecation('uni-display--h4', 'something else');
+}
+
+.#{$css-prefix}display--h5 {
+  font-weight: $font-weight-bold;
+  font-size: 1rem;
+  font-family: $font-display;
+  // @include class-deprecation('uni-display--h5', 'something else');
+}
+
+.#{$css-prefix}display--h6 {
+  font-weight: $font-weight-bold;
+  font-size: 0.75rem;
+  font-family: $font-display;
+  // @include class-deprecation('uni-display--h6', 'something else');
+}
+
+
+
+
+
+
+// Legacy Spacers
+// --------------------------------------------
+// Deprecated v0.10.0
+
+// Spacers :: All
+// --------------------------------------------
+.#{$css-prefix}spacer--xxsmall { margin: $space-quarter; }
+
+.#{$css-prefix}spacer--xsmall { margin: $space-quarter; }
+
+.#{$css-prefix}spacer--small { margin: 0.75rem; }
+
+.#{$css-prefix}spacer--medium { margin: $space-one; }
+
+.#{$css-prefix}spacer--large { margin: $space-one-and-half; }
+
+.#{$css-prefix}spacer--xlarge { margin: $space-two; }
+
+.#{$css-prefix}spacer--xxlarge { margin: $space-three; }
+
+
+
+
+
+// --------------------------------------------
+// Spacers :: Vertical
+// --------------------------------------------
+
+// Top + Bottom
+// --------------------------------------------
+.#{$css-prefix}spacer--xxsmall--vert {
+  margin-top: $space-quarter;
+  margin-bottom: $space-quarter;
+}
+
+.#{$css-prefix}spacer--xsmall--vert {
+  margin-top: $space-quarter;
+  margin-bottom: $space-quarter;
+}
+
+.#{$css-prefix}spacer--small--vert {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.#{$css-prefix}spacer--medium--vert {
+  margin-top: $space-one;
+  margin-bottom: $space-one;
+}
+
+.#{$css-prefix}spacer--large--vert {
+  margin-top: $space-one-and-half;
+  margin-bottom: $space-one-and-half;
+}
+
+.#{$css-prefix}spacer--xlarge--vert {
+  margin-top: $space-two;
+  margin-bottom: $space-two;
+}
+
+.#{$css-prefix}spacer--xxlarge--vert {
+  margin-top: $space-three;
+  margin-bottom: $space-three;
+}
+
+
+// Bottom
+// --------------------------------------------
+.#{$css-prefix}spacer--xxsmall--btm { margin-bottom: $space-quarter; }
+
+.#{$css-prefix}spacer--xsmall--btm { margin-bottom: $space-quarter; }
+
+.#{$css-prefix}spacer--small--btm { margin-bottom: 0.75rem; }
+
+.#{$css-prefix}spacer--medium--btm { margin-bottom: $space-one; }
+
+.#{$css-prefix}spacer--large--btm { margin-bottom: $space-one-and-half; }
+
+.#{$css-prefix}spacer--xlarge--btm { margin-bottom: $space-two; }
+
+.#{$css-prefix}spacer--xxlarge--btm { margin-bottom: $space-three; }
+
+
+// Top
+// --------------------------------------------
+.#{$css-prefix}spacer--xxsmall--top { margin-top: $space-quarter; }
+
+.#{$css-prefix}spacer--xsmall--top { margin-top: $space-quarter; }
+
+.#{$css-prefix}spacer--small--top { margin-top: 0.75rem; }
+
+.#{$css-prefix}spacer--medium--top { margin-top: $space-one; }
+
+.#{$css-prefix}spacer--large--top { margin-top: $space-one-and-half; }
+
+.#{$css-prefix}spacer--xlarge--top { margin-top: $space-two; }
+
+.#{$css-prefix}spacer--xxlarge--top { margin-top: $space-three; }
+
+
+
+
+
+// --------------------------------------------
+// Spacers :: Horizontal
+// --------------------------------------------
+
+// Right + Left
+// --------------------------------------------
+.#{$css-prefix}spacer--xxsmall--horiz {
+  margin-right: $space-quarter;
+  margin-left: $space-quarter;
+}
+
+.#{$css-prefix}spacer--xsmall--horiz {
+  margin-right: $space-quarter;
+  margin-left: $space-quarter;
+}
+
+.#{$css-prefix}spacer--small--horiz {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.#{$css-prefix}spacer--medium--horiz {
+  margin-right: $space-one;
+  margin-left: $space-one;
+}
+
+.#{$css-prefix}spacer--large--horiz {
+  margin-right: $space-one-and-half;
+  margin-left: $space-one-and-half;
+}
+
+.#{$css-prefix}spacer--xlarge--horiz {
+  margin-right: $space-two;
+  margin-left: $space-two;
+}
+
+.#{$css-prefix}spacer--xxlarge--horiz {
+  margin-right: $space-three;
+  margin-left: $space-three;
+}
+
+
+// Right
+// --------------------------------------------
+.#{$css-prefix}spacer--xxsmall--right { margin-right: $space-quarter; }
+
+.#{$css-prefix}spacer--xsmall--right { margin-right: $space-quarter; }
+
+.#{$css-prefix}spacer--small--right { margin-right: 0.75rem; }
+
+.#{$css-prefix}spacer--medium--right { margin-right: $space-one; }
+
+.#{$css-prefix}spacer--large--right { margin-right: $space-one-and-half; }
+
+.#{$css-prefix}spacer--xlarge--right { margin-right: $space-two; }
+
+.#{$css-prefix}spacer--xxlarge--right { margin-right: $space-three; }
+
+
+// Left
+// --------------------------------------------
+.#{$css-prefix}spacer--xxsmall--left { margin-left: $space-quarter; }
+
+.#{$css-prefix}spacer--xsmall--left { margin-left: $space-quarter; }
+
+.#{$css-prefix}spacer--small--left { margin-left: 0.75rem; }
+
+.#{$css-prefix}spacer--medium--left { margin-left: $space-one; }
+
+.#{$css-prefix}spacer--large--left { margin-left: $space-one-and-half; }
+
+.#{$css-prefix}spacer--xlarge--left { margin-left: $space-two; }
+
+.#{$css-prefix}spacer--xxlarge--left { margin-left: $space-three; }
+
+
+
+
+
+
+// --------------------------------------------
+// Padding :: All
+// --------------------------------------------
+.#{$css-prefix}pad--xxsmall { padding: $space-quarter; }
+
+.#{$css-prefix}pad--xsmall { padding: $space-quarter; }
+
+.#{$css-prefix}pad--small { padding: 0.75rem; }
+
+.#{$css-prefix}pad--medium { padding: $space-one; }
+
+.#{$css-prefix}pad--large { padding: $space-one-and-half; }
+
+.#{$css-prefix}pad--xlarge { padding: $space-two; }
+
+.#{$css-prefix}pad--xxlarge { padding: $space-three; }
+
+
+
+// --------------------------------------------
+// Padding :: Vertical
+// --------------------------------------------
+
+// Top + Bottom
+.#{$css-prefix}pad--xxsmall--vert {
+  padding-top: $space-quarter;
+  padding-bottom: $space-quarter;
+}
+
+.#{$css-prefix}pad--xsmall--vert {
+  padding-top: $space-quarter;
+  padding-bottom: $space-quarter;
+}
+
+.#{$css-prefix}pad--small--vert {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.#{$css-prefix}pad--medium--vert {
+  padding-top: $space-one;
+  padding-bottom: $space-one;
+}
+
+.#{$css-prefix}pad--large--vert {
+  padding-top: $space-one-and-half;
+  padding-bottom: $space-one-and-half;
+}
+
+.#{$css-prefix}pad--xlarge--vert {
+  padding-top: $space-two;
+  padding-bottom: $space-two;
+}
+
+.#{$css-prefix}pad--xxlarge--vert {
+  padding-top: $space-three;
+  padding-bottom: $space-three;
+}
+
+// Bottom
+.#{$css-prefix}pad--xxsmall--btm { padding-bottom: $space-quarter; }
+
+.#{$css-prefix}pad--xsmall--btm { padding-bottom: $space-quarter; }
+
+.#{$css-prefix}pad--small--btm { padding-bottom: 0.75rem; }
+
+.#{$css-prefix}pad--medium--btm { padding-bottom: $space-one; }
+
+.#{$css-prefix}pad--large--btm { padding-bottom: $space-one-and-half; }
+
+.#{$css-prefix}pad--xlarge--btm { padding-bottom: $space-two; }
+
+.#{$css-prefix}pad--xxlarge--btm { padding-bottom: $space-three; }
+
+
+// Top
+.#{$css-prefix}pad--xxsmall--top { padding-top: $space-quarter; }
+
+.#{$css-prefix}pad--xsmall--top { padding-top: $space-quarter; }
+
+.#{$css-prefix}pad--small--top { padding-top: 0.75rem; }
+
+.#{$css-prefix}pad--medium--top { padding-top: $space-one; }
+
+.#{$css-prefix}pad--large--top { padding-top: $space-one-and-half; }
+
+.#{$css-prefix}pad--xlarge--top { padding-top: $space-two; }
+
+.#{$css-prefix}pad--xxlarge--top { padding-top: $space-three; }
+
+
+// Spacers :: Horizontal
+// --------------------------------------------
+
+// Right + Left
+.#{$css-prefix}pad--xxsmall--horiz {
+  padding-right: $space-quarter;
+  padding-left: $space-quarter;
+}
+
+.#{$css-prefix}pad--xsmall--horiz {
+  padding-right: $space-quarter;
+  padding-left: $space-quarter;
+}
+
+.#{$css-prefix}pad--small--horiz {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.#{$css-prefix}pad--medium--horiz {
+  padding-right: $space-one;
+  padding-left: $space-one;
+}
+
+.#{$css-prefix}pad--large--horiz {
+  padding-right: $space-one-and-half;
+  padding-left: $space-one-and-half;
+}
+
+.#{$css-prefix}pad--xlarge--horiz {
+  padding-right: $space-two;
+  padding-left: $space-two;
+}
+
+.#{$css-prefix}pad--xxlarge--horiz {
+  padding-right: $space-three;
+  padding-left: $space-three;
+}
+
+
+// Right
+.#{$css-prefix}pad--xxsmall--right { padding-right: $space-quarter; }
+
+.#{$css-prefix}pad--xsmall--right { padding-right: $space-quarter; }
+
+.#{$css-prefix}pad--small--right { padding-right: 0.75rem; }
+
+.#{$css-prefix}pad--medium--right { padding-right: $space-one; }
+
+.#{$css-prefix}pad--large--right { padding-right: $space-one-and-half; }
+
+.#{$css-prefix}pad--xlarge--right { padding-right: $space-two; }
+
+.#{$css-prefix}pad--xxlarge--right { padding-right: $space-three; }
+
+
+// Left
+.#{$css-prefix}pad--xxsmall--left { padding-left: $space-quarter; }
+
+.#{$css-prefix}pad--xsmall--left { padding-left: $space-quarter; }
+
+.#{$css-prefix}pad--small--left { padding-left: 0.75rem; }
+
+.#{$css-prefix}pad--medium--left { padding-left: $space-one; }
+
+.#{$css-prefix}pad--large--left { padding-left: $space-one-and-half; }
+
+.#{$css-prefix}pad--xlarge--left { padding-left: $space-two; }
+
+.#{$css-prefix}pad--xxlarge--left { padding-left: $space-three; }

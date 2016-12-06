@@ -1,0 +1,37 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Variables :: Transitions
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+// Timing
+$trans-timing-fast:     0.2s;
+$trans-timing-medium:   0.3s;
+$trans-timing-slow:     0.5s;
+
+
+// Background
+$trans-bg: background-color $trans-timing-medium linear;
+
+
+// Color
+$trans-color-slow: color $trans-timing-slow linear;
+$trans-color: color $trans-timing-medium linear;
+$trans-color-fast: color $trans-timing-fast linear;
+
+
+// Opacity
+$trans-opacity: opacity $trans-timing-medium ease;
+
+
+// Border Color
+$trans-bdr-color: border-color $trans-timing-medium ease;
+
+
+// Width
+$trans-width-slow: width $trans-timing-slow ease-in-out;
+$trans-width: width $trans-timing-medium ease-in-out;
+$trans-width-fast: width $trans-timing-fast ease-in-out;

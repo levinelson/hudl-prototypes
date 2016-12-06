@@ -1,0 +1,82 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Variables :: Breakpoints
+//
+// --------------------------------------------
+// --------------------------------------------
+
+// These breakpoints are defined as the max-width
+// for each, using our base-16 rem sizing.
+// The media queries account for the ranges needed
+// to support each viewport size.
+
+// Phones
+$bp-small:    40rem; //640px
+
+// Tablets
+$bp-medium:   64rem; //1024px
+
+// Laptops and Desktops
+$bp-large:    90rem; //1440px
+
+// Large Screens and TVs
+$bp-xlarge:   120rem; //1920px
+
+
+// This variable is used inside the media query mixin, representing
+// 1 px, which is based on our 16px base font size.
+$bp-onepix:   0.0625rem;
+
+
+
+
+// Include Media Unit Intervals
+// --------------------------------------------
+// This tweaks the unit-intervals that come pre-set with the include media mixin
+// The pre-sets in include media assumes a base of 10px, rather than the 16px base we use.
+
+$unit-intervals: (
+  'px': 1,
+  'em': 0.0625,
+  'rem': 0.0625 // one pixel in rems
+);
+
+
+
+
+// Include Media Breakpoints
+// --------------------------------------------
+// This map represents the defined breakpoints for use with the incude media (@media) mixin
+
+$kickoff-breakpoints: (
+  'phone': 320px,
+  'tablet': 768px,
+  'desktop': 1024px
+);
+
+
+
+
+// Local Configurable Breakpoints
+// --------------------------------------------
+// This empty map allows users to create additional breakpoints for use inside a cluster
+// In their local environment, they would create a breakpoint.scss file and import that file BEFORE importing the kickoff-css npm package
+// So it would look like this
+//
+// $local-breakpoints: (
+//   'my-breakpoint': 400px,
+//   'my-breakpoint-2': 425px
+// );
+
+$local-breakpoints: () !default;
+
+
+
+
+// Merging Global and Local setting
+// --------------------------------------------
+// This merges Kickoff settings with local settings
+// allowing users to use values from our global settings, and their local setting.
+$breakpoints: map-merge($kickoff-breakpoints, $local-breakpoints);
+

@@ -1,0 +1,144 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Element :: Progress Bars
+
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+// TO DO
+// Explore better semantic html using progress and meter, and any default styling that would need to be overwritten
+// Figure out what value should be parameters for the mixins and what should be added to classes
+
+
+
+// Variables
+// --------------------------------------------
+$progress_ht:                 1.5rem;
+
+$progress_container_bg:       $ui-gray-light;
+$progress_container_bdr:      darken($progress_container_bg, 5%);
+
+$progress_meter_default:      $ui-gray-medium;
+$progress_meter_primary:      $ui-bg-primary;
+$progress_meter_secondary:    $ui-bg-secondary;
+$progress_meter_tertiary:     $ui-gray;
+
+$progress_meter_white:        $ui-bg-white;
+$progress_meter_danger:       $ui-bg-danger;
+$progress_meter_confirm:      $ui-bg-confirm;
+
+$progress_spacer_sm:          $space-quarter;
+$progress_spacer_med:         $space-one;
+
+$progress_stripe_color:       rgba(255, 255, 255, 0.1);
+
+
+
+
+// Progress Placeholders
+// --------------------------------------------
+%progress-meter {
+  @include progress-meter;
+  position: relative;
+  padding-right: $space-half;
+  padding-left: $space-half;
+}
+
+
+
+
+// Progress Animation
+// --------------------------------------------
+@keyframes stripes {
+  0 { background-position: -40px 0; }
+  100% { background-position: 40px 0; }
+}
+
+
+
+
+// Progress Styles
+// --------------------------------------------
+.#{$css-prefix}progress__container {
+  @include progress-container;
+  // margin-bottom: $progress_spacer_med;
+  height: $progress_ht;
+}
+
+.#{$css-prefix}progress__meter {
+  @extend %progress-meter;
+  background-color: $progress_meter_default;
+}
+
+.#{$css-prefix}progress__label {
+  margin-bottom: $progress_spacer_sm;
+  color: $body-text-color;
+  font-size: 1rem;
+}
+
+.#{$css-prefix}progress__percent {
+  color: $ui-white;
+  font-size: 0.75rem;
+  line-height: $progress_ht;
+}
+
+
+
+
+// Meter Color Variations
+// --------------------------------------------
+.#{$css-prefix}progress__meter--primary {
+  @extend %progress-meter;
+  background-color: $progress_meter_primary;
+}
+
+.#{$css-prefix}progress__meter--secondary {
+  @extend %progress-meter;
+  background-color: $progress_meter_secondary;
+}
+
+.#{$css-prefix}progress__meter--tertiary {
+  @extend %progress-meter;
+  background-color: $progress_meter_tertiary;
+}
+
+.#{$css-prefix}progress__meter--danger {
+  @extend %progress-meter;
+  background-color: $progress_meter_danger;
+}
+
+.#{$css-prefix}progress__meter--confirm {
+  @extend %progress-meter;
+  background-color: $progress_meter_confirm;
+}
+
+
+
+
+// Progress Striped
+// --------------------------------------------
+.#{$css-prefix}progress__meter--striped {
+  background-image: linear-gradient(
+    45deg,
+    $progress_stripe_color 25%,
+    transparent 25%,
+    transparent 50%,
+    $progress_stripe_color 50%,
+    $progress_stripe_color 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 40px 40px;
+}
+
+
+
+
+// Progress Striped Animated
+// --------------------------------------------
+.#{$css-prefix}progress__meter--is-active {
+  animation: stripes 2s linear infinite;
+}

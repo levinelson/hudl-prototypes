@@ -1,0 +1,32 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Mixins :: Media
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+
+@mixin avatar($size: $avatar-medium) {
+  width: $size;
+  height: $size;
+  overflow: hidden;
+  border-radius: 100%;
+
+  // Sets type size of abbreviations inside an avatar
+  @if $size == $avatar-small {
+    font-size: 0.875rem;
+  } @else if $size == $avatar-large {
+      font-size: 2rem;
+    } @else {
+        // font-size: $font_size_heading_sm;
+        font-size: 1.5rem;
+    }
+
+  &.#{$css-prefix}avatar--with-text {
+    // Hack  for non flexbox browsers vertically center type for abbreviations avatars
+    line-height: $size;
+  }
+
+}

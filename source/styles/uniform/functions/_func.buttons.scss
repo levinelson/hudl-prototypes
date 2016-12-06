@@ -1,0 +1,25 @@
+// Button Size
+// --------------------------------------------
+// Pulls configuration of button sizes from $button-sizes map located in the var.button.scss file
+
+@function  buttonSize($map, $property) {
+  @return map-get(map-get($btn-size, $map), $property);
+}
+
+
+// Buttons
+// --------------------------------------------
+@function  button($map, $property) {
+  @return map-get(map-get($btn-color, $map), $property);
+}
+
+
+// Active + Hover mix functions
+// --------------------------------------------
+@function buttonActive($color) {
+  @return mix($btn-mix-active, $color, 10%);
+}
+
+@function buttonHover($color) {
+  @return mix($color, $btn-mix-hover, 75%);
+}

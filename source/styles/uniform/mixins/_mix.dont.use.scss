@@ -1,0 +1,97 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Mixin :: Do not use
+//
+// --------------------------------------------
+// --------------------------------------------
+
+// These mixins are not for use, they have been removed because they do not support the system as defined by Uniform.
+
+// The will be added if/and when Uniform needs them
+
+
+// Button Rounded
+// --------------------------------------------
+// Used to create a rounded button
+@mixin button-circle ( $bg: $btn-bg-default, $size: 0.55em ) {
+  @include button-base;
+  padding: $size $size !important;
+  // border-color: shade($bg, 5%);
+  border-bottom: 0;
+  border-radius: 50%;
+  background-color: $bg;
+  box-shadow: none;
+  // background-image: linear-gradient($bg, shade($bg, 2%));
+  color: contrast-color($bg);
+  line-height: 0 !important;
+
+  // Hack to reposition icons
+  .#{$css-prefix}btn__icon {
+    position: relative;
+    left: 0.1em;
+  }
+}
+
+
+
+
+
+
+// Button Outline
+// --------------------------------------------
+@mixin button-outline ( $color: $btn-bg-default, $reverse: null ) {
+  @include button-base;
+  @include button-size;
+  @include button-disabled;
+  $border-width: 1px;
+  $border-style: solid;
+  border-bottom-width: $border-width;
+  border-color: shade($color, 5%);
+  background-color: transparent;
+  color: $color;
+  transition: $btn-trans-bg-color;
+
+  // hover
+  &:hover {
+    border-color: $color;
+    background-color: darken($color, 6%);
+    color: contrast-color($color);
+    // background-color: $color;
+  }
+
+  // active
+  &:active {
+    background-color: darken($color, 10%);
+    color: contrast-color($color);
+  }
+
+  // disabled
+  &:disabled,
+  &.#{$css-prefix}btn--disabled {
+    // border-color: disabled-contrast($color);
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+      // color: disabled-contrast($color);
+    }
+  }
+
+
+  &.#{$css-prefix}btn--is-spinning {
+    // When the button is an outline--reverse variant
+    @if ($reverse == true) {
+      @include button-spinner( $size: $btn-spinner-size, $color: black, $on-bg: true );
+    }
+    // All other button outlines
+    @else {
+      @include button-spinner( $size: $btn-spinner-size, $color: $color, $on-bg: false );
+
+      // The background changes on hover state for outlines
+      &:hover {
+        @include button-spinner ($size: $btn-spinner-size, $color: $color, $on-bg: true );
+      }
+    }
+  }
+
+}

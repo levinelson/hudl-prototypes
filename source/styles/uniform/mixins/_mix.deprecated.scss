@@ -1,0 +1,161 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Mixins :: Deprecated
+//
+// --------------------------------------------
+// --------------------------------------------
+
+/* stylelint-disable */
+@mixin class-deprecation($class: null, $new-class: null) {
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 1.45em;
+    max-width: 450px;
+    @if $class == null {
+      content: 'Class deprecated. Ask Design Systems for guidance';
+      text-transform: sentence;
+    }
+    @else {
+      content: $class + ' is deprecated, use ' + $new-class;
+      text-transform: lowercase;
+    }
+    background-color: red;
+    padding: 5px;
+    color: pink;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.2;
+    border: 1px solid #fff;
+    border-radius: 2px;
+  }
+}
+
+
+
+// Button Flat
+// --------------------------------------------
+// Deprecated v0.8.0
+@mixin button-flat ( $variant: secondary, $bespoke: null ) {
+  @warn 'The [button-flat] mixin has been deprecated. You should use [button-minimal], instead'
+}
+
+
+
+
+// Custom Checkbox
+// --------------------------------------------
+// Deprecated v0.9.0
+@mixin custom-check($type, $target: $form-checkbox-target) {
+
+  // Settings
+  // ----------------
+  // Local Variables
+  $label: formColor(standard, label);
+  $label-de: formColor(standard, label-de);
+
+
+
+  // Style
+  // ----------------
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  cursor: pointer;
+
+  & + .#{$target} {
+    @include theme-color($label, $label-de, false);
+    position: relative;
+    cursor: pointer;
+  }
+
+
+  & + .#{$target}::before {
+    @include theme-border($le-divider);
+    position: relative;
+    content: '\a0';
+    margin-right: $form-checkbox-margin;
+    width: $form-checkbox-xxx;
+    height: $form-checkbox-xxx;
+    display: inline-block;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: $form-checkbox-radius;
+    background-color: transparent;
+    line-height: 1;
+
+    //  Change border radius if radio
+    @if $type == radio {
+      border-radius: 50%;
+    }
+  }
+
+
+  // Checkbox or Radio happens here
+  & + .#{$target}::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    opacity: 0.01;
+    transition: $form-checkbox-trans;
+
+    // Checkmark
+    @if $type == check {
+      top: 0.225rem;
+      left: 0.2em;
+      width: calc(#{$form-checkbox-xxx} - 0.3em);
+      height: calc(#{$form-checkbox-xxx} -0.7em);
+      border-bottom: 0.2em solid $form-checkbox-color-hover;
+      border-left: 0.2em solid $form-checkbox-color-hover;
+      border-radius: $form-input-bdr-radius;
+      transform: rotate(-45deg);
+    } @else {
+      top: 0.175em;
+      left: 0.25em;
+      width: 0.55em;
+      height: 0.55em;
+      background-color: $form-checkbox-color-hover;
+      border-radius: 50%;
+    }
+  }
+
+
+  // Hover state
+  &:hover + .#{$target}::after { opacity: 1 }
+
+  // Hover state before
+  &:hover + .#{$target}::before {
+    @include theme-border( $le-type-dark, $de-type-reverse, false );
+  }
+
+
+  // Active state before
+  &:checked + .#{$target}::before {
+    @if $type == check {
+      @include theme-border($form-checkbox-bg, transparent);
+      @include theme-bg($form-checkbox-bg, #fff);
+    } @else {
+      @include theme-bg(transparent, transparent, false);
+      @include theme-border($form-checkbox-bg, #ffffff, false);
+    }
+  }
+
+
+  // Active state after
+  &:checked + .#{$target}::after {
+    opacity: 1;
+    // Checkbox
+    @if $type == check {
+      @include theme-border($form-checkbox-color-selected, $form-dark-checkbox-color-selected, false);
+
+    } @else { // Radio
+      @include theme-bg($form-checkbox-bg, #ffffff, false);
+    }
+  }
+
+
+  @warn 'The [custom-check] mixin has been deprecated. You should use [form-indicator], instead. Additionally, the html pattern for custom check and radios has changed as well.'
+
+}
+
+/* stylelint-enable */

@@ -1,0 +1,435 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Element :: Buttons
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+
+// Main Button Styles
+// --------------------------------------------
+.#{$css-prefix}btn { @include button(); }
+
+.#{$css-prefix}btn--primary { @include button( primary ); }
+
+.#{$css-prefix}btn--secondary { @include button( secondary ); }
+
+.#{$css-prefix}btn--destroy { @include button( destroy ); }
+
+.#{$css-prefix}btn--confirm { @include button( success ); }
+
+.#{$css-prefix}btn--subtle { @include button( subtle ); }
+
+
+
+
+
+
+// Combo Button Styles
+// --------------------------------------------
+.#{$css-prefix}btn--combo { @include button(secondary); }
+
+.#{$css-prefix}btn--primary--combo { @include button(primary); }
+
+.#{$css-prefix}btn--secondary--combo { @include button(secondary); }
+
+
+
+
+
+
+// Minimal Button Styles
+// --------------------------------------------
+.#{$css-prefix}btn--minimal { @include button-minimal; }
+
+.#{$css-prefix}btn--primary--minimal { @include button-minimal( primary ); }
+
+.#{$css-prefix}btn--secondary--minimal { @include button-minimal( secondary ); }
+
+.#{$css-prefix}btn--destroy--minimal { @include button-minimal( destroy ); }
+
+.#{$css-prefix}btn--confirm--minimal { @include button-minimal( success ); }
+
+.#{$css-prefix}btn--subtle--minimal { @include button-minimal( subtle ); }
+
+
+
+
+
+
+// Cancel Button Styles
+// --------------------------------------------
+.#{$css-prefix}btn--cancel {
+  @include button-minimal( cancel );
+  font-weight: normal;
+}
+
+
+
+
+
+
+// Button Outlines
+// --------------------------------------------
+// .#{$css-prefix}btn--outline { @include button-outline($btn-bdr-default); }
+
+// .#{$css-prefix}btn--primary--outline { @include button-outline($btn-bg-primary); }
+
+// .#{$css-prefix}btn--secondary--outline { @include button-outline($btn-bg-secondary); }
+
+// .#{$css-prefix}btn--danger--outline { @include button-outline($btn-bg-danger); }
+
+// .#{$css-prefix}btn--confirm--outline { @include button-outline($btn-bg-confirm); }
+
+
+// Reverse Outline
+// .#{$css-prefix}btn--reverse--outline {
+//   @include button-outline($color: $btn-bdr-reverse, $reverse: true);
+// }
+
+
+
+
+
+
+// Button Rounded
+// --------------------------------------------
+// .#{$css-prefix}btn--circle { @include button-circle( $btn-bg-default ); }
+
+// .#{$css-prefix}btn--primary--circle { @include button-circle( $btn-bg-primary ); }
+
+// .#{$css-prefix}btn--secondary--circle { @include button-circle( $btn-bg-secondary ); }
+
+// .#{$css-prefix}btn--danger--circle { @include button-circle( $btn-bg-danger ); }
+
+// .#{$css-prefix}btn--confirm--circle { @include button-circle( $btn-bg-confirm ); }
+
+
+
+
+
+
+// Button Size Variations
+// --------------------------------------------
+.#{$css-prefix}btn--small { @include button-size('small'); }
+
+.#{$css-prefix}btn--medium { @include button-size('medium'); }
+
+.#{$css-prefix}btn--large { @include button-size('large'); }
+
+
+
+
+
+
+// Button Block
+// --------------------------------------------
+// Use this on a button element, if you want it to stretch 100% of its container
+// <button class="uni-btn--primary uni-btn--block">Block Button</button>
+.#{$css-prefix}btn--block {
+  display: block;
+  width: 100%;
+  margin-left: 0 !important;
+  text-align: center;
+}
+
+
+
+
+
+
+// Button Row
+// --------------------------------------------
+// Use this to contain a group of buttons you want displayed in a row
+// <div class="uni-btn__row"> <button> <button> <button> </div>
+
+// 1. This removes the annoying additional space between inline block elements
+.#{$css-prefix}btn__row {
+  font-size: 0; // 1.
+
+  > [class^='#{$css-prefix}btn'] + [class^='#{$css-prefix}btn'] {
+    margin-left: 0.5rem;
+  }
+}
+
+
+
+
+
+
+// Button Group Combo
+// --------------------------------------------
+// Use this to contain a group of buttons that you want joined together
+// <div class="uni-btn__group--combo"> <button> <button> <button> </div>
+
+.#{$css-prefix}btn__group--combo {
+  font-size: 0; // fixes inline-block margin bug
+
+  > [class^='#{$css-prefix}btn'] {
+    overflow: hidden;
+    border-radius: 0;
+
+    // First button in combo
+    &:first-of-type {
+      border-top-left-radius: $btn-radius;
+      border-bottom-left-radius: $btn-radius;
+
+      // Overwites for checkbox and radio buttons
+      > [class^='#{$css-prefix}btn__label'] {
+        border-top-left-radius: $btn-radius;
+        border-bottom-left-radius: $btn-radius;
+      }
+    }
+
+
+    // Last button in combo
+    &:last-of-type {
+      border-top-right-radius: $btn-radius;
+      border-bottom-right-radius: $btn-radius;
+
+      // Overwites for checkbox and radio buttons
+      > [class^='#{$css-prefix}btn__label'] {
+        border-top-right-radius: $btn-radius;
+        border-bottom-right-radius: $btn-radius;
+      }
+    }
+
+  }
+}
+
+
+
+
+
+
+// Button Icons
+// --------------------------------------------
+.#{$css-prefix}btn__icon {
+  position: relative;
+  top: -0.04em;
+  fill: currentColor;
+  transition: 0.6s opacity ease-in-out;
+
+  // hiding icon for is-spinning, has-success and has-failure states
+  .#{$css-prefix}btn--is-spinning &,
+  .#{$css-prefix}btn--is-success &,
+  .#{$css-prefix}btn--is-failure & {
+    visibility: hidden;
+    width: 0;
+    opacity: 0;
+    display: none;
+  }
+
+}
+
+
+
+
+// Button Icon Only
+// --------------------------------------------
+.#{$css-prefix}btn--icon-only {
+  // background-color: red;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  width: buttonSize(medium, line-height) + em;
+
+  .#{$css-prefix}btn__icon {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  // Need to a better method of defining sizing for icon only buttons
+  &.#{$css-prefix}btn--small {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: buttonSize(small, line-height) + em;
+  }
+
+  // &.#{$css-prefix}btn--medium {  }
+
+  &.#{$css-prefix}btn--large {
+    width: buttonSize(large, line-height) + em;
+  }
+
+}
+
+
+
+
+
+// [class$='flat'] {
+//   &.#{$css-prefix}btn--icon-only {
+//     background-color: red;
+//   }
+// }
+
+
+
+
+// Button Close
+// --------------------------------------------
+// .#{$css-prefix}btn__close--modal {
+//   @include button-base;
+//   position: absolute;
+//   top: 50%;
+//   right: 1rem;
+//   margin-top: -16px;
+//   opacity: 0.6;
+//   transition: opacity 0.2s ease;
+//   &:hover { opacity: 1; }
+// }
+
+
+
+
+
+
+// Radio + Checks
+// --------------------------------------------
+.#{$css-prefix}btn--radio,
+.#{$css-prefix}btn--check {
+  display: inline-block;
+}
+
+
+.#{$css-prefix}btn__label--custom,
+.#{$css-prefix}btn__label--custom--alt {
+  @include button();
+  border-radius: 0;
+  background-image: none;
+
+  &:hover { background-image: none; }
+}
+
+
+.#{$css-prefix}btn__input--radio,
+.#{$css-prefix}btn__input--check {
+  display: none;
+
+  // Primary
+  &:checked + .#{$css-prefix}btn__label--custom {
+    border-color: darken($btn-bg-primary, 3%);
+    background-image: none;
+    background-color: $btn-bg-primary;
+    color: contrast-color($btn-bg-primary);
+  }
+
+  // Alternative
+  &:checked + .#{$css-prefix}btn__label--custom--alt {
+    border-color: darken($btn-bg-secondary, 3%);
+    background-image: none;
+    background-color: $btn-bg-secondary;
+    color: contrast-color($btn-bg-secondary);
+  }
+}
+
+
+
+// Drop down stuff
+// --------------------------------------------
+.#{$css-prefix}btn__drop-group {
+  position: relative;
+  display: inline-block;
+}
+
+// Combo button drop
+.#{$css-prefix}btn__drop--combo {
+  @include clearfix;
+
+  > [class*='#{$css-prefix}btn']:first-of-type {
+    float: left;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  > [class*='#{$css-prefix}btn']:last-of-type {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+
+
+
+// Drop down items
+// --------------------------------------------
+// .#{$css-prefix}dropdown { }
+
+.#{$css-prefix}dropdown__items {
+  position: absolute;
+  z-index: 100;
+  display: none;
+  min-width: 165px;
+  padding: $space-one;
+  margin-top: 2px;
+  // border: 1px solid $ui-gray-20;
+  border: 1px solid green;
+  border-radius: 3px;
+  background-color: $ui-white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+  .#{$css-prefix}dropdown--active & { display: block; }
+}
+
+
+.#{$css-prefix}dropup {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 2px;
+}
+
+
+
+.icon--drop {
+  display: inline-block;
+  border-top: 0.375em solid currentColor;
+  border-right: 0.25em solid transparent;
+  border-left: 0.25em solid transparent;
+  vertical-align: middle;
+}
+
+.icon--drop-up {
+  display: inline-block;
+  border-right: 4px solid transparent;
+  border-bottom: 6px solid currentColor;
+  border-left: 4px solid transparent;
+  vertical-align: middle;
+}
+
+
+
+
+
+// Note about state
+// Success and Failure is currently embedded into the mixin for flat buttons, with some importants. Either embed state into the mixin, or find a way to make state co-exist with each type of button
+
+
+// Success State
+// --------------------------------------------
+// This class is dynamically applied after a button submit has succeeded
+
+&.#{$css-prefix}btn--is-success {
+  @include button-mark('check');
+  background-color: $btn-bg-confirm;
+  color: $uni-white;
+  &:hover { background-color: $btn-bg-confirm; }
+}
+
+
+
+// Success State
+// --------------------------------------------
+// This class is dynamically applied is the button action fails
+
+&.#{$css-prefix}btn--is-failure {
+  @include button-mark('x');
+  background-color: $btn-bg-destroy;
+  color: $uni-white;
+  &:hover { background-color: $btn-bg-destroy; }
+}
+

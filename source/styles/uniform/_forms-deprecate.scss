@@ -1,0 +1,337 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Element :: Forms Deprecate
+//
+// --------------------------------------------
+// --------------------------------------------
+
+// Horizontal Form Items
+// --------------------------------------------
+.#{$css-prefix}form__item--horizontal {
+  .#{$css-prefix}form__label,
+  .#{$css-prefix}form__input,
+  .#{$css-prefix}form__input-container--select,
+  .#{$css-prefix}form__input-container--multiselect,
+  .#{$css-prefix}form__checkset,
+  .#{$css-prefix}form__input-container--has-icon {
+
+    @include mq($bp-form-horiz-has-layout) {
+      display: inline-block;
+    }
+  }
+
+  // Label
+  .#{$css-prefix}form__label {
+    // padding-right: $form-input-label-spacer;
+    padding-right: $form-input-padding;
+    margin-bottom: $form-input-label-spacer;
+    vertical-align: top;
+    font-size: 1em;
+
+    @include mq($bp-form-horiz-has-layout) {
+      width: 33%;
+      margin-bottom: 0;
+      text-align: right;
+    }
+  }
+
+  // Input
+  .#{$css-prefix}form__input,
+  .#{$css-prefix}form__input-container--select,
+  .#{$css-prefix}form__input-container--multiselect,
+  .#{$css-prefix}form__checkset,
+  .#{$css-prefix}form__input-container--has-icon {
+
+    @include mq($bp-form-horiz-has-layout) {
+      width: 66%;
+    }
+  }
+
+  // Hack to ensure icon inputs will always be full width inside the
+  // input-container--has-icon parent, which will be 66% at certain breakpoints
+  .#{$css-prefix}form__input-container--has-icon {
+    .#{$css-prefix}form__input { width: 100%; }
+  }
+
+  // Item + Item
+  & + & { margin-top: $form-item-spacer-horiz; }
+
+} // Horizontal
+
+
+
+
+
+
+// This should be abstracted. The layout here is not related to Forms themselves.
+// Rather, anything could be in the containers.
+// Some sort of grid class on the parent and some some sort of item class for each element.
+
+// <div class="grid-3">
+//   <div class="l-grid__item"> </div>
+//   <div class="l-grid__item"> </div>
+//   <div class="l-grid__item"> </div>
+// </div>
+
+// Inline Form Items
+// --------------------------------------------
+.#{$css-prefix}form__item--inline {
+
+  @include mq($bp-form-horiz-has-layout) {
+    display: inline-block;
+    margin-top: 0;
+    & + & { margin-left: $form-item-spacer; }
+  }
+
+  .#{$css-prefix}form__label,
+  .#{$css-prefix}form__input,
+  .#{$css-prefix}form__input-container--select,
+  .#{$css-prefix}form__input-container--multiselect,
+  .#{$css-prefix}form__checkset {
+    display: inline-block;
+    // width: auto;
+  }
+
+  // .#{$css-prefix}form__label {
+  //   vertical-align: middle;
+  //   padding-right: $form-input-label-spacer;
+  //   color: blue;
+  // }
+}
+
+
+
+
+
+
+// Icon Prefixed Fields
+// --------------------------------------------
+
+.#{$css-prefix}form__input-container--has-icon {
+  position: relative;
+  & > .#{$css-prefix}form__input { padding-left: 3rem; }
+
+  // At some point, it might worth investigating better proportional sizing and placement
+  // Rather, than relying on the root REM units.
+  // Changing the top value to EMs offers better positioning if the font size changes.
+  // But it could be better to work across all font sizes.
+  & > .#{$css-prefix}icon {
+    position: absolute;
+    top: 1em;
+    left: 1rem;
+
+     // This changes the color for search icons on dark backgrounds
+    .#{$css-prefix}form--dark & {
+      color: $form-dark-icon-color;
+      fill: currentColor;
+    }
+  }
+}
+
+
+
+
+// Text Area
+// --------------------------------------------
+.#{$css-prefix}form__input--textarea {
+  @include input-default;
+  min-height: $form-textarea-min-height;
+}
+
+
+// Checkbox
+// --------------------------------------------
+.#{$css-prefix}form__input--checkbox {
+  // @include input-default;
+  // @include custom-check(check);
+}
+
+
+
+// Radios
+// --------------------------------------------
+.#{$css-prefix}form__input--radio {
+  // @include input-default;
+  // @include custom-check(radio);
+}
+
+
+
+
+
+
+// Disabled States
+// --------------------------------------------
+// .#{$css-prefix}form__item--disabled {
+//   .#{$css-prefix}form__label,
+//   .#{$css-prefix}form__input,
+//   .#{$css-prefix}form__input--textarea,
+//   .#{$css-prefix}form__input--select,
+//   .#{$css-prefix}form__input--multiselect,
+//   .#{$css-prefix}form__option--multiselect {
+//     color: $form-input-disabled;
+//     opacity: $form-input-disabled-opacity;
+//   }
+
+//   .#{$css-prefix}form__input,
+//   .#{$css-prefix}form__input--textarea,
+//   .#{$css-prefix}form__input--select,
+//   .#{$css-prefix}form__input--multiselect {
+//     background-color: $form-input-bg-disabled;
+//     opacity: $form-input-disabled-opacity;
+//     cursor: default;
+//   }
+
+//   // Multiselect options hover when disabled
+//   .#{$css-prefix}form__option--multiselect {
+//     &:hover { background-color: $form-multi-option-disabled-hover; }
+//   }
+
+//   // Give icons for selects disabled look
+//   .#{$css-prefix}form__input-container--select {
+//     &::after { opacity: $form-input-disabled-opacity; }
+//   }
+
+// }
+
+
+
+
+
+
+// Error States
+// --------------------------------------------
+
+// .#{$css-prefix}form__item--error {
+//   .#{$css-prefix}form__label,
+//   .#{$css-prefix}form__input,
+//   .#{$css-prefix}form__input--textarea,
+//   .#{$css-prefix}form__input--select,
+//   .#{$css-prefix}form__input--multiselect {
+//     color: $form-input-color-error;
+
+//     // Error state for Dark Environment Forms
+//     .#{$css-prefix}form--dark & { color: $form-dark-input-color-error; }
+//   }
+
+//   .#{$css-prefix}form__input,
+//   .#{$css-prefix}form__input--textarea,
+//   .#{$css-prefix}form__input--select,
+//   .#{$css-prefix}form__input--multiselect {
+//     border-color: $form-input-bdr-color-error;
+//     outline: $form-input-outline;
+
+//     // Error state border for Dark Environment Forms
+//     .#{$css-prefix}form--dark & {
+//       border-color: $form-dark-input-bdr-color-error;
+//       outline: $form-input-outline;
+//     }
+//   }
+// }
+
+// .#{$css-prefix}form__item--required {
+//   .#{$css-prefix}form__label::before {
+//     position: absolute;
+//     left: -0.75rem;
+//     color: $form-input-color-error;
+//     font-size: 1rem;
+//     content: '*';
+//   }
+// }
+
+
+
+
+// Select Container
+// --------------------------------------------
+.#{$css-prefix}form__input-container--select {
+  position: relative;
+  // Setting color here allows for triangle to be styled with currentColor
+  color: $form-input-color;
+
+  // This contextually changes color
+  .#{$css-prefix}form--dark & { color: $form-dark-input-color; }
+
+  &::after { //dropdown arrow
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 0.5rem solid currentColor;
+    border-right: 0.25rem solid transparent;
+    border-left: 0.25rem solid transparent;
+    content: '';
+  }
+}
+
+
+
+
+// Select
+// --------------------------------------------
+.#{$css-prefix}form__input--select {
+  @include input-default;
+  position: relative;
+  padding: 0.825rem 2rem 0.825rem 1rem;
+}
+
+
+
+// Multi-Select Container
+// --------------------------------------------
+.#{$css-prefix}form__input-container--multiselect { position: relative; }
+
+
+
+// Multi-Select
+// --------------------------------------------
+.#{$css-prefix}form__input--multiselect {
+  @include input-default;
+  overflow: scroll; // Added to correct behavior applied via Normalize
+  padding: 0.75rem 0;
+}
+
+
+
+// Checkset
+// --------------------------------------------
+.#{$css-prefix}form__item--checkset {
+  & + & {
+    margin-top: formDensity(compact, between-check-items);
+
+    // Smaller space between items when --compact is on parent element
+    #{$form-compact} & {
+      margin-top: formDensity(compact, between-check-items);
+    }
+  }
+}
+
+
+
+// Checkset header
+// --------------------------------------------
+.#{$css-prefix}form__checkset-header {
+  @include theme-color(formColor(standard, input), formColor(standard, input-de), false );
+  display: block;
+  margin-bottom: 1em;
+  font-size: formSize(medium, input);
+
+  // Small modifier on element
+  &.#{$css-prefix}form__checkset-header--small {
+    font-size: formSize(small, input);
+  }
+
+  // Small size, added to parent
+  #{$form-small} & {
+    font-size: formSize(small, input);
+  }
+
+  // Compact modifier on parent
+  #{$form-compact} & {
+    margin-bottom: formDensity(compact, input);
+  }
+
+}

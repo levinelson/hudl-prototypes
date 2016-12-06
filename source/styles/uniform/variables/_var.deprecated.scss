@@ -1,0 +1,326 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Variables :: Deprecated
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+/* stylelint-disable */
+
+// Dark UI Colors
+// --------------------------------------------
+// Deprecated v0.3.0
+$ui-dark-100:                  #15191d;
+$ui-dark-90:                   $uni-ink;
+$ui-dark-80:                   $uni-evening;
+$ui-dark-70:                   #455361;
+$ui-dark-60:                   $uni-slate;
+$ui-dark-50:                   #7d90a2;
+$ui-dark-40:                   #9ba9b8;
+$ui-dark-30:                   #b9c3cd;
+$ui-dark-20:                   #e0e5e9;
+$ui-dark-10:                   #f4f6f7;
+
+
+
+// Gray UI Colors
+// --------------------------------------------
+// Deprecated v0.3.0
+$ui-gray-100:                 #111111;
+$ui-gray-90:                  #242424;
+$ui-gray-80:                  #333333;
+$ui-gray-70:                  #464646;
+$ui-gray-60:                  #686868;
+$ui-gray-50:                  #7c7c7c;
+$ui-gray-40:                  #999999;
+$ui-gray-30:                  #acacac;
+$ui-gray-20:                  #e8e8e8;
+$ui-gray-10:                  #f5f5f5;
+
+
+
+// Blue UI Colors
+// --------------------------------------------
+// Deprecated v0.3.0
+$ui-blue-100:                  #003245;
+$ui-blue-90:                   #005778;
+$ui-blue-80:                   #005778;
+$ui-blue-70:                   #007dab;
+$ui-blue-60:                   #0095cd;
+$ui-blue-50:                   $uni-electric;
+$ui-blue-40:                   #23c3ff;
+$ui-blue-30:                   #67d6ff;
+$ui-blue-20:                   #9ae3ff;
+$ui-blue-10:                   #cdf1ff;
+
+
+
+
+
+
+
+
+// Deprecated Team Color Names
+// --------------------------------------------
+// Deprecated in v0.6.0
+$team-maroon:                 $identity-maroon;
+$team-scarlet:                $identity-scarlet;
+$team-apple:                  $identity-apple;
+$team-orange:                 $identity-orange;
+$team-gold:                   $identity-gold;
+$team-yellow:                 $identity-yellow;
+$team-forest:                 $identity-forest;
+$team-kelly:                  $identity-kelly;
+$team-sky:                    $identity-sky;
+$team-royal:                  $identity-royal;
+$team-navy:                   $identity-navy;
+$team-purple:                 $identity-purple;
+$team-white:                  $identity-white;
+$team-silver:                 $identity-silver;
+$team-grey:                   $identity-grey;
+$team-black:                  $identity-black;
+$team-default:                $identity-default;
+
+
+// Deprecated Team Color
+// --------------------------------------------
+// Deprecated in v0.5.0
+$team-gray-light:             $team-silver;
+$team-red-light:              $team-apple;
+$team-red:                    $team-scarlet;
+$team-blue-light:             $team-sky;
+$team-blue:                   $team-royal;
+$team-blue-dark:              $team-navy;
+$team-green:                  $team-kelly;
+$team-green-dark:             $team-forest;
+
+
+
+// Deprecated Tagging Team Color Names
+// --------------------------------------------
+// Deprecated in v0.6.0
+$tagging-team-white:          $tagging-white;
+$tagging-team-white-shade:    $tagging-white-shade;
+$tagging-team-grey:           $tagging-grey;
+$tagging-team-grey-shade:     $tagging-grey-shade;
+$tagging-team-black:          $tagging-black;
+$tagging-team-black-shade:    $tagging-black-shade;
+$tagging-team-yellow:         $tagging-yellow;
+$tagging-team-yellow-shade:   $tagging-yellow-shade;
+$tagging-team-orange:         $tagging-orange;
+$tagging-team-orange-shade:   $tagging-orange-shade;
+$tagging-team-red:            $tagging-red;
+$tagging-team-red-shade:      $tagging-red-shade;
+$tagging-team-green:          $tagging-green;
+$tagging-team-green-shade:    $tagging-green-shade;
+$tagging-team-blue:           $tagging-blue;
+$tagging-team-blue-shade:     $tagging-blue-shade;
+$tagging-team-purple:         $tagging-purple;
+$tagging-team-purple-shade:   $tagging-purple-shade;
+
+
+
+// Deprecated Tagging Team Color
+// --------------------------------------------
+// Deprecated in v0.5.0
+$tagging-team-gray:           $tagging-team-grey;
+
+
+
+
+// Deprecated Font Sizes
+// --------------------------------------------
+// Deprecated in v0.7.0
+
+// These sizes are used to composed the sizes that are actually applied with the CSS
+// Do not directly apply these within the Library, as these values will change or disappear
+$font-size-1:             0.75rem;      // 12
+$font-size-2:             0.875rem;     // 14
+$font-size-3:             1rem;         // 16
+$font-size-4:             1.125rem;     // 18
+$font-size-5:             1.5rem;       // 24
+$font-size-6:             2rem;         // 32
+$font-size-7:             2.5rem;       // 40
+$font-size-8:             3rem;         // 48
+
+
+// Body Sizes
+$body-size-xsmall:           $font-size-1;
+$body-size-small:            $font-size-2;
+$body-size-medium:           $font-size-3;
+$body-size-large:            $font-size-4;
+
+
+// Display Scale
+$display-size-h6:          $font-size-1;
+$display-size-h5:          $font-size-3;
+$display-size-h4:          $font-size-5;
+$display-size-h3:          $font-size-6;
+$display-size-h2:          $font-size-7;
+$display-size-h1:          $font-size-8;
+
+
+
+
+
+// Deprecated Button Settings
+// --------------------------------------------
+// Deprecated in v0.8.0
+
+// These names have changed. The variables are being used, only with different names.
+$btn-bg-danger:             $critical;
+$btn-bg-confirm:            $success;
+
+
+
+
+// Text Buttons
+// --------------------------------------------
+// Text buttons have been renamed to Flat buttons
+
+// Deprecated in v0.8.0
+// Leaving these commented out to see what, if anything breaks
+
+// $btn-text:                  $ui-text-medium;
+// $btn-text-bg-active:        $ui-gray-light;
+// $btn-text-disabled:         $ui-text-xlight;
+
+// $btn-text:                  $le-type-light;
+// $btn-text-primary:          $btn-bg-primary;
+// $btn-text-secondary:        $btn-text;
+// $btn-text-destroy:          $critical;
+// $btn-text-success:          $success;
+
+
+// Border
+// --------------------------------------------
+// This border value was used in previous visual iterations of buttons
+
+// Deprecated in v0.8.0
+// $btn-bottom-bdr:             0.1875em;
+
+
+
+// Button Padding
+// --------------------------------------------
+// $btn-pad-xsmall:            0.5em;
+// $btn-pad-small:             0.75em;
+// $btn-pad-medium:            0.75em;
+// $btn-pad-large:             1em;
+// $btn-pad-xlarge:            1.5em;
+
+// $btn-pad-xsmall:            0.75em;
+// $btn-pad-small:             1em;
+// $btn-pad-medium:            1.25em;
+// $btn-pad-large:             1.5em;
+// $btn-pad-xlarge:            1.75em;
+
+
+
+
+// $btn-pad-adjust:            $btn-bottom-bdr;
+
+
+
+
+// Deprecated Form Settings
+// --------------------------------------------
+// Deprecated in v0.9.0
+
+// $form-input-padding:                1rem;
+// $form-input-label-spacer:           $spacer-xxsmall;  // 4
+
+// $form-item-spacer:                  $spacer-medium;   // 16
+// $form-item-spacer:                  $spacer-xlarge;   // 16
+
+// $form-checkset-item-spacer:         $spacer-xsmall;
+
+// $form-item-spacer-horiz:            $spacer-large;
+
+// $form-item-trans:                   all $trans-timing-medium ease;
+// $form-checkbox-trans:               $trans-opacity;
+
+
+// $form-checkbox-target:              '#{$css-prefix}form__label--custom';
+
+// $form-checkbox-size:                1.5rem;
+
+// $form-checkbox-size:                1em;
+
+// $form-checkbox-xxx:                 1.05em;
+
+
+
+// Forms Light Environment
+// --------------------------------------------
+
+// $form-input-bdr:                    1px solid $le-divider;
+// $form-input-bdr-color-error:        $critical;
+
+// $form-input-color:                  $le-type-dark;              // ink
+// $form-input-color-error:            $critical;
+// $form-input-color-placeholder:      $le-type-nonessential;
+
+// $form-input-label-color:            $le-type-medium;            // typewriter
+
+// $form-input-disabled:               $le-type-nonessential;
+// $form-input-bg-disabled:            transparent;
+
+// $form-input-disabled-opacity:       0.4;
+
+// $form-checkbox-color-hover:         $ui-gray-medium;
+// $form-checkbox-color-selected:      #fff;
+
+// $form-helper-color:                 $le-type-nonessential;
+// $form-helper-size:                  0.75rem;    // 12px
+
+// $form-multiselect-hover:            $le-bg-bone-slate;
+
+
+
+// Forms Dark Environment
+// --------------------------------------------
+
+// $form-dark-input-bdr:               1px solid $de-divider;
+
+// $form-dark-input-color:             $de-type-reverse;
+// $form-dark-input-color-placeholder: $de-type-nonessential;
+
+// $form-dark-input-bdr-color-error:   $critical-tint;
+// $form-dark-input-color-error:       $critical-tint;
+// $form-dark-input-color-error-placeholder: $critical-tint;
+
+// $form-dark-input-label-color:       $de-type-bright;          // bright
+
+// $form-dark-checkbox-color-selected: $electric;
+
+// $form-dark-icon-color:              $de-type-subtle;
+
+// $form-dark-helper-color:                 $de-type-nonessential;
+
+// $form-dark-checkbox-color-selected: black;
+
+
+// Forms Breakpoints
+// --------------------------------------------
+// $bp-form-horiz-has-layout:           $bp-small;
+
+
+
+// Deprecated Legacy Spacers
+// --------------------------------------------
+// Deprecated in v0.10.0
+$spacer-xxxsmall:       0.125rem; // 2px
+$spacer-xxsmall:        0.25rem;  // 4px
+$spacer-xsmall:         0.5rem;   // 8px
+$spacer-small:          0.75rem;  // 12px
+$spacer-medium:         1rem;     // 16px
+$spacer-large:          1.5rem;   // 24px
+$spacer-xlarge:         2rem;     // 32px
+$spacer-xxlarge:        3rem;     // 48px
+
+
+
+/* stylelint-enable */

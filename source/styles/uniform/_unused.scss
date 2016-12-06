@@ -1,0 +1,68 @@
+// These are currently unused elements
+
+// Overlines
+// --------------------------------------------
+.#{$css-prefix}overline, %overline {
+  font-size: $body-size-small;
+  line-height: 1;
+  margin-bottom: $spacer-xxsmall;
+}
+
+.#{$css-prefix}overline--lt {
+  @extend %overline;
+  color: $ui-text-medium;
+}
+
+.#{$css-prefix}overline--accent {
+  @extend %overline;
+  color: $ui-orange;
+}
+
+
+
+
+
+
+
+
+
+
+// Section Headers
+// --------------------------------------------
+.#{$css-prefix}section-hdr--lg {
+  font-size: $display-size-h1;
+  font-family: $font-display;
+}
+
+
+.#{$css-prefix}section-hdr--med {
+  font-size: $display-size-h2;
+  font-family: $font-display;
+}
+
+
+.#{$css-prefix}section-hdr--sm {
+  font-size: $display-size-h3;
+  font-family: $font-display;
+}
+
+
+.#{$css-prefix}section-hdr--xsm {
+  font-size: $body-size-small;
+  font-family: $font-display;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  background-color: lighten($ui-dark-light, 50%);
+  padding-top: 0.6rem;
+  padding-bottom: $spacer-xsmall;
+  padding-left: $spacer-small;
+  padding-right: $spacer-small;
+}
+
+
+// Used for Page level explainer subheads
+.#{$css-prefix}section-hdr--sub {
+  font-size: $display-size-h4;
+  font-family: $font-display;
+  color: $ui-text-medium;
+}

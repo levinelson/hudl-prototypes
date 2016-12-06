@@ -1,0 +1,149 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Variables :: Color
+//
+// --------------------------------------------
+// --------------------------------------------
+
+/* stylelint-disable */
+
+// Base Brand Colors
+// --------------------------------------------
+$uni-orange:                  #ff6500;
+$uni-electric:                #009ce3;
+$uni-ink:                     #232a31;
+$uni-evening-tint:            #505964;
+$uni-evening:                 #38434f;
+$uni-evening-shade:           #2c343e;
+$uni-slate-tint:              #63707d;
+$uni-slate:                   #4e5d6c;
+$uni-slate-shade:             #3b4652;
+
+
+
+
+// Utility Colors
+// --------------------------------------------
+
+// Primary
+$electric-tint:               #4db9eb;
+$electric:                    #009ce3;
+$electric-shade:              #007cb5;
+
+// Success
+$success-tint:                #a9c94d;
+$success:                     #84b200;
+$success-shade:               #5c7c00;
+
+// Warning
+$warning-tint:                #edc54d;
+$warning:                     #e6ac00;
+$warning-shade:               #916c00;
+
+// Critical
+$critical-tint:               #ff523d;
+$critical:                    #e81e05;
+$critical-shade:              #b91804;
+
+
+
+
+// Light Environment Colors
+// --------------------------------------------
+
+// For Backgrounds
+$le-bg-white:                 #ffffff;
+$le-bg-white-shade:           #edeff0;
+$le-bg-clean-slate-tint:      #ffffff;
+$le-bg-clean-slate:           #f9f9fa;
+$le-bg-clean-slate-shade:     #e4e6e9;
+$le-bg-bone-slate-tint:       #fbfcfc;
+$le-bg-bone-slate:            #eff0f2;
+$le-bg-bone-slate-shade:      #dbdee1;
+
+// For Type
+$le-type-ink:                 #232a31;
+$le-type-typewriter:          #4e5d6c;
+$le-type-light-type:          #687581;
+$le-type-nonessential:        #a5acb4;
+
+// For Dividers & Borders
+$le-divider:                  #afb5bc;
+$le-border:                   #afb5bc;
+
+
+
+
+// Dark Environment Colors
+// --------------------------------------------
+
+// For Backgrounds
+$de-bg-pitch-black-tint:      #262e35;
+$de-bg-pitch-black:           #111418;
+$de-bg-pitch-black-shade:     #000000;
+$de-bg-midnight-tint:         #2e3740;
+$de-bg-midnight:              #191f24;
+$de-bg-midnight-shade:        #111418;
+$de-bg-ink-tint:              #36404b;
+$de-bg-ink:                   #232a31;
+$de-bg-ink-shade:             #191f24;
+
+// For Type
+$de-type-white:               #ffffff;
+$de-type-bright-type:         #c5cacf;
+$de-type-subtle-type:         #8b959f;
+$de-type-nonessential-dark:   #687581;
+
+// For Dividers & Borders
+$de-divider:                  #4a5866;
+$de-border:                   #4a5866;
+
+
+
+
+// Identity Colors
+// --------------------------------------------
+$identity-maroon:             #790622;
+$identity-scarlet:            #d00000;
+$identity-apple:              #ff1e1e;
+$identity-orange:             #ff8c00;
+$identity-gold:               #edb407;
+$identity-yellow:             #ffdd00;
+$identity-forest:             #245900;
+$identity-kelly:              #3e9600;
+$identity-sky:                #53bcef;
+$identity-royal:              #084da4;
+$identity-navy:               #0c3970;
+$identity-purple:             #621296;
+$identity-white:              #fafafa;
+$identity-silver:             #d7d9dd;
+$identity-grey:               #646566;
+$identity-black:              #222222;
+$identity-default:            #38434f;
+
+
+
+
+// Tagging Colors
+// --------------------------------------------
+$tagging-white:               #fcfcfc;
+$tagging-white-shade:         #cccccc;
+$tagging-grey:                #7d7f81;
+$tagging-grey-shade:          #646567;
+$tagging-black:               #444444;
+$tagging-black-shade:         #2f2f2f;
+$tagging-yellow:              #ffdd00;
+$tagging-yellow-shade:        #e5c600;
+$tagging-orange:              #ff9900;
+$tagging-orange-shade:        #de8500;
+$tagging-red:                 #e70f0f;
+$tagging-red-shade:           #b80c0c;
+$tagging-green:               #3e9600;
+$tagging-green-shade:         #317800;
+$tagging-blue:                #2d83c9;
+$tagging-blue-shade:          #2468a0;
+$tagging-purple:              #7516b1;
+$tagging-purple-shade:        #5d118d;
+
+/* stylelint-enable */

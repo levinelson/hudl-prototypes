@@ -1,0 +1,68 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Element :: Icons
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+
+// Icons
+// --------------------------------------------
+.#{$css-prefix}icon__container {
+  display: inline-block;
+  border-radius: 0.25rem;
+  line-height: 0;
+}
+
+
+// 1. Reinforces a situation where pre-15 versions of React strips this rule out of the svg code, casuing some more complex svgs to not properly punch out or mask portions of the rest of the svg.
+.#{$css-prefix}icon {
+  @include theme-color($le-type-medium);
+  width: $icon-size-medium;
+  height: $icon-size-medium;
+  fill: $icon-color-default;
+  fill-rule: evenodd; // 1
+}
+
+// Proto class. Anticipating that the fill-rule in uni-icon causes problems. The hope is this would be used in addition to uni-icon to fix any unintended consequences occuring from above.
+// Needs to be verified that
+// a) the uni-icon class does cause issues
+// b) this solves that unverified problem
+.#{$css-prefix}icon--nonzero {
+  fill-rule: nonzero;
+}
+
+
+// Color variations
+.#{$css-prefix}icon--reverse { fill: $icon-color-reverse; }
+
+.#{$css-prefix}icon--active { fill: $ui-orange; }
+
+.#{$css-prefix}icon--lt { fill: $ui-text-light; }
+
+
+// Container Backgrounds
+.#{$css-prefix}icon__container--primary { background-color: $ui-blue; }
+
+.#{$css-prefix}icon__container--danger { background-color: $ui-red; }
+
+.#{$css-prefix}icon__container--success { background-color: $ui-green; }
+
+
+// Sizes
+.#{$css-prefix}icon--small {
+  width: $icon-size-small;
+  height: $icon-size-small;
+}
+
+.#{$css-prefix}icon--medium {
+  width: $icon-size-medium;
+  height: $icon-size-medium;
+}
+
+.#{$css-prefix}icon--large {
+  width: $icon-size-large;
+  height: $icon-size-large;
+}

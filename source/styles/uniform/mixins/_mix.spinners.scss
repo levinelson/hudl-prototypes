@@ -1,0 +1,67 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Mixins :: Spinners
+//
+// --------------------------------------------
+// --------------------------------------------
+
+@mixin css-spinner (
+  $size: $spinner-size,
+  $bg-color: $spinner-color-default,
+  $on-bg: false,
+  $speed: $spinner-timing,
+  $thickness: ($size * 0.225),
+  $margin: 0,
+  $button-spinner: false
+  ) {
+
+  // Internal Variables
+  $spinner_color_on-bg: contrast-color($bg-color);
+  $spinner_color_on-bg_accent: contrast-spinner($bg-color);
+
+  $spinner_color_main: $bg-color;
+  $spinner_color_accent: rgba($ui-gray, 0.2);
+
+
+  // Rotation Keyframes
+  @keyframes spinner-rotation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(359deg); }
+  }
+
+
+  // position: relative;
+  display: inline-block;
+  clear: both;
+  // background-color: red;
+
+  @if $button-spinner == false {
+    width: $size;
+    height: $size;
+  }
+
+  margin: 0 auto;
+  border-radius: 100%;
+  animation: spinner-rotation $speed infinite linear;
+
+  @if $on-bg == true {
+    border-top: $thickness solid $spinner_color_on-bg;
+    border-right: $thickness solid $spinner_color_on-bg_accent;
+    border-bottom: $thickness solid $spinner_color_on-bg_accent;
+    border-left: $thickness solid $spinner_color_on-bg_accent;
+  }
+  @else {
+    border-top: $thickness solid $spinner_color_main;
+    border-right: $thickness solid $spinner_color_accent;
+    border-bottom: $thickness solid $spinner_color_accent;
+    border-left: $thickness solid $spinner_color_accent;
+  }
+
+  // If a browser doesn't support CSS animations, just hide the spinner
+  // and show the "message" a bit bigger
+  // 8.25.16. Not sure this check is fallback is what we ultimately need.
+  // The spinner animation utilizes transform. So we could have instances where the the browser supports animations but not transform. And the spinner is just sitting there, doing nothing.
+  .no-cssanimations & { display: none; }
+
+}

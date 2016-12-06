@@ -1,0 +1,75 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Element :: Banners
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+
+// Banners
+// --------------------------------------------
+.#{$css-prefix}banner {
+  @include clearfix;
+  padding: $space-half $space-one-and-half;
+  background-color: $ui-gray-medium;
+}
+
+.#{$css-prefix}banner--persistent--btm {
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  // box-shadow: 0 -8px 8px -8px rgba(0, 0, 0, 0.4);
+}
+
+.#{$css-prefix}banner--danger {
+  background-color: $ui-red;
+}
+
+
+
+
+// Banner Type
+// --------------------------------------------
+.#{$css-prefix}banner__h {
+  font-weight: $font-weight-bold;
+}
+
+.#{$css-prefix}banner__text {
+  font-size: 1rem;
+}
+
+.#{$css-prefix}banner__text--sm {
+  font-size: 0.875rem;
+}
+
+.#{$css-prefix}banner__text--danger {
+  color: $ui-red;
+}
+
+.#{$css-prefix}banner__text--reversed {
+  color: $ui-white;
+}
+
+
+
+
+// Banner Layout
+// --------------------------------------------
+.#{$css-prefix}banner-layout {
+  display: flex;
+  clear: both;
+}
+
+.#{$css-prefix}banner-layout__main {
+  flex-grow: 1;
+  margin-right: auto;
+}
+
+.#{$css-prefix}banner-layout__secondary {
+  margin-left: $space-two;
+}

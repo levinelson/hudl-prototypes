@@ -1,0 +1,56 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Mixins :: Type
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+// Uniform Type
+// --------------------------------------------
+@mixin uniform-type( $variant ) {
+
+  // Variables
+  // ----------------
+  // Set by list maps
+  $family: uniformType($variant, family);
+  $weight: uniformType($variant, weight);
+  $size-small: uniformType($variant, size-small);
+  $size-desktop: uniformType($variant, size);
+  $color: uniformType($variant, color);
+  $color-de: uniformType($variant, color-de);
+  $lh-small: uniformType($variant, line-height-small);
+  $lh: uniformType($variant, line-height);
+  $letter-spacing: uniformType($variant, letter-spacing);
+
+
+  // Style
+  // ----------------
+  font-family: $family;
+  font-weight: $weight;
+  letter-spacing: $letter-spacing;
+
+  @if $size-small == null {
+    font-size: $size-desktop;
+  } @else {
+    @include type-size($size-desktop, $size-small);
+  }
+
+
+  @if $color-de == null and $color == null {
+    @include theme-color;
+  } @else if $color-de == null {
+    @include theme-color($color);
+  } @else {
+    @include theme-color($color, $color-de, false);
+  }
+
+
+  @if $lh-small == null {
+    line-height: $lh;
+  } @else {
+    @include line-height($lh, $lh-small);
+  }
+
+}

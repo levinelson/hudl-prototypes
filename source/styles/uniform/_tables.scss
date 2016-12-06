@@ -1,0 +1,189 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Elements :: Tables
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+// Table Container
+// -------------------------
+.#{$css-prefix}table__container {
+  & + & { margin-top: $space-three; }
+}
+
+
+// Base Table Styles
+// -------------------------
+
+%table-base {
+  width: 100%;
+  max-width: 100%;
+  font-size: $table-font-size;
+}
+
+
+// Standard Table
+// -------------------------
+.#{$css-prefix}table {
+  @extend %table-base;
+
+  // Column Headers
+  > thead > tr > th,
+  .#{$css-prefix}table__thead > tr > th {
+    padding: $table-cell-padding;
+    vertical-align: bottom;
+    border-bottom: $table-bdr-thick;
+    background-color: $ui-gray-light;
+    text-align: left;
+  }
+
+  // Column Footers
+  > tfoot > tr > td,
+  .#{$css-prefix}table__tfoot > tr > td {
+    padding: $table-cell-padding;
+    border-top: $table-bdr;
+    vertical-align: top;
+    // line-height: ;
+  }
+
+  // Cells
+  > tbody > tr > td,
+  .#{$css-prefix}table__tbody > tr > td {
+    padding: $table-cell-padding;
+  }
+
+  // Account for multiple tbody instances
+  > tbody + tbody { border-top: $table-bdr-thick; }
+}
+
+
+// Bordered Table
+// -------------------------
+// Adds borders to the table and all cells.
+.#{$css-prefix}table--bordered {
+  border: $table-bdr;
+
+  // Column Headers
+  > thead > tr > th {
+    border: $table-bdr;
+    border-top: $table-bdr-dark;
+    border-bottom: $table-bdr-thick;
+  }
+
+  // Cells
+  > tbody > tr > td { border: $table-bdr; }
+
+}
+
+
+// Striped Table Rows
+// -------------------------
+// Alternate row background colors
+.#{$css-prefix}table--striped {
+  > tbody > tr {
+    &:nth-child(2n + 2) { background-color: $table-bg-striped; }
+    &:hover { background-color: $table-bg-hover-darker; }
+  }
+}
+
+
+// Hoverable Table Rows
+// --------------------------------------------
+.#{$css-prefix}table--hoverable {
+  > tbody > tr:hover {
+    background-color: $table-bg-hover;
+  }
+}
+
+
+// Explainer
+// --------------------------------------------
+.#{$css-prefix}table__explain {
+  padding: 15px 20px;
+  margin-top: $space-one;
+  background-color: $table-bg-striped;
+}
+
+
+// Table Column Groups
+// --------------------------------------------
+.#{$css-prefix}table__col--bdr-right {
+  border-right: $table-bdr-dark;
+}
+
+.#{$css-prefix}table__col--bdr-left {
+  border-left: $table-bdr-dark;
+}
+
+.#{$css-prefix}table__col--bg {
+  background-color: $table-bg-vert;
+}
+
+
+// Responsive Tables
+// --------------------------------------------
+@media only screen and (max-width: $bp-table-rwd) {
+
+  .#{$css-prefix}table--rwd { margin-bottom: 0; }
+
+  .#{$css-prefix}table--pinned {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    overflow-x: scroll;
+    background: $table-bg-pinned;
+  }
+
+  .#{$css-prefix}table--pinned table {
+    width: 100%;
+    border-right: none;
+    border-left: none;
+  }
+
+  .#{$css-prefix}table--pinned > th,
+  .#{$css-prefix}table--pinned > td {
+    white-space: nowrap;
+  }
+
+  .#{$css-prefix}table__wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 15px;
+      content: '';
+      background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.001) 75%, rgba(0, 0, 0, 0.25));
+    }
+  }
+
+  // .#{$css-prefix}table__wrapper .#{$css-prefix}table--scrollable {
+    // margin-left: 35%;
+  // }
+
+  .#{$css-prefix}table__wrapper .#{$css-prefix}table--scrollable {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+
+  .#{$css-prefix}table--rwd > td,
+  .#{$css-prefix}table--rwd > th {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .#{$css-prefix}table--rwd th:first-child,
+  .#{$css-prefix}table--rwd td:first-child,
+  .#{$css-prefix}table--rwd .#{$css-prefix}table--pinned td {
+    display: none;
+  }
+
+}

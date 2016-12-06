@@ -1,0 +1,25 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Variables :: Micro-Layout
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+
+// $ml-margin: $spacer-large;
+
+$ml-margin: 1.5rem; // use variable in favor of this value once spacer vars are released
+
+$ml-target: '.l-grid__item';
+
+$ml-bdr-color: $le-border;
+
+$ml-bdr-width: 1px;
+
+// $ml-trans: margin 0.2s ease;
+
+// $ml-trans: $trans-width-fast;
+
+$ml-trans: width 0.2s linear; // use variable when transition vars are release

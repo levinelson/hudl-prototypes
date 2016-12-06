@@ -1,0 +1,651 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Elements :: Forms
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+
+
+// --------------------------------------------
+// Form Parents
+// --------------------------------------------
+
+// Form (parent elements)
+// --------------------------------------------
+.#{$css-prefix}form {
+  // font-size: 1rem; // 16px
+}
+
+
+.#{$css-prefix}form--small {
+  // font-size: 0.875rem; // 14px
+}
+
+
+// .#{$css-prefix}form--compact { }
+
+
+
+
+
+
+// --------------------------------------------
+// Form Sections
+// --------------------------------------------
+
+// Form Section
+// --------------------------------------------
+.#{$css-prefix}form__section {
+  & + & {
+    margin-top: $space-one-and-half;
+    padding-top: $space-one-and-half;
+    // border-top: $form-input-bdr;
+    border-top-width: 1px;
+    border-top-style: solid;
+    @include theme-border($le-divider, $de-divider, false);
+  }
+}
+
+
+
+
+
+
+// Form Section Header
+// --------------------------------------------
+// The element is currently a copy past of uni-subhead class
+.#{$css-prefix}form__section-header {
+  @include theme-color($le-type-dark);
+  display: block;
+  margin-bottom: 1em;
+  font-family: $font-display;
+  font-weight: $font-weight-bold;
+  font-size: 1rem;  // 16px
+}
+
+
+
+
+
+
+// --------------------------------------------
+// Form Item
+// --------------------------------------------
+
+// Form Item
+// --------------------------------------------
+.#{$css-prefix}form__item {
+  position: relative;
+  @include form-disabled;
+
+  // 1. Add space between items
+  // 2. Add space when a single check item follows an item
+  // 3. When an item follows a section
+  & + &, // 1
+  & + .#{$css-prefix}form__check-item, // 2
+  & + .#{$css-prefix}form__section { // 3
+    margin-top: formDensity(standard, between-items);
+
+    // Smaller space between items when --compact is on parent element
+    #{$form-compact} & {
+      margin-top: formDensity(compact, between-items);
+    }
+  }
+
+  // Control space when __item follows __item--has-divider
+  & + &.#{$css-prefix}form__item--has-divider {
+    margin-top: formDensity(standard, divider-margin);
+
+    // When compact is added to parent element
+    #{$form-compact} & {
+      margin-top: formDensity(compact, divider-margin);
+      padding-top: formDensity(compact, divider-pad);
+    }
+  }
+
+}
+
+
+
+
+
+
+// Form Item with divider
+// --------------------------------------------
+// Because margin between __item affects the margin between __item--has-divider
+// margin for this modifier is set above in __item class
+.#{$css-prefix}form__item.#{$css-prefix}form__item--has-divider {
+  @include theme-border(formColor(primary, divider), formColor(primary, divider-de), false);
+  // margin-top: formDensity(standard, divider-margin);
+  padding-top: formDensity(standard, divider-pad);
+  border-width: 1px 0 0 0;
+  border-style: solid;
+
+  // When compact is added to parent element
+  #{$form-compact} & {
+    // margin-top: formDensity(compact, divider-margin);
+    padding-top: formDensity(compact, divider-pad);
+  }
+
+}
+
+
+
+
+
+
+// --------------------------------------------
+// Labels
+// --------------------------------------------
+
+// Input Labels
+// --------------------------------------------
+.#{$css-prefix}form__label {
+  @include theme-color(formColor(primary, label), formColor(primary, label-de), false);
+  @include form-size(medium, label);
+  @include form-disabled;
+  display: block;
+  margin-bottom: formDensity(standard, label);
+  letter-spacing: 0.2px;
+
+
+  // Compact modifier on parent
+  #{$form-compact} & {
+    margin-bottom: formDensity(compact, label);
+  }
+
+}
+
+
+
+
+
+
+// Help Message
+// --------------------------------------------
+.#{$css-prefix}form__help-message {
+  @include theme-color( formColor(primary,help-message), formColor(primary, help-message-de), false );
+  @include form-size(medium, help-message);
+  @include form-disabled;
+  margin-top: 4px;
+  // font-size: $form-helper-size;
+  line-height: $form-helper-line-height;
+
+  // When there is an error
+  #{$form-item-error} &,
+  &.#{$css-prefix}form__help-message--is-error {
+    // @include theme-color( $critical, $critical-tint, false );
+  }
+}
+
+
+
+
+
+
+// Required
+// --------------------------------------------
+// This is a span inside a __label
+.#{$css-prefix}form__required {
+  @include theme-color(formColor(primary, required), formColor(primary, required-de), false);
+  position: relative;
+  top: -1px;
+  margin-left: 2px;
+  font-size: 0.75em;
+
+  // asteriks
+  // &:after {
+  //   position: absolute;
+  //   top: 0.07em;
+  //   right: -0.5em;
+  //   content: '*';
+  //   color: $critical;
+  //   font-size: 1.3em;
+  // }
+
+}
+
+
+
+
+
+
+// --------------------------------------------
+// Form Controls
+// --------------------------------------------
+
+// Control
+// --------------------------------------------
+// This wraps inputs and text areas.
+// This will make elements within this parent display inline with each other
+// e.g. A search box + button combo
+.#{$css-prefix}form__control {
+  display: flex;
+
+  // This ensures the input will grow to fill the space
+  > .#{$css-prefix}form__input {
+    flex: 1;
+  }
+}
+
+
+
+
+
+
+// --------------------------------------------
+// Inputs
+// --------------------------------------------
+
+// Inputs
+// --------------------------------------------
+.#{$css-prefix}form__input {
+  @include input-default;
+}
+
+
+
+
+// File Input
+// --------------------------------------------
+.#{$css-prefix}form__input--file {
+  margin-top: formDensity(standard, file);
+  margin-bottom: formDensity(standard, file);
+
+  #{$form-compact} & {
+    margin-top: formDensity(compact, file);
+    margin-bottom: formDensity(compact, file);
+  }
+}
+
+
+
+
+// Date Input, Time Input
+// --------------------------------------------
+.#{$css-prefix}form__input--date,
+.#{$css-prefix}form__input--time {
+  @include input-default;
+  @include input-adjust;
+}
+
+
+
+
+// Text Area
+// --------------------------------------------
+.#{$css-prefix}form__textarea {
+  @include input-default;
+  min-height: $form-textarea-min-height;
+}
+
+
+
+
+
+
+// --------------------------------------------
+// Selects
+// --------------------------------------------
+
+// Select Container
+// --------------------------------------------
+// This uses a background image for the drop down arrow.
+// The color for the dropdown is hard coded within the svg code
+// To edit it you'll either need to create a new svg, or find the spot where the color is
+// The additional svgs take care of dark environments as well as if the light environment is specified.
+.#{$css-prefix}form__control--select {
+  // @include theme-color(formColor(primary, input), formColor(primary, input-de), false);
+  // @include theme-color($le-border, $de-border, false);
+  position: relative;
+
+  background-image: url("data:image/svg+xml,%3Csvg%20class%3D%22svg-test-svg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Edropdown%3C%2Ftitle%3E%3Cg%20fill%3D%22#{$le-border}%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M4.625%208L2%2010.625l14%2014%2014-14L27.375%208%2016%2019.375%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-size: 1.25em;
+  background-position: 98% 50%;
+
+
+  [class*='t-de'] & { background-image: url("data:image/svg+xml,%3Csvg%20class%3D%22svg-test-svg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Edropdown%3C%2Ftitle%3E%3Cg%20fill%3D%22#{$de-border}%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M4.625%208L2%2010.625l14%2014%2014-14L27.375%208%2016%2019.375%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
+
+  [class*='t-le'] & { background-image: url("data:image/svg+xml,%3Csvg%20class%3D%22svg-test-svg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Edropdown%3C%2Ftitle%3E%3Cg%20fill%3D%22#{$le-border}%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M4.625%208L2%2010.625l14%2014%2014-14L27.375%208%2016%2019.375%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
+
+
+  // &::after { //dropdown arrow
+  //   position: absolute;
+  //   top: 50%;
+  //   right: 1em;
+  //   display: block;
+  //   width: 0;
+  //   height: 0;
+  //   margin-top: -3px; // this specific value tweaks the arrow based on the size of the arrow
+  //   border-top: 0.5rem solid currentColor;
+  //   border-right: 0.25rem solid transparent;
+  //   border-left: 0.25rem solid transparent;
+  //   content: '';
+  // }
+
+
+  // Using Clip Path. Decided against based on lack of browser support
+  // &::after {
+  //   @include theme-bg($le-border, $de-border, false);
+  //   position: absolute;
+  //   content: '';
+  //   top: 50%;
+  //   right: 1em;
+  //   margin-top: -0.75em;
+  //   display: block;
+  //   width: 1.05em;
+  //   height: 1em;
+  //   -webkit-clip-path: polygon(100% 45%, 100% 65%, 50% 100%, 0 65%, 0 45%, 50% 75% );
+  //   clip-path: polygon(100% 45%, 100% 65%, 50% 100%, 0 65%, 0 45%, 50% 75% );
+  // }
+
+  // Another arrow attempt. A white svg sits on top of the other. This is doesn't work in dark environments
+  // &::after,
+  // &::before { //dropdown arrow
+  //   @include theme-color($le-border, $de-border, false);
+  //   position: absolute;
+  //   top: 40%;
+  //   right: 1em;
+  //   display: block;
+  //   width: 1.15em;
+  //   height: 0.55em;
+  //   margin-top: -3px; // this specific value tweaks the arrow based on the size of the arrow
+  //   border-top: 1rem solid currentColor;
+  //   border-right: 0.65rem solid transparent;
+  //   border-left: 0.65rem solid transparent;
+  //   content: '';
+  //   border-radius: 0.2em;
+  // }
+  // &::before {
+  //   @include theme-color(#fff, transparent, false);
+  //   top: 25%;
+  //   z-index: 1;
+  // }
+
+
+  // Using svg image
+  // &:after {
+  //   @include theme-color($le-border, $de-border, false);
+  //   position: absolute;
+  //   top: 40%;
+  //   right: 1em;
+  //   display: block;
+  //   width: 1.25em;
+  //   height: 1.25em;
+  //   margin-top: -0.25em;
+  //   content: '';
+  //   background-image: url("data:image/svg+xml,%3Csvg%20class%3D%22svg-test-svg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctitle%3Edropdown%3C%2Ftitle%3E%3Cg%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M4.625%208L2%2010.625l14%2014%2014-14L27.375%208%2016%2019.375%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  //   background-repeat: no-repeat;
+  //   background-size: 100%;
+  // }
+
+
+}
+
+
+
+
+// Multi Select Container
+// --------------------------------------------
+.#{$css-prefix}form__control--multiselect { }
+
+
+
+
+// Select
+// --------------------------------------------
+.#{$css-prefix}form__select {
+  @include input-default;
+  @include input-adjust;
+  cursor: pointer;
+
+  //  Removes default arrow from IE10+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+
+
+
+// Multi Select
+// --------------------------------------------
+.#{$css-prefix}form__multiselect {
+  @include input-default;
+  overflow: scroll; // Added to correct behavior applied via Normalize
+
+}
+
+
+
+
+// Select Option
+// --------------------------------------------
+.#{$css-prefix}form__option {
+  width: 100%;
+}
+
+
+
+
+// Multi-Select Option
+// --------------------------------------------
+.#{$css-prefix}form__option--multiselect {
+  padding: 0.25em 5px;
+
+  &:hover {
+    @include theme-bg( formColor(primary, multiselect-hover), formColor(primary, multiselect-hover-de), false);
+  }
+}
+
+
+
+
+
+
+// --------------------------------------------
+// Checks + Radios
+// --------------------------------------------
+
+// Check Group
+// --------------------------------------------
+// Container class for a releated group of checkboxes or radios
+.#{$css-prefix}form__check-group,
+.#{$css-prefix}form__radio-group {
+  // @include form-disabled;
+}
+
+
+
+
+// Check Header
+// --------------------------------------------
+.#{$css-prefix}form__check-header,
+.#{$css-prefix}form__radio-header {
+  @include theme-color(formColor(primary, input), formColor(primary, input-de), false );
+  @include form-size(medium, check-header);
+  display: block;
+  margin-bottom: 1em;
+}
+
+
+
+
+// Check Item
+// --------------------------------------------
+.#{$css-prefix}form__check-item,
+.#{$css-prefix}form__radio-item {
+  @include clearfix;
+  line-height: 1.15;
+  @include form-disabled;
+
+  // Between items
+  & + & {
+    margin-top: formDensity(standard, between-check-items);
+
+    #{$form-compact} & {
+      margin-top: formDensity(compact, between-check-items);
+    }
+  }
+
+  // 1. When an __item follows a single check item
+  // 2. When a section follows a check item
+  & + .#{$css-prefix}form__item, // 1
+  & + .#{$css-prefix}form__section { // 2
+    margin-top: formDensity(standard, between-items);
+    // Smaller space between items when --compact is on parent element
+    #{$form-compact} & {
+      margin-top: formDensity(compact, between-items);
+    }
+  }
+
+}
+
+
+
+// Indicators Check + Radio
+// --------------------------------------------
+.#{$css-prefix}form__indicator--check,
+.#{$css-prefix}form__indicator--radio {
+  display: inline-block;
+  margin-right: 15px;
+  width: 1em;
+  height: 1em;
+}
+
+.#{$css-prefix}form__indicator--check {
+  @include form-indicator;
+}
+
+
+.#{$css-prefix}form__indicator--radio {
+  @include form-indicator(radio);
+}
+
+
+
+
+// Inputs Check + Radios
+// --------------------------------------------
+.#{$css-prefix}form__input--check {
+  @include form-check;
+}
+
+
+.#{$css-prefix}form__input--radio {
+  @include form-check(radio);
+}
+
+
+
+
+// Check + Radio Labels
+// --------------------------------------------
+// Sizes will either need to be added manually
+// would be nice to find a method of adding this via the form mixin
+.#{$css-prefix}form__label--check,
+.#{$css-prefix}form__label--radio {
+  display: block;
+  cursor: pointer;
+  @include theme-color(formColor(primary, label), formColor(primary, label-de), false);
+
+  // Disabled
+  // ----------------
+  // .#{$css-prefix}form__item--is-disabled .#{$css-prefix}form__check-group &
+  // .#{$css-prefix}form__item--is-disabled .#{$css-prefix}form__radio-group & {
+  //   cursor: default;
+  // }
+
+  // Error State
+  // ----------------
+  #{$form-item-error} & {
+    @include theme-color($critical, $critical-tint, false);
+    // @include theme-border($critical, $critical-tint, false);
+
+    &:focus { }
+  }
+
+}
+
+
+.#{$css-prefix}form__label--check {
+  @include form-size(medium, label--check);
+}
+
+
+.#{$css-prefix}form__label--radio {
+  @include form-size(medium, label--radio);
+}
+
+
+
+// Disabled Check + Radio Labels
+// --------------------------------------------
+// Kind of hacky solution to ensure cursor isn't a point when __item is disabled
+.#{$css-prefix}form__item--is-disabled {
+  .#{$css-prefix}form__label--check,
+  .#{$css-prefix}form__label--radio {
+    cursor: default;
+    // @include form-disabled;
+  }
+}
+
+// Hack solution if there's a single check item and the __item--is-disabled class is applied to the __check-item element
+.#{$css-prefix}form__check-item.#{$css-prefix}form__item--is-disabled {
+  .#{$css-prefix}form__label--check {
+    opacity: 0.2;
+  }
+}
+
+
+
+// --------------------------------------------
+// Search Icon
+// --------------------------------------------
+
+// Search Icon
+// --------------------------------------------
+.#{$css-prefix}form__icon--search {
+  top: 1.25em !important; // fixing weird position issue for this icon
+  &::before,
+  &::after { //search icon
+    position: absolute;
+    border: 2px solid currentColor;
+    content: '';
+  }
+
+  &::before { //lens
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+  }
+
+  &::after { //handle
+    top: 9px;
+    left: 10px;
+    height: 0.5rem;
+    transform: rotate(-45deg);
+  }
+
+  // This changes the color for search icons on dark backgrounds
+  // .#{$css-prefix}form--dark & { color: $form_dark_input_label_color; }
+
+}
+
+
+
+
+
+// --------------------------------------------
+// Range
+// --------------------------------------------
+
+// xxxx
+// --------------------------------------------
+.#{$css-prefix}form__input--range {
+  @include input-range;
+}

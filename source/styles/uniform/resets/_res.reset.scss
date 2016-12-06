@@ -1,0 +1,152 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Reset :: Reset
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+
+// This works in conjunction with Normalize. It contains some resets that normalize, obviously doesn't touch as well as some helpers to make things more better.
+
+
+// HTML element
+// --------------------------------------------
+// 1. Sets a specific font size to be used with REM sizing
+// 3. Changes the default tap highlight to be completely transparent in iOS.
+html {
+  font-size: $font-size-root; // 1
+  -webkit-tap-highlight-color: rgba(0,0,0,0); // 3
+}
+
+
+
+
+// Body element
+// --------------------------------------------
+
+// 1. Sets default background color for body
+// 2. Sets default font-family. The !important ensures olders clusters get default setting.
+// 3. Sets body  equal to root size
+// 4. Default line-height.
+// 5. Sets default text color that's not pure black;
+// 6. Smoothes font rendering for webkit and firefox browsers.
+body {
+  background-color: $body-bg; // 1
+  font-family: $font-body !important; // 2
+  font-size: $font-size-base; // 3
+  line-height: $line-height-base; // 4
+  color: $body-text-color; // 5
+  -webkit-font-smoothing: antialiased; // 6
+  -moz-osx-font-smoothing: grayscale; // 6
+}
+
+
+
+// Tables
+// --------------------------------------------
+// Remove most spacing between table cells.
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+
+// This was moved from Normalize file. It was removed in Normalize 4.0.
+// We should decide if there value for us or not
+
+// Contain overflow in all browsers.
+pre { overflow: auto; }
+
+
+
+
+// Lists
+// --------------------------------------------
+// Resetting some user agent behavior for lists
+ul,
+ol,
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+
+li {
+  list-style-position: inside; // make sure list item bullets are inside container
+}
+
+
+dd {
+  margin: 0; // remove margin start for definition list description elements
+}
+
+
+
+
+// Paragraphs
+// --------------------------------------------
+// Remove default margins from p elements
+p { margin: 0; }
+
+
+
+// Headers
+// --------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-display;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, { margin: 0; }
+
+h1, h2, h3, h4, h5, h6, { font-weight: normal; }
+
+
+
+// Media + Embeds
+// --------------------------------------------
+// Remove the gap between audio, canvas, iframes, images, videos and the bottom of their containers: https://github.com/h5bp/html5-boilerplate/issues/440
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+// Keeps images from expanding beyond their containers
+img { max-width: 100%; }
+
+// Zero out margin on figures
+figure { margin: 0; }
+
+// Zero out everything in a fieldset to make fields display correctly
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+
+
+// For full screen app like
+// --------------------------------------------
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#main {
+  flex: 1;
+}

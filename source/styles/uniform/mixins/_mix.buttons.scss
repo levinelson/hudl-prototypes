@@ -1,0 +1,619 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Mixin :: Buttons
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+// TO-DO
+// 1. Remove commented out size variations code
+
+
+
+// Button Base Mixin
+// --------------------------------------------
+@mixin button-base {
+  display: inline-block;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  border-radius: $btn-radius;
+
+  background-color: transparent;
+  vertical-align: middle;
+  font-weight: $btn-font-weight;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+
+  text-transform: capitalize;
+  text-decoration: none;
+  -webkit-appearance: none;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
+    text-decoration: none;
+    outline: 0;
+  }
+
+  &:disabled,
+  &.#{$css-prefix}btn--is-disabled,
+  &.#{$css-prefix}btn--disabled {
+    cursor: default;
+  }
+}
+
+
+
+
+// Button Spinner
+// --------------------------------------------
+@mixin button-spinner(
+  $size: $btn-spinner-size,
+  $color: green,
+  $on-bg: false,
+  $spin-target: uni-btn__content-container ) {
+
+  .#{$spin-target} {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      @include css-spinner(
+        $size: $size,
+        $bg-color: $color,
+        $on-bg: $on-bg,
+        $button-spinner: true
+      );
+    }
+  }
+
+  // Contextual sizing hacks based on the size modifier for a given button
+  // This can be cleaned up and reconsidered
+  // One option which is equally as unfortunate, is moving this to the button sizing mixin
+  // The sizing affects the size of the spinner. I don't know.
+  // Get someone who knows how to write CSS on this, pronto.
+
+  .#{$spin-target} {
+    // margin-left: buttonSize(medium, padding-left);
+    margin-left: 1.438em;
+
+    &::before {
+      width: buttonSize(medium, icon-size);
+      height: buttonSize(medium, icon-size);
+      left: -(buttonSize(medium, icon-size));
+      margin-top: -(buttonSize(medium, icon-size) / 2);
+      margin-left: -(buttonSize(medium, icon-size) / 4);
+    }
+  }
+
+
+  &.#{$css-prefix}btn--small {
+    .#{$spin-target} {
+      // margin-left: buttonSize(small, padding-left);
+      margin-left: 1.14286em;
+
+      &::before {
+        width: buttonSize(small, icon-size);
+        height: buttonSize(small, icon-size);
+        left: -(buttonSize(small, icon-size));
+        margin-top: -(buttonSize(small, icon-size) / 2);
+        margin-left: -(buttonSize(small, icon-size) / 4);
+      }
+    }
+  }
+
+  &.#{$css-prefix}btn--medium {
+    .#{$spin-target} {
+      margin-left: 1.438em;
+
+      &::before {
+        width: buttonSize(medium, icon-size);
+        height: buttonSize(medium, icon-size);
+        left: -(buttonSize(medium, icon-size));
+        margin-top: -(buttonSize(medium, icon-size) / 2);
+        margin-left: -(buttonSize(medium, icon-size) / 4);
+      }
+    }
+  }
+
+  &.#{$css-prefix}btn--large {
+    .#{$spin-target} {
+      margin-left: 1.445em;
+
+      &::before {
+        width: buttonSize(large, icon-size);
+        height: buttonSize(large, icon-size);
+        left: -(buttonSize(large, icon-size));
+        margin-top: -(buttonSize(large, icon-size) / 2);
+        margin-left: -(buttonSize(large, icon-size) / 4);
+      }
+    }
+  }
+
+  // Icon Only spinner adjustment
+  &.#{$css-prefix}btn--icon-only {
+    .#{$spin-target} {
+      left: 29%;
+    }
+  }
+
+} // button-spinner
+
+
+
+
+// Button Mark
+// --------------------------------------------
+@mixin button-mark($type: check, $size: $btn-spinner-size, $color: $uni-white) {
+  .#{$css-prefix}btn__content-container {
+    position: relative;
+    // margin-left: ($size + 0.15em);
+    // margin-left: 1.25em;
+
+    &::before,
+    &::after {
+      position: absolute;
+      // top: 0;
+      // bottom: 0;
+      top: 1px;
+      bottom: 1px;
+      left: 0;
+      content: '';
+      // width: 0.275em;
+      // width: 0.5em;
+      // background-color: $color;
+      // width: 0.225em;
+      // height: 98%;
+      // background-color: $color;
+      // left: -($size);
+      border: solid $color;
+      border-width: 0 0 0 0;
+    }
+
+    @if $type == 'check' {
+      &::before {
+        width: 0.55em;
+        // border: solid $color;
+        border-width: 0 0.275em 0.275em 0;
+        transform: rotate(35deg);
+        // background-color: transparent;
+        // height: 45%;
+        // bottom: 0.0525em;
+        // left: -($size + 0.20em);
+      }
+      &:after { position: static; }
+    } @elseif $type == '+' {
+        &::before,
+        &::after { background-color: $color; }
+        &::before { transform: rotate(90deg); }
+        &::after { }
+      } @elseif $type == '-' {
+          &::before,
+          &::after { background-color: $color; }
+          &::before { transform: rotate(90deg); }
+          &::after { background-color: transparent; }
+        } @elseif $type == 'x' {
+            // &:before, &:after { background-color: $color; }
+            &::before { transform: rotate(45deg); border-width: 0 0.275em 0 0; }
+            &::after { transform: rotate(-45deg); border-width: 0 0.275em 0 0; }
+          }
+  }
+
+
+  // Contextual sizing hacks based on the size modifier for a given button
+  // These are copied from the same hacks utilized in the button-spinner mixin
+  // Eventually, these should be untangled and made consistent, or at least reside in a consistent spot, such as within the button-size mixin.
+  .#{$css-prefix}btn__content-container {
+    margin-left: 1.438em;
+    &::before, &::after { left: -(buttonSize(medium, icon-size) * 0.88); }
+  }
+
+  &.#{$css-prefix}btn--small {
+    .#{$css-prefix}btn__content-container {
+      &::before, &::after { left: -(buttonSize(small, icon-size) * 0.88); }
+    }
+  }
+
+  &.#{$css-prefix}btn--medium {
+    .#{$css-prefix}btn__content-container {
+      &::before, &::after { left: -(buttonSize(medium, icon-size) * 0.88); }
+    }
+  }
+
+  &.#{$css-prefix}btn--large {
+    .#{$css-prefix}btn__content-container {
+      &::before, &::after { left: -(buttonSize(large, icon-size) * 0.88); }
+    }
+  }
+
+  // Icon Only spinner adjustment
+  // Dang.
+  &.#{$css-prefix}btn--icon-only {
+    .#{$css-prefix}btn__content-container {
+      left: 25%;
+    }
+  }
+
+  &.#{$css-prefix}btn--icon-only.#{$css-prefix}btn--small {
+    .#{$css-prefix}btn__content-container {
+      left: 0;
+    }
+  }
+
+   &.#{$css-prefix}btn--icon-only.#{$css-prefix}btn--large {
+    .#{$css-prefix}btn__content-container {
+      left: 33%;
+    }
+  }
+
+
+}
+
+
+
+
+// Button Disabled
+// --------------------------------------------
+// Setting disabled state
+@mixin button-disabled( $color: $btn-disabled ) {
+
+  // Local variables
+  $btn-type-color: $btn-disabled-type;
+
+  &:disabled,
+  &.#{$css-prefix}btn--is-disabled,
+  &.#{$css-prefix}btn--disabled {
+    opacity: 0.2;
+    background-color: $color;
+    color: $btn-type-color;
+    svg { fill: $btn-type-color; }
+
+    &:hover {
+      opacity: 0.2;
+      background-color: $color;
+      color: $btn-type-color;
+    }
+
+    &:focus { background-color: $color; }
+
+    [class*='t-de'] & { color: $btn-type-color; }
+
+    [class*='t-le'] & { color: $btn-type-color; }
+  }
+}
+
+
+
+
+// Button Size
+// --------------------------------------------
+// To define different sizes of buttons.
+// Configuration of button sizes is controlled by $uni-btn-size map located in the var.button.scss file
+
+@mixin button-size( $size: medium ) {
+  height:         buttonSize($size, line-height) + em;
+  line-height:    buttonSize($size, line-height);
+  padding-top:    buttonSize($size, padding-top);
+  padding-right:  buttonSize($size, padding-right);
+  padding-bottom: buttonSize($size, padding-bottom);
+  padding-left:   buttonSize($size, padding-left);
+  font-size:      buttonSize($size, font-size);
+  font-weight:    buttonSize($size, font-weight);
+
+  // Controlling sizing of icons inside buttons
+  .#{$css-prefix}btn__icon {
+    width: buttonSize($size, icon-size);
+    height: buttonSize($size, icon-size);
+    margin-right: buttonSize($size, icon-margin-right);
+    margin-left: -(buttonSize($size, icon-margin-left));
+  }
+} // button-size
+
+
+
+
+// Button Rounded
+// --------------------------------------------
+// Removed
+
+
+
+
+// Button Outline
+// --------------------------------------------
+// Removed
+
+
+
+
+// Note about button-minimal and button mixins
+// Overall, the duplication neccessary between having separate mixins for regular Buttons and minimal Buttons seems to make sense. The reduction of duplicated logic doesn't seem worth the additional complexity that would need to be added into the master Button mixin. At some point, it might be worth considering. However, at that point, the button minimal mixin probably would need to remain, as an interface into the new master mixin, at least for some period of time.
+
+
+
+
+// Button Minimal
+// --------------------------------------------
+@mixin button-minimal ( $variant: subtle, $bespoke: null ) {
+
+  // Settings
+  // ----------------
+  // Local Variables, set via maps
+  $color: button($variant, minimal);
+  $btn-hover: button($variant, minimal-hover);
+  $btn-active: button($variant, minimal-active);
+
+
+  // Fallbacks
+
+  // If map doesn't specificaly have a minimal option specified
+  @if $color == null {
+    $color: button($variant, bg);
+  }
+
+   // 1. If map doesn't have a specific minimal hover defined, grab the hover from standard buttons
+   // 2. If there's not bg-hover specified in map, programmatically set the hover state
+  @if $btn-hover == null { // 1
+    $btn-hover: button($variant, bg-hover);
+  } @elseif $btn-hover == null { // 2
+      $btn-hover: buttonHover($color);
+    }
+
+
+  // If map doesn't have a specific minimal hover defined, grab the hover from standard buttons
+  @if $btn-hover == null {
+    $btn-hover: button($variant, bg-active);
+  } @elseif $btn-active == null {
+      $btn-active: buttonActive($color);
+    }
+
+
+
+
+  // Programmatic Fallbacks
+  // If button map doesn't have defined values,
+  // programmatically set hover and active states
+  // @if $btn-hover == null {
+  //   $btn-hover: buttonHover($color);
+  // }
+
+  // @if $btn-active == null {
+  //   $btn-active: buttonActive($color);
+  // }
+
+  // Setting dark environment colors, if they exist
+  // Hover and Active for dark environment is currenlty hard set, using the active and hover functions. If we begin defining specific colors for those colors in maps, we'll need to provide the logic that would 1. test if the $color-de exists, 2. then test if the dark environment dark hover or active exists and set that value, 3. or set the programmatic hover or active based on $color-de
+  $color-de: button($variant, minimal-de);
+
+  // Disabled Colors
+  $btn-text-disabled: $le-type-dark;
+  $btn-text-disabled-de: $uni-white;
+
+
+  // Style
+  // ----------------
+  @include button-base;
+
+  // This conditional includes the button size if the button is not a local, bespoke button,
+  // created outside the design system. 99.9% of buttons will be uniform buttons,
+  // The check helps to ensure our users can create their own buttons. However, they'll additionally need to add a size modifier class within their markup
+  @if $bespoke == null {
+    @include button-size;
+  }
+  color: $color;
+  padding-right: 0.75em;
+  padding-left: 0.75em;
+  transition: $trans-color;
+
+  // Hacking size
+  // This non-elegant hack gives a consistent padding for minimal buttons without resorting to !important to fight against size modifiers.
+  &.#{$css-prefix}btn--small,
+  &.#{$css-prefix}btn--medium,
+  &.#{$css-prefix}btn--large {
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+  }
+
+  // Hover + Focus
+  // ----------------
+  &:hover,
+  &:focus {
+    color: $btn-hover;
+  }
+
+  // Active
+  // ----------------
+  &:active {
+    color: $btn-active;
+  }
+
+
+    // Spinning State
+  // ----------------
+  &.#{$css-prefix}btn--is-spinning {
+    @include button-spinner($size: $btn-spinner-size, $color: $color, $on-bg: false);
+    color: $btn-active;
+    &:hover { color: $btn-active; }
+  }
+
+  // Dark Environment
+  // ----------------
+  [class*='t-de'] & {
+    @if $color-de != null {
+      color: $color-de;
+      &:hover, &:focus { color: buttonHover($color-de); }
+      &:active { color: buttonActive($color-de); }
+    }
+  }
+
+  // Light Evironment.
+  // Needed if switching from dark to light, or light nested within light.
+  // ----------------
+  [class*='t-le'] & {
+    color: $color;
+    &:hover, &:focus { color: $btn-hover; }
+    &:active { color: $btn-active; }
+  }
+
+  // Disabled
+  // ----------------
+  &:disabled,
+  &.#{$css-prefix}btn--is-disabled,
+  &.#{$css-prefix}btn--disabled {
+    color: $btn-text-disabled;
+    opacity: 0.1;
+    &:hover { text-decoration: none; }
+    // Dark Environment for Disabled
+    [class*='t-de'] & {
+      color: $btn-text-disabled-de;
+      opacity: 0.15;
+    }
+
+    // Light Environment for Disabled
+    [class*='t-le'] & {
+      color: $btn-text-disabled;
+      opacity: 0.1;
+    }
+  }
+
+  // Success state
+  // ----------------
+  &.#{$css-prefix}btn--is-success {
+    @include button-mark('check', $color: $btn-bg-confirm);
+    background-color: transparent !important;
+    color: $btn-bg-confirm;
+    &:hover {
+      background-color: transparent !important;
+      color: $btn-bg-confirm;
+    }
+  }
+
+  // Failure state
+  // ----------------
+  &.#{$css-prefix}btn--is-failure {
+    @include button-mark('x', $color: $btn-bg-destroy);
+    background-color: transparent !important;
+    color: $btn-bg-destroy;
+    &:hover {
+      color: $btn-bg-destroy;
+      background-color: transparent !important;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+// Button
+// --------------------------------------------
+@mixin button( $variant: subtle, $bespoke: null ) {
+
+  // Settings
+  // ----------------
+  // Local Variables, set via maps
+  $color: button($variant, bg);
+  $btn-hover: button($variant, bg-hover);
+  $btn-active: button($variant, bg-active);
+  $btn-text: button($variant, color);
+
+
+  // Programmatic Fallbacks
+  // If button map doesn't have defined values,
+  // programmatically set hover and active states
+  @if $btn-hover == null {
+    $btn-hover: buttonHover($color);
+  }
+
+  @if $btn-active == null {
+    $btn-active: buttonActive($color);
+  }
+
+  // Checking to see if a color is defined in list map, otherwise using contrast-color function
+  @if $btn-text == null {
+    $btn-text: contrast-color($color);
+  }
+
+  // Setting dark environment colors, if they exist
+  // See note in button minimal about potential future needs for dark environment testing
+  $color-de: button($variant, bg-de);
+  $btn-text-de: button($variant, color-de);
+
+
+  // Style
+  // ----------------
+  @include button-base;
+  // This conditional includes the button size if the button is not a local, bespoke button,
+  // created outside the design system. 99.9% of buttons will be uniform buttons,
+  // The check helps to ensure our users can create their own buttons. However, they'll additionally need to add a size modifier class within their markup
+  @if $bespoke == null {
+    @include button-size;
+  }
+  @include button-disabled;
+  background-color: $color;
+  color: $btn-text;
+  transition: $btn-trans-bg-color;
+
+  // Hover + Focus
+  // ----------------
+  &:hover,
+  &:focus {
+    // background-image: none;
+    background-color: $btn-hover;
+    // outline: none;
+  }
+
+  // Active
+  // ----------------
+  &:active { background-color: $btn-active; }
+
+  // Spinning State
+  // ----------------
+  &.#{$css-prefix}btn--is-spinning {
+    @include button-spinner($size: $btn-spinner-size, $color: $color, $on-bg: true);
+    background-color: $btn-active;
+    &:hover { background-color: $btn-active; }
+  }
+
+  // This ensures a smooth transition as state is added to a button
+  > .#{$css-prefix}btn__content-container {
+    transition: margin 0.2s linear;
+  }
+
+  // Dark Environment
+  // ----------------
+  [class*='t-de'] & {
+    @if $btn-text-de != null {
+      color: $btn-text-de;
+    }
+    @if $color-de != null {
+      background-color: $color-de;
+      &:hover, &:focus { background-color: buttonHover($color-de); }
+      &:active { background-color: buttonActive($color-de); }
+    }
+  }
+
+  // Light Evironment.
+  // Needed if switching from dark to light, or light nested within light.
+  // ----------------
+  [class*='t-le'] & {
+    background-color: $color;
+    &:hover, &:focus { background-color: $btn-hover; }
+    &:active { background-color: $btn-active; }
+  }
+
+} // button
+

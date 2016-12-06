@@ -1,0 +1,310 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Space
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+
+// --------------------------------------------
+// Margin
+// --------------------------------------------
+
+// Margin :: All
+// --------------------------------------------
+.#{$css-prefix}margin--eighth { @include space(margin, all, $space-eighth); }
+
+.#{$css-prefix}margin--quarter { @include space(margin, all, $space-quarter); }
+
+.#{$css-prefix}margin--half { @include space(margin, all, $space-half); }
+
+.#{$css-prefix}margin--one { @include space(margin, all, $space-one); }
+
+.#{$css-prefix}margin--one-and-half { @include space(margin, all, $space-one-and-half); }
+
+.#{$css-prefix}margin--two { @include space(margin, all, $space-two); }
+
+.#{$css-prefix}margin--three { @include space(margin, all, $space-three); }
+
+.#{$css-prefix}margin--four { @include space(margin, all, $space-four); }
+
+
+
+
+// --------------------------------------------
+// Margin :: Vertical
+// --------------------------------------------
+
+// Top + Bottom
+// --------------------------------------------
+.#{$css-prefix}margin--eighth--vert { @include space(margin, vertical, $space-eighth); }
+
+.#{$css-prefix}margin--quarter--vert { @include space(margin, vertical, $space-quarter); }
+
+.#{$css-prefix}margin--half--vert { @include space(margin, vertical, $space-half); }
+
+.#{$css-prefix}margin--one--vert { @include space(margin, vertical, $space-one); }
+
+.#{$css-prefix}margin--one-and-half--vert { @include space(margin, vertical, $space-one-and-half); }
+
+.#{$css-prefix}margin--two--vert { @include space(margin, vertical, $space-two); }
+
+.#{$css-prefix}margin--three--vert { @include space(margin, vertical, $space-three); }
+
+.#{$css-prefix}margin--four--vert { @include space(margin, vertical, $space-four); }
+
+
+// Top
+// --------------------------------------------
+.#{$css-prefix}margin--eighth--top { @include space(margin, top, $space-eighth); }
+
+.#{$css-prefix}margin--quarter--top { @include space(margin, top, $space-quarter); }
+
+.#{$css-prefix}margin--half--top { @include space(margin, top, $space-half); }
+
+.#{$css-prefix}margin--one--top { @include space(margin, top, $space-one); }
+
+.#{$css-prefix}margin--one-and-half--top { @include space(margin, top, $space-one-and-half); }
+
+.#{$css-prefix}margin--two--top { @include space(margin, top, $space-two); }
+
+.#{$css-prefix}margin--three--top { @include space(margin, top, $space-three); }
+
+.#{$css-prefix}margin--four--top { @include space(margin, top, $space-four); }
+
+
+// Bottom
+// --------------------------------------------
+.#{$css-prefix}margin--eighth--btm { @include space(margin, bottom, $space-eighth); }
+
+.#{$css-prefix}margin--quarter--btm { @include space(margin, bottom, $space-quarter); }
+
+.#{$css-prefix}margin--half--btm { @include space(margin, bottom, $space-half); }
+
+.#{$css-prefix}margin--one--btm { @include space(margin, bottom, $space-one); }
+
+.#{$css-prefix}margin--one-and-half--btm { @include space(margin, bottom, $space-one-and-half); }
+
+.#{$css-prefix}margin--two--btm { @include space(margin, bottom, $space-two); }
+
+.#{$css-prefix}margin--three--btm { @include space(margin, bottom, $space-three); }
+
+.#{$css-prefix}margin--four--btm { @include space(margin, bottom, $space-four); }
+
+
+
+
+// --------------------------------------------
+// Margin :: Horizontal
+// --------------------------------------------
+
+// Right + Left
+// --------------------------------------------
+.#{$css-prefix}margin--eighth--horiz { @include space(margin, horizontal, $space-eighth); }
+
+.#{$css-prefix}margin--quarter--horiz { @include space(margin, horizontal, $space-quarter); }
+
+.#{$css-prefix}margin--half--horiz { @include space(margin, horizontal, $space-half); }
+
+.#{$css-prefix}margin--one--horiz { @include space(margin, horizontal, $space-one); }
+
+.#{$css-prefix}margin--one-and-half--horiz { @include space(margin, horizontal, $space-one-and-half); }
+
+.#{$css-prefix}margin--two--horiz { @include space(margin, horizontal, $space-two); }
+
+.#{$css-prefix}margin--three--horiz { @include space(margin, horizontal, $space-three); }
+
+.#{$css-prefix}margin--four--horiz { @include space(margin, horizontal, $space-four); }
+
+
+// Right
+// --------------------------------------------
+.#{$css-prefix}margin--eighth--right { @include space(margin, right, $space-eighth); }
+
+.#{$css-prefix}margin--quarter--right { @include space(margin, right, $space-quarter); }
+
+.#{$css-prefix}margin--half--right { @include space(margin, right, $space-half); }
+
+.#{$css-prefix}margin--one--right { @include space(margin, right, $space-one); }
+
+.#{$css-prefix}margin--one-and-half--right { @include space(margin, right, $space-one-and-half); }
+
+.#{$css-prefix}margin--two--right { @include space(margin, right, $space-two); }
+
+.#{$css-prefix}margin--three--right { @include space(margin, right, $space-three); }
+
+.#{$css-prefix}margin--four--right { @include space(margin, right, $space-four); }
+
+
+// Left
+// --------------------------------------------
+.#{$css-prefix}margin--eighth--left { @include space(margin, left, $space-eighth); }
+
+.#{$css-prefix}margin--quarter--left { @include space(margin, left, $space-quarter); }
+
+.#{$css-prefix}margin--half--left { @include space(margin, left, $space-half); }
+
+.#{$css-prefix}margin--one--left { @include space(margin, left, $space-one); }
+
+.#{$css-prefix}margin--one-and-half--left { @include space(margin, left, $space-one-and-half); }
+
+.#{$css-prefix}margin--two--left { @include space(margin, left, $space-two); }
+
+.#{$css-prefix}margin--three--left { @include space(margin, left, $space-three); }
+
+.#{$css-prefix}margin--four--left { @include space(margin, left, $space-four); }
+
+
+
+
+
+
+// --------------------------------------------
+// Padding
+// --------------------------------------------
+
+// Padding :: All
+// --------------------------------------------
+.#{$css-prefix}pad--eighth { @include space(padding, all, $space-eighth); }
+
+.#{$css-prefix}pad--quarter { @include space(padding, all, $space-quarter); }
+
+.#{$css-prefix}pad--half { @include space(padding, all, $space-half); }
+
+.#{$css-prefix}pad--one { @include space(padding, all, $space-one); }
+
+.#{$css-prefix}pad--one-and-half { @include space(padding, all, $space-one-and-half); }
+
+.#{$css-prefix}pad--two { @include space(padding, all, $space-two); }
+
+.#{$css-prefix}pad--three { @include space(padding, all, $space-three); }
+
+.#{$css-prefix}pad--four { @include space(padding, all, $space-four); }
+
+
+
+
+// --------------------------------------------
+// Padding :: Vertical
+// --------------------------------------------
+
+// Top + Bottom
+// --------------------------------------------
+.#{$css-prefix}pad--eighth--vert { @include space(padding, vertical, $space-eighth); }
+
+.#{$css-prefix}pad--quarter--vert { @include space(padding, vertical, $space-quarter); }
+
+.#{$css-prefix}pad--half--vert { @include space(padding, vertical, $space-half); }
+
+.#{$css-prefix}pad--one--vert { @include space(padding, vertical, $space-one); }
+
+.#{$css-prefix}pad--one-and-half--vert { @include space(padding, vertical, $space-one-and-half); }
+
+.#{$css-prefix}pad--two--vert { @include space(padding, vertical, $space-two); }
+
+.#{$css-prefix}pad--three--vert { @include space(padding, vertical, $space-three); }
+
+.#{$css-prefix}pad--four--vert { @include space(padding, vertical, $space-four); }
+
+
+// Top
+// --------------------------------------------
+.#{$css-prefix}pad--eighth--top { @include space(padding, top, $space-eighth); }
+
+.#{$css-prefix}pad--quarter--top { @include space(padding, top, $space-quarter); }
+
+.#{$css-prefix}pad--half--top { @include space(padding, top, $space-half); }
+
+.#{$css-prefix}pad--one--top { @include space(padding, top, $space-one); }
+
+.#{$css-prefix}pad--one-and-half--top { @include space(padding, top, $space-one-and-half); }
+
+.#{$css-prefix}pad--two--top { @include space(padding, top, $space-two); }
+
+.#{$css-prefix}pad--three--top { @include space(padding, top, $space-three); }
+
+.#{$css-prefix}pad--four--top { @include space(padding, top, $space-four); }
+
+
+// Bottom
+// --------------------------------------------
+.#{$css-prefix}pad--eighth--btm { @include space(padding, bottom, $space-eighth); }
+
+.#{$css-prefix}pad--quarter--btm { @include space(padding, bottom, $space-quarter); }
+
+.#{$css-prefix}pad--half--btm { @include space(padding, bottom, $space-half); }
+
+.#{$css-prefix}pad--one--btm { @include space(padding, bottom, $space-one); }
+
+.#{$css-prefix}pad--one-and-half--btm { @include space(padding, bottom, $space-one-and-half); }
+
+.#{$css-prefix}pad--two--btm { @include space(padding, bottom, $space-two); }
+
+.#{$css-prefix}pad--three--btm { @include space(padding, bottom, $space-three); }
+
+.#{$css-prefix}pad--four--btm { @include space(padding, bottom, $space-four); }
+
+
+
+
+// --------------------------------------------
+// Padding :: Horizontal
+// --------------------------------------------
+
+// Right + Left
+// --------------------------------------------
+.#{$css-prefix}pad--eighth--horiz { @include space(padding, horizontal, $space-eighth); }
+
+.#{$css-prefix}pad--quarter--horiz { @include space(padding, horizontal, $space-quarter); }
+
+.#{$css-prefix}pad--half--horiz { @include space(padding, horizontal, $space-half); }
+
+.#{$css-prefix}pad--one--horiz { @include space(padding, horizontal, $space-one); }
+
+.#{$css-prefix}pad--one-and-half--horiz { @include space(padding, horizontal, $space-one-and-half); }
+
+.#{$css-prefix}pad--two--horiz { @include space(padding, horizontal, $space-two); }
+
+.#{$css-prefix}pad--three--horiz { @include space(padding, horizontal, $space-three); }
+
+.#{$css-prefix}pad--four--horiz { @include space(padding, horizontal, $space-four); }
+
+
+// Right
+// --------------------------------------------
+.#{$css-prefix}pad--eighth--right { @include space(padding, right, $space-eighth); }
+
+.#{$css-prefix}pad--quarter--right { @include space(padding, right, $space-quarter); }
+
+.#{$css-prefix}pad--half--right { @include space(padding, right, $space-half); }
+
+.#{$css-prefix}pad--one--right { @include space(padding, right, $space-one); }
+
+.#{$css-prefix}pad--one-and-half--right { @include space(padding, right, $space-one-and-half); }
+
+.#{$css-prefix}pad--two--right { @include space(padding, right, $space-two); }
+
+.#{$css-prefix}pad--three--right { @include space(padding, right, $space-three); }
+
+.#{$css-prefix}pad--four--right { @include space(padding, right, $space-four); }
+
+
+// Left
+// --------------------------------------------
+.#{$css-prefix}pad--eighth--left { @include space(padding, left, $space-eighth); }
+
+.#{$css-prefix}pad--quarter--left { @include space(padding, left, $space-quarter); }
+
+.#{$css-prefix}pad--half--left { @include space(padding, left, $space-half); }
+
+.#{$css-prefix}pad--one--left { @include space(padding, left, $space-one); }
+
+.#{$css-prefix}pad--one-and-half--left { @include space(padding, left, $space-one-and-half); }
+
+.#{$css-prefix}pad--two--left { @include space(padding, left, $space-two); }
+
+.#{$css-prefix}pad--three--left { @include space(padding, left, $space-three); }
+
+.#{$css-prefix}pad--four--left { @include space(padding, left, $space-four); }

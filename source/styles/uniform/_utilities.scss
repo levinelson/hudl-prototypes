@@ -1,0 +1,134 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Utilities
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+// Floats
+// --------------------------------------------
+.u-float--left { float: left; }
+
+.u-float--right { float: right; }
+
+
+
+
+
+
+// Content Alignment
+// --------------------------------------------
+// Note: Left Aligned is Default
+
+.u-align--right { text-align: right; }
+
+.u-align--center { text-align: center; }
+
+
+
+
+
+
+// Visually Hidden + Screen Reader
+// --------------------------------------------
+// These classes visually hide elements that we want to make available for screen reader users
+
+/* stylelint-disable */
+.u-visually-hidden,
+.u-sr-only {
+  position: absolute !important;
+  padding: 0 !important;
+  width: 1px !important;
+  overflow: hidden !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+}
+/* stylelint-enable */
+
+
+
+
+
+
+// .u-sr-only { @extend %u-visually-hidden; }
+
+
+// Visable at Breakpoints
+// --------------------------------------------
+// These all you to hide or show elements above, below, or at specific breakpoints
+
+// Helper Classes for Hiding
+
+// .u-hide---small {
+//   display: block;
+
+//   @include mq(max, $bp-small) { display: none; }
+// }
+
+
+// .u-hide--medium {
+//   display: block;
+
+//   @include mq($bp-small, $bp-medium) { display: none }
+// }
+
+
+// .u-hide--mediumdown {
+//   display: block;
+
+//   @include mq(max, $bp-medium) { display: none; }
+// }
+
+
+// .u-hide--large {
+//   display: block;
+
+//   @include mq($bp-medium, $bp-large) { display: none; }
+// }
+
+
+// .u-hide--xlarge {
+//   display: block;
+
+//   @include mq($bp-large) { display: none; }
+// }
+
+
+// // Helper Classes for Showing
+// .u-show--small {
+//   display: none;
+
+//   @include mq(max, $bp-small) { display: block; }
+// }
+
+
+// .u-show--medium {
+//   display: none;
+
+//   @include mq($bp-small, $bp-medium) { display: block; }
+// }
+
+
+// .u-show--mediumdown {
+//   display: none;
+
+//   @include mq(max, $bp-medium) { display: block; }
+// }
+
+
+// .u-show--large {
+//   display: none;
+
+//   @include mq($bp-medium, $bp-large) { display: block; }
+// }
+
+
+// .u-show--xlarge {
+//   display: none;
+
+//   @include mq($bp-large) { display: block; }
+// }

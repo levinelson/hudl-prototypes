@@ -1,0 +1,227 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Variables :: Forms
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+// Classes
+// --------------------------------------------
+// These classes are referenced in places throughout Form styles
+// This makes any change to those classes a one stop change
+// With any change, you would need to update markup, obviously.
+
+// Parent element size modifier
+$form-small:                      '.#{$css-prefix}form--small';
+$form-medium:                     '.#{$css-prefix}form--medium';
+$form-large:                      '.#{$css-prefix}form--large';
+
+// Parent element density modifier
+$form-compact:                    '.#{$css-prefix}form--compact';
+
+// Parent element error
+$form-item-error:                 '.#{$css-prefix}form__item--is-error';
+
+// Elements
+$form-item-small:                 '.#{$css-prefix}form__item--small';
+$form-item-compact:               '.#{$css-prefix}form__item--compact';
+
+
+
+
+// Sizes
+// --------------------------------------------
+$form-size-large:                 1.125rem;     // 18
+$form-size-medium:                1rem;         // 16
+$form-size-small:                 0.875rem;     // 14
+
+$form-size-helper:                0.75rem;      // 12
+
+$form-textarea-min-height:        200px;
+
+$form-helper-line-height:         1.166666667; // 14/12
+
+
+
+
+// Universal
+// --------------------------------------------
+$form-input-bdr-radius:             0.3125em;
+
+$form-input-margin:                 0;
+
+$form-input-shadow:                 none;
+
+$form-input-outline:                0;
+$form-input-outline-focus:          0;
+
+
+
+
+// Checks + Radio
+// --------------------------------------------
+$form-checkbox-margin:              $space-half;  // 8
+
+$form-checkbox-radius:              0.1875rem; // 3px
+
+
+
+
+// Light Environment
+// --------------------------------------------
+$form-input-bg:                     transparent;
+$form-input-bdr-color-focus:        $uni-slate;
+
+// $form-multi-option-disabled-hover:  transparent;
+
+$form-checkbox-bg:                  $le-type-dark;
+
+
+
+
+// Dark Environment
+// --------------------------------------------
+$form-dark-input-bg:                rgba(0, 0, 0, 0.2);
+$form-dark-input-bdr-color-focus:   $de-type-bright; // $ui-orange-dark;
+
+
+
+
+// Form Color Map
+// --------------------------------------------
+// This color map controls color for forms.
+// Additional values might be added as the system matures
+$uni-form-color: (
+  primary: (
+    label: $le-type-medium, // typewriter
+    label-de: $de-type-bright, // bright
+    required: $le-type-nonessential,
+    required-de: $de-type-nonessential,
+    input: $le-type-dark, // ink
+    input-de: $de-type-reverse,
+    input-error: $critical,
+    input-error-de: $critical-tint,
+    input-disabled: purple,
+    input-disabled-de: yellow,
+    input-border: $le-border,
+    input-border-de: $de-border,
+    input-bg: transparent,
+    input-bg-de: rgba(0, 0, 0, 0.2),
+    placeholder: $le-type-nonessential,
+    placeholder-de: $de-type-nonessential,
+    divider: $le-divider,
+    divider-de: $de-divider,
+    help-message: $le-type-nonessential,
+    help-message-de: $de-type-nonessential,
+    multiselect-hover: $le-bg-bone-slate,
+    multiselect-hover-de: $de-bg-black
+  )
+);
+
+
+
+
+// Form Density Map
+// --------------------------------------------
+$uni-form-density: (
+  standard: (
+    label: $space-quarter, // 4
+    helper: $space-quarter, // 4
+    between-items: $space-two,  // 32
+    between-check-items: $space-one, // 16
+    divider-pad: $space-one-and-half, // 24
+    divider-margin: $space-one-and-half,  // 24
+    file: $space-quarter
+  ),
+  compact: (
+    label: $space-eighth, // 2
+    helper: $space-eighth, // 2
+    between-items: $space-one,  // 16
+    between-check-items: $space-half,  // 8
+    divider-pad: $space-one, // 16
+    divider-margin: $space-one,  // 16
+    file: $space-quarter
+  )
+);
+
+
+
+
+// Form Size Map
+// --------------------------------------------
+$uni-form-size: (
+  large: (
+    label-size: $form-size-large,
+    label-pad: 0,
+    required: 1px,
+    input-size: $form-size-large,  // 16
+    input-pad-horiz: 1em,
+    input-pad-vert:  0.8615em,
+    help-message-size: $form-size-helper,  // 12
+    help-message-pad: 0,
+    check-header-size: $form-size-large, // 16
+    check-header-pad: 0,
+    label--check-size: 1rem,
+    label--radio-size: 1rem,
+    border-width: 1px,
+    height: 3.375rem
+  ),
+  medium: (
+    label-size: $form-size-medium, // 16
+    label-pad: 0,
+    required: 1px,
+    input-size: $form-size-medium,  // 16
+    input-pad-horiz: 1em,
+    input-pad-vert:  0.625em,
+    help-message-size: $form-size-helper,  // 12
+    help-message-pad: 0,
+    check-header-size: 1rem, // 16
+    check-header-pad: 0,
+    label--check-size: 1rem,
+    label--radio-size: 1rem,
+    border-width: 1px,
+    height: 2.5rem,
+  ),
+  small: (
+    label-size: $form-size-small,  // 14
+    label-pad: 0,
+    required: 1px,
+    input-size: $form-size-small,  // 14
+    input-pad-horiz: 1em,  // 8
+    input-pad-vert:  0.429em,
+    help-message-size: $form-size-helper,  // 12
+    help-message-pad: 0,
+    check-header-size: $form-size-small,  // 14
+    check-header-pad: 0,
+    label--check-size: 0.875rem,
+    label--radio-size: 0.875rem,
+    border-width: 1px,
+    height: 1.875rem
+  )
+);
+
+
+
+
+// Bespoke Form Maps
+// --------------------------------------------
+$bespoke-form-color: () !default;
+
+$bespoke-form-density: () !default;
+
+$bespoke-form-size: () !default;
+
+
+
+
+// Merging Global and Local settings
+// --------------------------------------------
+// This merges Uniform settings with any bespoke settings
+// allowing users to use values from our global settings, and their local environment.
+$form-color: map-merge($uni-form-color, $bespoke-form-color);
+
+$form-density: map-merge($uni-form-density, $bespoke-form-density);
+
+$form-size: map-merge($uni-form-size, $bespoke-form-size);

@@ -1,0 +1,413 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Elements :: Type
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+// TO-DO
+// 1. Create variables (or maps) for the hardcoded values for the type system
+// 2. Consider creating a 'scale' for the sizes outlined below, making it easier to use those across yet to be created type elements or within components such as buttons.
+
+// 40px   2.5rem
+// 30px   1.875rem
+// 22px   1.375rem
+// 18px   1.125rem
+// 16px   1rem
+// 14px   0.875rem
+// 12px   0.75rem
+// 10px   0.625rem
+
+
+
+
+
+// New Uniform Headlines
+// --------------------------------------------
+.#{$css-prefix}headline--1 {
+  @include uniform-type(headline-1);
+  // @include theme-color($le-type-light);
+  // @include type-size(2.5rem, 1.875rem);   // 40 ~ 30
+  // @include line-height(1, 1.066666667);   // 40 ~ 32
+  // font-family: $font-display;
+  // font-weight: $font-weight-light;
+  // letter-spacing: -0.025em;
+}
+
+
+.#{$css-prefix}headline--2 {
+  @include uniform-type(headline-2);
+  // @include theme-color($le-type-light);
+  // @include type-size(1.875rem, 1.375rem);           // 30 ~ 22
+  // @include line-height(1.066666667, 1.090909091);   // 32 ~ 24
+  // font-family: $font-display;
+  // font-weight: $font-weight-light;
+  // letter-spacing: -0.025em;
+}
+
+
+.#{$css-prefix}headline--3 {
+  @include uniform-type(headline-3);
+  // @include theme-color($le-type-dark);
+  // @include type-size(1.375rem, 1.125rem);           // 22 ~ 18
+  // @include line-height(1.181818182, 1.166666667);   // 26 ~ 21
+  // font-family: $font-display;
+  // font-weight: $font-weight-light;
+  // letter-spacing: -0.015em;
+}
+
+
+
+
+
+// New Uniform Subhead
+// --------------------------------------------
+.#{$css-prefix}subhead {
+  @include uniform-type(subhead);
+  // @include theme-color($le-type-dark);
+  // font-family: $font-display;
+  // font-weight: $font-weight-bold;
+  // font-size: 1rem;  // 16px
+  // line-height: 1;  // 16px
+}
+
+
+.#{$css-prefix}subhead--small {
+  @include uniform-type(subhead-small);
+  // @include theme-color($le-type-dark);
+  // font-family: $font-display;
+  // font-weight: $font-weight-bold;
+  // font-size: 0.75rem;  // 12px
+  // line-height: 0.75;  // 12px
+  // color: $le-type-dark;
+
+  &.#{$css-prefix}subhead--subtle {
+    @include theme-color($le-type-light);
+  }
+}
+
+
+
+
+// New Uniform Text
+// --------------------------------------------
+
+.#{$css-prefix}text--large {
+  @include uniform-type(text-large);
+  // @include theme-color;
+  // font-family: $font-body;
+  // font-weight: $font-weight-light;
+  // font-size: 1.125rem;  // 18px
+  // line-height: 1.444444444;  // 26px
+}
+
+
+.#{$css-prefix}text {
+  @include uniform-type(text);
+  // @include theme-color;
+  // font-family: $font-body;
+  // font-weight: $font-weight-reg;
+  // font-size: 1rem;  // 16px
+  // line-height: 1.5;  // 24px
+
+  &.#{$css-prefix}text--set-solid {
+    line-height: 1.125; // 18px
+  }
+}
+
+
+.#{$css-prefix}text--small {
+  @include uniform-type(text-small);
+  // @include theme-color;
+  // font-family: $font-body;
+  // font-weight: $font-weight-reg;
+  // font-size: 0.875rem;  // 14px
+  // line-height: 1.428571429;  // 20px
+
+  &.#{$css-prefix}text--set-solid {
+    line-height: 1.071428571; // 15px
+  }
+}
+
+
+.#{$css-prefix}text--micro {
+  @include uniform-type(text-micro);
+  // @include theme-color;
+  // font-family: $font-body;
+  // font-weight: $font-weight-reg;
+  // font-size: 0.75rem;  // 12px
+  // line-height: 1.416666667;  // 17px
+
+  &.#{$css-prefix}text--set-solid {
+    line-height: 1.083333333; // 13px
+  }
+}
+
+
+
+.#{$css-prefix}text--additional {
+  @include uniform-type(text-additional);
+  // @include theme-color($le-type-nonessential);
+  // font-family: $font-body;
+  // font-weight: $font-weight-reg;
+  // font-size: 1rem;  // 16px
+  // line-height: 1.5;  // 24px
+
+  // &.#{$css-prefix}text--set-solid {
+  //   line-height: 1.125; // 18px
+  // }
+}
+
+
+
+
+// Uniform Item Titles
+// --------------------------------------------
+.#{$css-prefix}item-title {
+  @include uniform-type(item-title);
+  // @include theme-color($le-type-nonessential);
+  // font-family: $font-body;
+  // font-weight: $font-weight-bold;
+  // font-size: 0.75rem;  // 12px
+  // line-height: 1;  // 12px
+
+  // &.#{$css-prefix}item-title--small{
+  //   font-size: 0.625rem; // 10px
+  // }
+
+  &.#{$css-prefix}item-title--caps {
+    text-transform: uppercase;
+  }
+}
+
+
+.#{$css-prefix}item-title--small {
+  @include uniform-type(item-title-small);
+  // @include theme-color($le-type-nonessential);
+  // font-family: $font-body;
+  // font-weight: $font-weight-bold;
+  // font-size: 0.625rem; // 10px
+  // line-height: 1;  // 10px
+
+  &.#{$css-prefix}item-title--caps {
+    text-transform: uppercase;
+  }
+}
+
+
+
+
+
+// Articles
+// --------------------------------------------
+// Add this class to a container for continuous area of text, such as a blog post.
+// This will automatically handle the space between paragraphs
+.#{$css-prefix}article {
+  // @warn 'The class .uni-article is probably not a class you should ever use. Please let Design System know how and why you need it.';
+  > p {
+    margin-top: 0.875rem;
+    margin-bottom: 0.875rem;
+  }
+}
+
+
+
+
+
+
+// Lists
+// --------------------------------------------
+
+// Basic List Style
+// --------------------------------------------
+// This is extended into all other lists to give that variation our basic styles
+
+// .#{$css-prefix}list__items,
+// %list__items {
+//   padding: 0;
+//   margin: 0;
+//   list-style-type: none;
+//   color: $body-text-color;
+// }
+
+
+// .#{$css-prefix}list__items--3 {
+//   column-count: 3;
+// }
+
+
+
+
+
+
+// List Style Types
+// --------------------------------------------
+
+// .#{$css-prefix}list__items--square {
+//   @extend %list__items;
+//   list-style: square inside none;
+// }
+
+// .#{$css-prefix}list__items--circle {
+//   @extend %list__items;
+//   list-style: circle inside none;
+// }
+
+// .#{$css-prefix}list__items--disc {
+//   @extend %list__items;
+//   list-style: disc inside none;
+// }
+
+
+
+
+
+
+// Fancy Numbered Lists
+// --------------------------------------------
+// Use this on <ol> elements to get fancy numbers that can be more easily styled
+// .#{$css-prefix}list__items--numbered {
+//   @extend %list__items;
+
+//   > .#{$css-prefix}list__item {
+//     counter-increment: step-counter;
+//     list-style: none;
+
+//     &:before {
+//       content: counter(step-counter) '.';
+//       margin-right: 5px;
+//       font-size: 80%;
+//       background-color: rgb(200,200,200);
+//       color: white;
+//       font-weight: bold;
+//       padding: 3px 8px;
+//       border-radius: 3px;
+//     }
+//   }
+// }
+
+
+
+
+
+// Most likely will not ever need these List on Background classes
+
+// Lists on Backgrounds
+// --------------------------------------------
+// .#{$css-prefix}__items--pad,
+// %list__items--pad {
+//   padding: $spacer-small;
+// }
+
+// .#{$css-prefix}list__items--bg--dark {
+//   @extend %list__items--pad;
+//   background-color: $ui-dark;
+// }
+
+// .#{$css-prefix}list__items--bg--orange {
+//   @extend %list__items--pad;
+//   background-color: $ui-orange;
+// }
+
+
+
+
+// Base List Item Styles
+// --------------------------------------------
+.#{$css-prefix}list__item,
+%list__item {
+  // padding: 0.5rem 0;
+}
+
+
+
+// List Item Reverse
+// --------------------------------------------
+// .#{$css-prefix}list__item--reverse {
+//   // @extend %list__item;
+//   color: $ui-white;
+// }
+
+
+
+// List Item Link
+// --------------------------------------------
+
+// .#{$css-prefix}list__link {
+//   color: inherit;
+// }
+
+
+
+
+
+
+// Block Quotes
+// --------------------------------------------
+
+// .#{$css-prefix}blockquote {
+//   display: block;
+//   padding: 0.5rem 1rem;
+//   border-left: 5px solid $ui-gray;
+//   font-style: italic;
+//   quotes: "\201C""\201D""\2018""\2019";
+
+//   &:before {
+//     color: $ui-gray;
+//     content: open-quote;
+//   }
+
+//   &:after {
+//     color: $ui-gray;
+//     content: close-quote;
+//   }
+// }
+
+
+
+
+// Inline Text
+// --------------------------------------------
+strong { font-weight: $font-weight-bold; }
+
+em { font-style: italic; }
+
+small { font-size: 0.75rem; }
+
+mark {
+  background-color: $ui-orange;
+  color: $ui-white;
+}
+
+strike {
+  text-decoration: line-through;
+  color: $ui-gray;
+}
+
+
+
+
+// Helper Classes
+// --------------------------------------------
+
+// .u-text--uppercase { text-transform: uppercase; }
+
+// .u-text--lowercase { text-transform: lowercase; }
+
+.u-text-alignment--left { text-align: left; }
+
+.u-text-alignment--center { text-align: center; }
+
+.u-text-alignment--right { text-align: right; }
+
+.u-text--bold { font-weight: $font-weight-bold; }
+
+.u-text-overflow {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+

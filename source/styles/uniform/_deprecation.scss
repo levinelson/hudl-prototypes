@@ -1,0 +1,13 @@
+// This is used in places where we classes have been deprecated
+// This is for development only
+
+
+// %deprecation {
+//   position: relative;
+//   &:before {
+//     content: 'This class is deprecated.';
+//     background-color: red;
+//     padding: 5px;
+//     color: #fff;
+//   }
+// }

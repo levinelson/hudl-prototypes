@@ -1,0 +1,50 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Mixins :: Type Size
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+// Type Size variables
+// --------------------------------------------
+$trans-type-size: font-size 0.2s linear;
+
+$bp-display-type: 37.5rem;    // 600px
+
+
+// Type Size Mixin
+// --------------------------------------------
+@mixin type-size (
+  $default-size: null,
+  $small-size: null
+  ) {
+
+  // Set the size we type to be by default
+  font-size: $default-size;
+  transition: $trans-type-size;
+
+  // Use max-width media query to set type size at smaller resolutions
+  @include mq($bp-display-type, max) {
+    font-size: $small-size;
+  }
+}
+
+
+
+// Line height Mixin
+// --------------------------------------------
+@mixin line-height (
+  $default-line-height: null,
+  $small-line-height: null
+  ) {
+
+  // Set the size we type to be by default
+  line-height: $default-line-height;
+
+  // Use max-width media query to set type size at smaller resolutions
+  @include mq($bp-display-type, max) {
+    line-height: $small-line-height;
+  }
+}

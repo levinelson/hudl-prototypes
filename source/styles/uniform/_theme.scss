@@ -1,0 +1,25 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Elements :: Theme
+//
+// --------------------------------------------
+// --------------------------------------------
+
+/* stylelint-disable */
+
+// Theme Background
+// --------------------------------------------
+// These are used to control color switching for type (buttons, borders, form elments to come)
+
+// Dark
+.t-de--black { background-color: $de-bg-black !important; }
+.t-de--midnight { background-color: $de-bg-midnight !important; }
+.t-de--ink { background-color: $de-bg-ink !important; }
+
+// Light
+.t-le--white { background-color: $le-bg-white !important; }
+.t-le--clean { background-color: $le-bg-clean-slate !important; }
+.t-le--bone { background-color: $le-bg-bone-slate !important; }
+
+/* stylelint-enable */

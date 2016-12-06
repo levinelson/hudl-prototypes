@@ -1,0 +1,207 @@
+@import 'uniform/uniform-ui';
+
+@mixin mq($bp-1, $bp-2: null) {
+  @if $bp-1 == "max" {
+    @media (max-width: $bp-2 - $bp-onepix) { @content; }
+  }
+  @elseif $bp-2 == "max" {
+    @media (max-width: $bp-1 - $bp-onepix) { @content; }
+  }
+  @elseif $bp-1 == "min" {
+    @media (min-width: $bp-2) { @content; }
+    @warn 'You do not need "min" in your min-width media queries. Use @include mq($my-breakpoint), rather than @include(min, $my-breakpoint)';
+  }
+  @elseif $bp-2 == "min" {
+    @media (min-width: $bp-1) { @content; }
+    @warn 'You do not need "min" in your min-width media queries. Use @include mq($my-breakpoint), rather than @include($my-breakpoint, min)';
+  }
+  @elseif $bp-2 == null {
+    //single breakpoint
+    @media (min-width: $bp-1) { @content; }
+  }
+  @else {
+    //bracketed breakpoint
+    @media (min-width: $bp-1) and (max-width: $bp-2 - $bp-onepix) { @content; }
+  }
+}
+
+body {
+  background-color: $de-bg-pitch-black;
+}
+
+.trigger-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 5rem;
+  padding: $space-one;
+
+  .uni-btn--primary {
+    margin-bottom: .5rem;
+  }
+}
+
+.container {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  &._desktop-de-1 {
+    background-image: url(../img/desktop-de-1.jpg);
+  }
+
+  &._desktop-le-1 {
+    background-image: url(../img/desktop-le-1.jpg);
+  }
+
+  &._desktop-le-2 {
+    background-image: url(../img/desktop-le-2.jpg);
+  }
+
+  &._desktop-ve-1 {
+    background-image: url(../img/desktop-ve-1.jpg);
+  }
+
+  &._mobile-l-ve {
+    background-image: url(../img/mobile-landscape-ve.jpg);
+  }
+
+  &._mobile-p-le {
+    background-image: url(../img/mobile-portrait-le.jpg);
+  }
+}
+
+$toast-padding-mobile: $space-one - $space-quarter;
+$toast-padding-desktop: $space-one;
+$bp-toast-desktop: 32rem;
+
+.toast {
+  display: flex;
+  box-shadow: 0 .25rem 2rem rgba($de-bg-midnight, .5);
+  transition: transform 300ms cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  overflow: hidden;
+  margin: .5rem;
+  border-radius: $space-quarter;
+  transform: translateY(calc(-100% - 0.5rem));
+
+  @include mq($bp-toast-desktop) {
+    transform: translateY(calc(100% + 1rem));
+    width: 30rem;
+    bottom: 1rem;
+    right: 1rem;
+    margin: 0;
+    position: fixed;
+  }
+
+  &.toast--is-triggered {
+    transform: translateX(0);
+    transition: transform 300ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+}
+
+.toast__message {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $toast-padding-mobile;
+
+  @include mq($bp-toast-desktop) {
+    padding: $toast-padding-desktop;
+  }
+
+  .t-de--ink & {
+    a {
+      color: $de-type-bright-type;
+      text-decoration: none;
+      border-bottom: 1px dotted $de-type-bright-type;
+    }
+  }
+
+  .t-le--clean & {
+    a {
+      color: $le-type-typewriter;
+      text-decoration: none;
+      border-bottom: 1px dotted $le-type-typewriter;
+    }
+  }
+}
+
+.toast__icon  {
+  display: flex;
+  align-items: center;
+  padding: $toast-padding-mobile;
+  transition: .25s;
+
+  @include mq($bp-toast-desktop) {
+    padding: $toast-padding-desktop;
+  }
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    @include mq($bp-toast-desktop) {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    g {
+      fill: $uni-white;
+    }
+  }
+
+  .toast--icon-is-hidden & {
+    display: none;
+  }
+
+  .toast--type-default & {
+    background-color: $de-bg-ink-tint;
+  }
+
+  .toast--type-success & {
+    background-color: $success;
+  }
+
+  .toast--type-critical & {
+    background-color: $critical;
+  }
+
+  .toast--type-warning & {
+    background-color: $warning;
+  }
+}
+
+.toast__message__buttons {
+  padding-top: $space-one;
+
+  .toast--buttons-are-hidden & {
+    display: none;
+  }
+}
+
+.toast__clear {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: $toast-padding-mobile;
+  padding-left: 0;
+
+  @include mq(30rem) {
+    padding: $toast-padding-desktop;
+  }
+
+  svg {
+    width: .75rem;
+    height: .75rem;
+
+    g {
+      .t-le--clean & {
+        fill: $le-type-typewriter;
+      }
+      .t-de--ink & {
+        fill: $de-type-bright-type;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Mixins :: Theme
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+
+
+// Theme Color
+// --------------------------------------------
+// Used for switching between color when switching between light and dark environments
+
+@mixin theme-color(
+  $light: $le-type-medium,
+  $dark: null,
+  $auto-switch: true ) {
+
+  // Automatically set dark environment type colors based on its corresponding light environment colors
+  @if $auto-switch == true {
+    @if $light == $le-type-medium { $dark: $de-type-bright; }
+    @else if $light == $le-type-dark { $dark: $de-type-reverse; }
+    @else if $light == $le-type-light { $dark: $de-type-subtle; }
+    @else if $light == $le-type-nonessential { $dark: $de-type-nonessential; }
+  }
+
+  // Ensures normal, light environment color is equal to $light argument
+  color: $light;
+
+  // Check to ensure a users has not enabled custom color switching but forget to add a $dark environment companion color
+  @if $auto-switch == false and $dark == null {
+    @warn 'Please add a value for $dark parameter to ensure proper theme switching';
+  }
+
+  // Referencing light or dark theme parents to set color, accordingly
+  [class*='t-de'] & { color: $dark; }
+  [class*='t-le'] & { color: $light; }
+}
+
+
+
+
+// Theme Background
+// --------------------------------------------
+// Used for switching background colors between light and dark environments
+@mixin theme-bg(
+  $light: null,
+  $dark: null,
+  $auto-switch: true) {
+
+  @if $auto-switch == true { }
+
+  // Reminds users to add a $dark argument when auto-switch is set to true
+  @if $auto-switch == true and $dark == null {
+    @warn 'Currently, theme-bg does not have predetermined values outlined to enable automatic switching between environments. Please define a value for $dark';
+  }
+
+  background-color: $light;
+
+  @if $auto-switch == false and $dark == null {
+    @warn 'Please add a value for $dark parameter to ensure proper theme switching';
+  }
+
+  // Referencing light or dark theme parents to set color, accordingly
+  [class*='t-de'] & { background-color: $dark; }
+  [class*='t-le'] & { background-color: $light; }
+
+}
+
+
+
+// Theme Border
+// --------------------------------------------
+// Used for switching border color when switching between light and dark environments
+@mixin theme-border(
+  $light: $le-divider,
+  $dark: null,
+  $auto-switch: true ) {
+
+  // Automatically set dark environment border colors based on its corresponding light environment colors
+  @if $auto-switch == true {
+    @if $light == $le-divider { $dark: $de-divider; }
+    @else if $light == $le-border { $dark: $de-border; }
+  }
+
+  // Ensures normal, light environment color is equal to $light argument
+  border-color: $light;
+
+  @if $auto-switch == false and $dark == null {
+    @warn 'Please add a value for $dark parameter to ensure proper theme switching';
+  }
+
+  // Referencing light or dark theme parents to set color, accordingly
+  [class*='t-de'] & { border-color: $dark; }
+  [class*='t-le'] & { border-color: $light; }
+
+}

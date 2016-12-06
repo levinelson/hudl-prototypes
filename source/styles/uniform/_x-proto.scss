@@ -1,0 +1,185 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// xxxx
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+
+
+
+
+
+// Header
+// --------------------------------------------
+
+.site-header {
+  background-color: $ui-dark;
+  height: 55px;
+  width: 100%;
+  padding: 0 12px;
+}
+
+.site-logo__h {
+  font-size: 30px;
+  line-height: 55px;
+}
+
+.site-logo__link {
+  display: block;
+  text-decoration: none;
+  color: $ui-white;
+}
+
+
+
+
+
+
+
+
+// Layout Helpers
+// --------------------------------------------
+.l-content-pad, %l-content-pad {
+  padding-left: $space-half;
+  padding-right: $space-half;
+  transition: padding 0.2s ease;
+}
+
+.l-site-pad, %l-site-pad {
+  padding-left: $space-half;
+  padding-right: $space-half;
+  transition: padding 0.2s ease;
+  @include mq(40rem) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+
+
+// xxxx
+// --------------------------------------------
+
+
+
+
+// Page Nav
+// --------------------------------------------
+.page-nav { }
+
+.page-nav__group {
+  background-color: #fff;
+}
+
+.page-nav__h--sub {
+  font-weight: $font-weight-bold;
+  background-color: lighten($ui-dark-light, 50%);
+  padding: 9px 12px 8px 12px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.page-nav__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.page-nav__item {
+  padding: 1rem;
+  padding-right: calc(1rem - 8px);
+  cursor: pointer;
+  border-right: 8px solid transparent;
+  transition: background-color 0.6s ease;
+  &:hover {
+    background-color: $ui-gray-light;
+    border-right-color: darken($ui-gray-light, 6%);
+  }
+
+  & + & { border-top: $bdr-1-light; }
+
+}
+
+.page-nav__item--is-selected { border-right-color: $ui-orange; }
+
+.page-nav__overline {
+  font-size: 0.75rem;
+}
+
+.page-nav__text {
+  font-size: 24px;
+}
+
+.page-nav__text--sm {
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Hero
+// --------------------------------------------
+.#{$css-prefix}hero {
+  background-color: $ui-dark-medium;
+  height: 300px;
+  padding: $space-three;
+}
+
+.#{$css-prefix}hero--tester {
+  background-image: url(https://i.ytimg.com/vi/f4vL8IS4wOo/maxresdefault.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: opacity(55%) contrast(140%);
+
+}
+
+
+// Action Lists
+// --------------------------------------------
+
+$action_list_item_pad: $space-one $space-half;
+
+// EXPLANATION: If the list item is empty, i.e. there is no
+
+.action-list { }
+
+.action-list__item {
+  @include clearfix;
+
+  & + & { border-top: $bdr-1-light; }
+}
+
+.action-list__link {
+  display: block;
+  color: $ui-orange;;
+  padding: $action_list_item_pad;
+  &:hover { background-color: red; }
+}
+
+.action-list__figure {
+  float: right;
+  color: $ui-text-medium;
+}
+
+.action-list__no-data {
+  display: block;
+  color: $ui-text-medium;
+  padding: $action_list_item_pad;
+}

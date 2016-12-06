@@ -1,0 +1,26 @@
+// Form color
+// --------------------------------------------
+// Pulls configuration for form color from $form-color map located in the var.forms.scss file
+@function  formColor($map, $property) {
+  @return map-get(map-get($form-color, $map), $property);
+}
+
+
+
+
+// Form density
+// --------------------------------------------
+// Pulls configuration for form density from $form-density map located in the var.forms.scss file
+@function  formDensity($map, $property) {
+  @return map-get(map-get($form-density, $map), $property);
+}
+
+
+
+
+// Form size
+// --------------------------------------------
+// Pulls configuration for form size from $form-size map located in the var.forms.scss file
+@function  formSize($map, $property) {
+  @return map-get(map-get($form-size, $map), $property);
+}

@@ -1,0 +1,121 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Variables :: Color Extensions
+//
+// --------------------------------------------
+// --------------------------------------------
+
+// This file extends the token color variables, which can be extended from one another within the same file
+// Also adds some variables not accounted for with Token
+
+$uni-white:                   #ffffff;
+
+
+// Light Environment
+// --------------------------------------------
+
+// Light Environment Backgrounds
+$le-bg-white-tint:            $uni-white; // Same as regular value
+
+// Light Environment Type Color
+$le-type-dark:                $uni-ink;      // ink
+$le-type-medium:              $uni-slate;   // typewriter
+$le-type-light:               #687581;
+
+
+// Dark Environment
+// --------------------------------------------
+
+// Dark Environment Backgrounds
+$de-bg-black:                 #111418;
+$de-bg-black-tint:            #262e35;
+$de-bg-black-shade:           #000000;
+
+// Dark Environment Type Color
+$de-type-reverse:             $uni-white;
+$de-type-bright:              #c5cacf;
+$de-type-subtle:              #8b959f;
+$de-type-nonessential:        #687581;
+
+
+
+
+
+// --------------------------------------------
+// Existing Kickoff Variables with Uniform colors
+// --------------------------------------------
+
+// Dark UI Colors
+$ui-dark:                     $uni-ink;
+$ui-dark-medium:              $uni-evening;
+$ui-dark-light:               $uni-slate;
+
+
+// Text Colors (Legacy)
+// Mapped to light environment text colors
+// Deprecate these ?????
+$ui-text-dark:                $le-type-dark;            // $ui-gray-80;
+$ui-text-medium:              $le-type-medium;          // $ui-gray-60;
+$ui-text-light:               $le-type-light;           // $ui-gray-40;
+$ui-text-xlight:              $le-type-nonessential;    // $ui-gray-30;
+
+
+// Backgrounds (Legacy)
+// These are fundamental colors that cascade through the entire system
+// So any removal will be a slow, meticulous situation. Enjoy.
+$ui-gray:                     darken($le-bg-bone-slate, 15%);        // $ui-gray-50;
+$ui-gray-medium:              darken($le-bg-bone-slate, 5%);         // $ui-gray-20;
+$ui-gray-light:               $le-bg-bone-slate;                    // $ui-gray-10;
+
+
+
+
+
+// UI Blue
+$ui-blue:                      $uni-electric; // $ui-blue-50;
+
+// UI White
+$ui-white:                    #ffffff;
+
+// UI Black
+$ui-black:                    #000000;
+
+// UI Orange
+$ui-orange:                    $uni-orange;
+// $ui-orange-dark:               darken($ui-orange, 5%);
+// $ui-orange-light:              lighten($ui-orange, 12%);
+
+// UI Red
+$ui-red:                      $critical;
+$ui-red-dark:                 $critical-shade;
+$ui-red-light:                $critical-tint;
+
+// UI Yellow
+$ui-yellow:                   $warning;
+$ui-yellow-dark:              $warning-shade;
+$ui-yellow-light:             $warning-tint;
+
+// UI Green
+$ui-green:                    $success;
+$ui-green-dark:               $success-shade;
+$ui-green-light:              $success-tint;
+
+
+
+// Body Defaults
+// --------------------------------------------
+$body-bg:                     $ui-white;
+$body-text-color:             $ui-text-dark;
+
+
+// Button + Progress defaults
+// --------------------------------------------
+$ui-bg-default:               #f4f6f7; // value from ui-gray-10
+$ui-bg-primary:               $ui-orange;
+$ui-bg-secondary:             $electric;
+$ui-bg-tertiary:              $ui-bg-default;
+
+$ui-bg-white:                 $uni-white;
+$ui-bg-danger:                $critical;
+$ui-bg-confirm:               $success;

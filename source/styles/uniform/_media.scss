@@ -1,0 +1,77 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Elements :: Media
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+
+// Images
+// --------------------------------------------
+
+
+
+// Video
+// --------------------------------------------
+
+
+
+// Cards
+// --------------------------------------------
+
+
+
+// Avatars
+// --------------------------------------------
+
+.#{$css-prefix}avatar {
+  @include avatar;
+}
+
+
+.#{$css-prefix}avatar--sm {
+  @include avatar($avatar-small);
+}
+
+
+.#{$css-prefix}avatar--med {
+  @include avatar($avatar-medium);
+}
+
+
+.#{$css-prefix}avatar--lg {
+  @include avatar($avatar-large);
+}
+
+
+
+
+// Blank Avatar
+// --------------------------------------------
+.#{$css-prefix}avatar--blank {
+  background-color: $avatar-bg-blank;
+}
+
+
+
+
+
+// Avatars with text
+// --------------------------------------------
+
+.#{$css-prefix}avatar--with-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $avatar-bg-text;
+  text-align: center;
+}
+
+
+.#{$css-prefix}avatar__initials {
+  color: $ui-white;
+  font-weight: $font-weight-bold;
+  font-size: 1em;
+}

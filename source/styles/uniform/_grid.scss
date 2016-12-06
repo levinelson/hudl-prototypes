@@ -1,0 +1,204 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Elements :: Grid
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+// Basic Grid Container
+// --------------------------------------------
+
+.#{$css-prefix}grid {
+  @include clearfix;
+  display: block;
+  clear: both;
+  width: $grid-width;
+  padding: 0;
+  margin: 0;
+}
+
+
+// Outside Guttered Grid Container
+// --------------------------------------------
+
+.#{$css-prefix}grid--outsidegutters {
+  @include clearfix;
+  display: block;
+  clear: both;
+  width: $grid-width;
+  padding: 0 $grid-gutterwidth;
+  margin: 0;
+}
+
+
+// Option: Make a Grid Container Fixed Width
+// --------------------------------------------
+
+.#{$css-prefix}grid--fixedwidth {
+  width: $grid-maxwidth;
+  margin: 0 auto;
+
+  // Below the Medium Breakpoint
+  @include mq(max, $bp-medium) {
+    width: $grid-width; // remove fixed width, make 100%
+  }
+}
+
+
+// Option: Add a Max Width to a Grid Container
+// --------------------------------------------
+
+.#{$css-prefix}grid--maxwidth {
+  width: 100%;
+  max-width: $grid-maxwidth;
+  margin: 0 auto;
+
+  // Below the Medium Breakpoint
+  @include mq(max, $bp-medium) {
+    max-width: $grid-width; // remove fixed width, make 100%
+  }
+}
+
+
+// Grid Row
+// --------------------------------------------
+
+.#{$css-prefix}grid__row {
+  @include clearfix;
+  width: 100%;
+  padding: 0;
+  margin-bottom: $grid-gutterwidth;
+}
+
+
+
+// Grid Row No column padding
+// --------------------------------------------
+// Use this modifier, if you want grid__col-- that don't have gutters
+
+.#{$css-prefix}grid__row--no-gutter-cols {
+  > [class*='#{$css-prefix}grid__col--'] { padding-right: 0; }
+}
+
+
+
+// Grid Column
+// --------------------------------------------
+// NOTE: Any styling (i.e., background colors) should be done on the content
+// wrapper within the column, not the column itself since we're using paddings
+// for gutters.
+
+[class*='#{$css-prefix}grid__col--'] {
+  float: left;
+  padding-right: $grid-gutterwidth;
+  // min-height: 3rem;
+  text-align: left;
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+}
+
+
+// Column Types
+// --------------------------------------------
+// NOTE: Use combinations of these within the row to total the grid_width (100%).
+
+// One Whole
+.#{$css-prefix}grid__col--onewhole {
+  width: $grid-col--onewhole;
+}
+
+// Three Quarters
+.#{$css-prefix}grid__col--threequarters {
+  width: $grid-col--threequarters;
+}
+
+// One Half
+.#{$css-prefix}grid__col--onehalf {
+  width: $grid-col--onehalf;
+}
+
+// Two Thirds
+.#{$css-prefix}grid__col--twothirds {
+  width: $grid-col--twothirds;
+
+  // At Small Breakpoint
+  @include mq(max, $bp-small) {
+    width: $grid-col--onewhole;
+  }
+
+}
+
+// One Third
+.#{$css-prefix}grid__col--onethird {
+  width: $grid-col--onethird;
+
+  // At Small Breakpoint
+  @include mq(max, $bp-small) {
+    width: $grid-col--onehalf;
+  }
+}
+
+// One Quarter
+.#{$css-prefix}grid__col--onequarter {
+  width: $grid-col--onequarter;
+
+  // At Small Breakpoint
+  @include mq(max, $bp-small) {
+    width: $grid-col--onehalf;
+  }
+}
+
+
+// Indented Column Types
+// --------------------------------------------
+// NOTE: Use one of these in additon to a column width to equal the grid_width (100%).
+
+// Indent by Two Thirds
+.#{$css-prefix}grid__col--indent-twothirds {
+  margin-left: $grid-col--twothirds;
+
+  // At Small Breakpoint
+  @include mq(max, $bp-small) {
+    margin-left: 0; //0%
+  }
+}
+
+// Indent by One Half
+.#{$css-prefix}grid__col--indent-onehalf {
+  margin-left: $grid-col--onehalf;
+
+  // At Small Breakpoint
+  @include mq(max, $bp-small) {
+    margin-left: 0; //0%
+  }
+}
+
+// Indent by One Third
+.#{$css-prefix}grid__col--indent-onethird {
+  margin-left: $grid-col--onethird;
+
+  // At Small Breakpoint
+  @include mq(max, $bp-small) {
+    margin-left: 0; //0%
+  }
+}
+
+// Indent by One Quarter
+.#{$css-prefix}grid__col--indent-onequarter {
+  margin-left: $grid-col--onequarter;
+}
+
+
+// Centered Column
+// --------------------------------------------
+// NOTE: No need to apply this to a '--onewhole' width column type.
+
+.#{$css-prefix}grid__col--centered {
+  float: none;
+  margin: 0 auto;
+}
+

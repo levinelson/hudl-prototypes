@@ -1,0 +1,48 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Kickoff CSS :: Alpha
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+// Rules out of order
+// ----------------------------------------
+.crazy-thing {
+  background-color: red;
+  position: relative;
+  display: flex;
+}
+
+
+// Undefined unit
+// ----------------------------------------
+.my-class {
+  width: 12px;
+  min-width: 12p;
+}
+
+
+// Redundant duplicate properties
+// ----------------------------------------
+.ha {
+  display: block;
+  color: green;
+  display: flex;
+}
+
+
+// Browser Prefix
+// ----------------------------------------
+.flex {
+  display: -webkit-flex;
+}
+
+
+// Nesting
+// ----------------------------------------
+.flex {
+  a { display: block; }
+}
+

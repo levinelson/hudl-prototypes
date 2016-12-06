@@ -1,0 +1,15 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Function :: Type
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+// Uniform Type
+// --------------------------------------------
+// Pulls configuration for form color from $form-color map located in the var.forms.scss file
+@function  uniformType($map, $property) {
+  @return map-get(map-get($type-system, $map), $property);
+}

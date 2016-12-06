@@ -1,0 +1,202 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Variables :: Type
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+
+
+// URL Path
+// --------------------------------------------
+// $font-base-url-path:                      '//d3hhcdv9i08ck8.cloudfront.net/';
+
+
+
+
+// Specific URL Paths
+// --------------------------------------------
+// TODO: Create a better file naming convention and folder structure
+
+// $font-url-path-trade-normal:              'trade-gothic/regular/regular';
+// $font-url-path-trade-normal-ital:         'trade-gothic/regular-oblique/regular-oblique';
+// $font-url-path-trade-bold:                'trade-gothic/bold-one/bold';
+// $font-url-path-trade-bold-ital:           'trade-gothic/bold-oblique/bold-oblique';
+// $font-url-path-trade-heavy:               'trade-gothic/heavy/heavy';
+
+// $font-url-path-trade-cond-normal:         'trade-gothic/condensed/condensed';
+// $font-url-path-trade-cond-normal-ital:    'trade-gothic/condensed-oblique/condensed-oblique';
+// $font-url-path-trade-cond-bold:           'trade-gothic/condensed-bold/condensed-bold';
+// $font-url-path-trade-cond-bold-ital:      'trade-gothic/condensed-bold-oblique/condensed-bold-oblique';
+// $font-url-path-trade-cond-heavy:          'trade-gothic/condensed-heavy/condensed-heavy';
+
+
+
+
+// Fallback Stack
+// --------------------------------------------
+$font-sans-fallback:                      helvetica, arial, sans-serif;
+
+
+
+// Brand Fonts
+// --------------------------------------------
+// $font-brand:                              'trade';
+// $font-brand-cond:                         'trade-condensed';
+
+$font-brand:                              $font-sans-fallback;
+$font-brand-cond:                         $font-sans-fallback;
+
+$font-body:                               $font-sans-fallback;
+$font-display:                            $font-brand;
+// $font-display-cond:                       $font-brand-cond, 'trade', $font-sans-fallback;
+
+$font-display-cond:                       $font-brand-cond;
+
+
+
+
+// Font Weights
+// --------------------------------------------
+$font-weight-light:                       300;
+$font-weight-reg:                         400;
+$font-weight-bold:                        bold;
+// $font-weight-heavy:                       900;
+
+
+
+
+// Base Size
+// --------------------------------------------
+// font_size_root is set on the html element.
+// font_size_base is set on the body element
+$font-size-root:          16px;
+$font-size-base:          1rem;
+// $line-height-base:        1.5;
+$line-height-base:        1;
+
+
+
+// Type System Map
+// --------------------------------------------
+// This list map controls the uniform type system
+// Additional values might be added as the system matures
+// The type system uses the automatic color switching from theme-color mixin
+// However, custom dark environment colors can be activated by adding a $color-de key and value to any variant
+/* stylelint-disable */
+$uni-type-system: (
+
+  // Headlines
+  headline-1: (
+    family: $font-display,
+    weight: $font-weight-light,
+    size-small: 1.875rem, // 30
+    size: 2.5rem, // 40
+    color: $le-type-light,
+    line-height-small: 1.066666667, // 32
+    line-height: 1,  // 40
+    letter-spacing: -0.025em
+  ),
+  headline-2: (
+    family: $font-display,
+    weight: $font-weight-light,
+    size-small: 1.375rem,  // 22
+    size: 1.875rem,  // 30
+    color: $le-type-light,
+    line-height-small: 1.090909091,  // 24
+    line-height: 1.066666667,  // 32
+    letter-spacing: -0.025em
+  ),
+  headline-3: (
+    family: $font-display,
+    weight: $font-weight-light,
+    size-small: 1.125rem,  // 18
+    size: 1.375rem,  // 22
+    color: $le-type-dark,
+    line-height-small: 1.166666667,  // 21
+    line-height: 1.181818182,  // 26
+    letter-spacing: -0.015em
+  ),
+
+  // Subheads
+  subhead: (
+    family: $font-display,
+    weight: $font-weight-bold,
+    size: 1rem,
+    color: $le-type-dark,
+    line-height: 1
+  ),
+  subhead-small: (
+    family: $font-display,
+    weight: $font-weight-bold,
+    size: 0.75rem,
+    color: $le-type-dark,
+    line-height: 1
+  ),
+
+  // Text
+  text-large: (
+    family: $font-body,
+    weight: $font-weight-light,
+    size: 1.125rem, // 18
+    line-height: 1.444444444 // 26
+  ),
+  text: (
+    family: $font-body,
+    weight: $font-weight-reg,
+    size: 1rem,
+    line-height: 1.5
+  ),
+  text-small: (
+    family: $font-body,
+    weight: $font-weight-reg,
+    size: 0.875rem,
+    line-height: 1.428571429
+  ),
+  text-micro: (
+    family: $font-body,
+    weight: $font-weight-reg,
+    size: 0.75rem,
+    line-height: 1.416666667
+  ),
+  text-additional: (
+    family: $font-body,
+    weight: $font-weight-reg,
+    color: $le-type-nonessential,
+    size: 1rem,
+    line-height: 1.5
+  ),
+
+  // Item Titles
+  item-title: (
+    family: $font-body,
+    weight: $font-weight-bold,
+    size: 0.75rem,  // 12
+    color: $le-type-nonessential,
+    line-height: 1
+  ),
+  item-title-small: (
+    family: $font-body,
+    weight: $font-weight-bold,
+    size: 0.625rem, // 10
+    color: $le-type-nonessential,
+    line-height: 1
+  ),
+);
+/* stylelint-enable */
+
+
+// Bespoke Type Maps
+// --------------------------------------------
+$bespoke-type-system: () !default;
+
+
+
+
+// Merging Global and Local settings
+// --------------------------------------------
+// This merges Uniform settings with any bespoke settings
+// allowing users to use values from our global settings, and their local environment.
+$type-system: map-merge($uni-type-system, $bespoke-type-system);

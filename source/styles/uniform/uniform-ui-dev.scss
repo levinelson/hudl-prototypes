@@ -1,0 +1,41 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Test to overwrite breakpoints
+//
+// --------------------------------------------
+// --------------------------------------------
+
+$local-breakpoints: (
+  'test1': 500px,
+  'test2': 510px
+);
+
+
+
+
+
+// --------------------------------------------
+// --------------------------------------------
+//
+// Kickoff CSS - DEVELOPMENT ONLY
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+@import 'variables/var.all.compiled';
+@import 'functions/func.all.compiled';
+@import 'mixins/mix.all.compiled';
+
+@import 'mixins/mix.include-media';
+
+// @import 'resets/res.all.compiled';
+
+// --------------------------------------------
+// Development CSS
+// --------------------------------------------
+// These files are used for testing of items inside kickoff and don't need to be compiled inside of Kickoff
+
+@import 'x-testfile';
+@import 'x-proto';

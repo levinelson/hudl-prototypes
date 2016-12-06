@@ -1,0 +1,31 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Mixins :: Space
+//
+// --------------------------------------------
+// --------------------------------------------
+
+@mixin space(
+    $property: margin,
+    $direction: all,
+    $size: $space-one ) {
+
+ // Styles
+  // ----------------
+  @if $direction == all {
+    #{$property}-top: $size;
+    #{$property}-right: $size;
+    #{$property}-bottom: $size;
+    #{$property}-left: $size;
+  } @elseif $direction == vertical {
+      #{$property}-top: $size;
+      #{$property}-bottom: $size;
+    } @elseif $direction == horizontal {
+        #{$property}-right: $size;
+        #{$property}-left: $size;
+    } @else {
+        #{$property}-#{$direction}: $size;
+    }
+
+}

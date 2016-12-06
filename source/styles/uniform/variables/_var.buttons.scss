@@ -1,0 +1,290 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Variables :: Buttons
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+// TO-DO
+// 1. Match color variable names to Uniform names (i.e. destory rather than danger, etc.)
+// 2. Replace variable names throughout the system
+// 3. Deprecate older variables and move to deprecate file
+
+
+// TO DO
+// 1. Remove hard coded size values, potentially using a, as of this writing, yet to be created scale.
+
+
+
+// Colors
+// --------------------------------------------
+$btn-bg-default:            rgba(157, 166, 174, 0.2);
+$btn-bg-primary:            $electric;
+$btn-bg-secondary:          rgba($le-type-light, 0.8);
+$btn-bg-subtle:             $btn-bg-default;
+
+$btn-bg-brand:              $uni-orange;
+
+
+$btn-bg-white:              $uni-white;
+$btn-bg-destroy:            $critical;
+$btn-bg-confirm:            $success;
+
+
+
+
+// Mix Colors
+// --------------------------------------------
+// Used in func.buttons to mix with input color to create active or hover color
+$btn-mix-active:            #191919;
+$btn-mix-hover:             $uni-white;
+
+
+
+
+// Color Contrast
+// --------------------------------------------
+// Return values for contrast functions.
+// Automatically sets color for text and svg within buttons
+
+$btn-contrast-default:      $electric;
+$btn-contrast:              $uni-white;
+
+
+
+
+// Cancel Button
+// --------------------------------------------
+$btn-text-cancel:           $le-type-nonessential;
+
+
+
+
+// Outline Button
+// --------------------------------------------
+// $btn-bdr-default:           $ui-gray;
+// $btn-bdr-reverse:           $de-type-subtle;
+
+
+
+
+// Disabled Button
+// --------------------------------------------
+$btn-disabled:              $le-type-nonessential;
+$btn-disabled-type:         $le-type-dark;
+
+
+
+
+// Combo Colors
+// --------------------------------------------
+$btn-bg-default-combo:       darken($btn-bg-default, 5%);
+$btn-bg-primary-combo:       darken($btn-bg-primary, 5%);
+$btn-bg-secondary-combo:     darken($btn-bg-default, 5%);
+// $btn-bg-danger-combo:        darken($btn-bg-danger, 5%);
+// $btn-bg-confirm-combo:       $ui-bg-confirm;
+
+
+
+
+// Button Types Sizes
+// --------------------------------------------
+// These are used in the Sizes map below
+
+$btn-size-small:            0.875rem;
+$btn-size-medium:           1rem;
+$btn-size-large:            1.125rem;
+
+
+
+
+// Border Radius
+// --------------------------------------------
+// $btn-radius:                2px;
+// $btn-radius:                4px;
+$btn-radius:                0.245em;
+
+
+
+
+// Font Weight
+// --------------------------------------------
+$btn-font-weight:           $font-weight-bold;
+
+
+
+
+// Transitions
+// --------------------------------------------
+$btn-trans-bg-color:        $trans-bg, $trans-color;
+
+
+
+
+// Spinners
+// --------------------------------------------
+$btn-spinner-size:          1em;
+
+
+
+
+// Sizes Map
+// --------------------------------------------
+// $uni-btn-size: (
+//   small: (
+//     padding-top:      0.571428571em,
+//     padding-right:    1.142857143em,
+//     padding-bottom:   0.571428571em,
+//     padding-left:     1.142857143em,
+//     font-size:        $btn-size-small,
+//     font-weight:      $font-weight-bold,
+//     icon-size:        $icon-size-small
+//   ),
+//   large: (
+//     padding-top:      1em,
+//     padding-right:    2.222222222em,
+//     padding-bottom:   1em,
+//     padding-left:     2.222222222em,
+//     font-size:        $btn-size-large,
+//     font-weight:      $font-weight-reg,
+//     icon-size:        $icon-size-medium
+//   ),
+//   medium: (
+//     padding-top:      0.75em,
+//     padding-right:    1.25em,
+//     padding-bottom:   0.75em,
+//     padding-left:     1.25em,
+//     font-size:        $btn-size-medium,
+//     font-weight:      $font-weight-bold,
+//     icon-size:        $icon-size-large
+//   )
+// );
+
+
+
+
+
+$uni-btn-size: (
+  small: (
+    padding-top:      0,
+    padding-right:    1.142857143em,
+    padding-bottom:   0,
+    padding-left:     1.142857143em,
+    font-size:        $btn-size-small,
+    font-weight:      $font-weight-bold,
+    icon-size:        $icon-size-small,
+    icon-margin-right: 0.25rem,
+    icon-margin-left: 4px,
+    line-height:      2.142857143
+  ),
+  medium: (
+    padding-top:      0,
+    padding-right:    1.25em,
+    padding-bottom:   0,
+    padding-left:     1.25em,
+    font-size:        $btn-size-medium,
+    font-weight:      $font-weight-bold,
+    icon-size:        $icon-size-medium,
+    icon-margin-right: 0.25rem,
+    icon-margin-left: 5px,
+    line-height:      2.5
+  ),
+  large: (
+    padding-top:      0,
+    padding-right:    2.222222222em,
+    padding-bottom:   0,
+    padding-left:     2.222222222em,
+    font-size:        $btn-size-large,
+    font-weight:      $font-weight-reg,
+    icon-size:        $icon-size-large,
+    icon-margin-right: 0.5rem,
+    icon-margin-left: 14px,
+    line-height:      3
+  )
+);
+
+
+
+// Buttons Map
+// --------------------------------------------
+// This color map controls color for buttons and minimal buttons.
+// Currently, this is using the smallest number of needed values
+// However, the full map would look like this.
+// Additional values might be added as the system matures
+
+// primary: (
+//   bg: #ccc, // background color for normal button
+//   bg-hover: orange, // hover state for a normal button
+//   bg-active: #ddd, // active state for a normal button
+//   color: #fff, // text color for a normal button
+//   minimal: #ccc, // text color for a minimal button
+//   minimal-de: #ddd // text for a minimal button in dark environment
+// )
+
+/* stylelint-disable */
+$uni-btn-color: (
+  primary: (
+    bg:       $electric,
+    // bg-hover: #40b4ea,
+    // bg-active: #1a9ad1,
+    color:    $uni-white,
+    minimal:     $electric
+  ),
+  secondary: (
+    bg:       $btn-bg-secondary,
+    color:    $uni-white,
+    minimal:     $le-type-light,
+    minimal-de:  $de-type-bright,
+  ),
+  destroy: (
+    bg:       $critical,
+    bg-hover: #ff4a33,
+    color:    $uni-white,
+    minimal:     $critical
+  ),
+  subtle: (
+    bg:       $btn-bg-subtle,
+    bg-hover: rgba(193, 198, 203, 0.2),
+    bg-active: rgba(122, 133, 144, 0.2),
+    color:    $le-type-light,
+    color-de: $de-type-bright,
+    minimal:     $de-type-subtle,
+    minimal-hover: #a8afb7,
+    minimal-de:  $de-type-subtle,
+    minimal-active: #7c858e
+  ),
+  success: (
+    bg:       $success,
+    color:    $uni-white,
+    minimal:     $success
+  ),
+  cancel: (
+    minimal:     $btn-text-cancel,
+    minimal-de:  $de-type-nonessential
+  )
+);
+/* stylelint-enable */
+
+// Cancel (Light): Nonessential (Light) | hover: 25% tint | active: 10% shade
+
+// Cancel (Dark): Nonessential (Dark) | hover: 25% tint | active: 10% shade
+
+
+// Bespoke Button Maps
+// --------------------------------------------
+$bespoke-btn-size: () !default;
+
+$bespoke-btn-color: () !default;
+
+
+
+
+// Merging Global and Local settings
+// --------------------------------------------
+// This merges Uniform settings with any bespoke settings
+// allowing users to use values from our global settings, and their local environment.
+$btn-size: map-merge($uni-btn-size, $bespoke-btn-size);
+
+$btn-color: map-merge($uni-btn-color, $bespoke-btn-color);

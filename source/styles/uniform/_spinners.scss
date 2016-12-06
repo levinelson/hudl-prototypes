@@ -1,0 +1,30 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Elements :: Spinners
+//
+// --------------------------------------------
+// --------------------------------------------
+
+// @DEPRECATE: Remove css-spinner classes.
+
+// Basic
+// --------------------------------------------
+.css-spinner,
+.#{$css-prefix}css-spinner {
+  @include css-spinner();
+}
+
+.css-spinner--bg,
+.#{$css-prefix}css-spinner--bg {
+  @include css-spinner($ui-orange, $on-bg: true);
+}
+
+
+// Color Options
+// --------------------------------------------
+
+
+
+// Positioning Options
+// --------------------------------------------

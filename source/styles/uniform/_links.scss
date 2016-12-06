@@ -1,0 +1,139 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Element :: Links
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+
+// TO DO
+// 1. Refine types of links needed
+// 2. Define hover styles
+// 3. Use or get rid of link mixin
+// 4. DRY code
+
+
+
+// Master Link Element Selector
+// --------------------------------------------
+a {
+  @include link;
+  color: $electric;
+  font-family: inherit;
+  // @include underline(transparent);
+  &:hover {
+    // text-decoration: underline;
+    // @include underline($ui-orange);
+  }
+}
+
+
+// Link Regular
+// --------------------------------------------
+.#{$css-prefix}link--reg,
+%link--reg {
+  @include link;
+}
+
+
+// Link Header
+// --------------------------------------------
+// .#{$css-prefix}link--header, %link--header {
+//   color: inherit;
+//   border-bottom: 1px dotted currentColor;
+//   &:hover { color: #000; }
+// }
+
+
+// Link Action
+// --------------------------------------------
+.#{$css-prefix}link--action,
+%link--action {
+  color: $electric;
+  @include underline(transparent);
+
+  &:hover {
+    text-decoration: none;
+    @include underline($electric);
+  }
+}
+
+
+.#{$css-prefix}link--action--display,
+%link--action {
+  color: $electric;
+  @include underline(transparent, $display: true);
+
+  &:hover {
+    text-decoration: none;
+    @include underline($electric, $display: true);
+  }
+
+}
+
+
+// Link Text
+// --------------------------------------------
+.#{$css-prefix}link--text,
+%link--text {
+  color: $body-text-color;
+  @include underline($body-text-color);
+
+  &:hover {
+    @include underline($body-text-color);
+    text-decoration: none;
+  }
+}
+
+.#{$css-prefix}link--text--display,
+%link--text {
+  color: $body-text-color;
+  @include underline($body-text-color, $display: true);
+
+  &:hover {
+    @include underline($body-text-color, $display: true);
+    text-decoration: none;
+  }
+}
+
+
+
+
+// Link Secondary
+// --------------------------------------------
+.#{$css-prefix}link--secondary,
+%link--secondary {
+  color: $ui-blue;
+  @include underline(transparent);
+
+  &:hover {
+    @include underline($ui-blue);
+    text-decoration: none;
+  }
+}
+
+
+.#{$css-prefix}link--secondary--display,
+%link--secondary {
+  color: $ui-blue;
+  @include underline(transparent, $display: true);
+
+  &:hover {
+    @include underline($ui-blue, $display: true);
+    text-decoration: none;
+  }
+
+}
+
+
+// Link Action Underline
+// --------------------------------------------
+// .#{$css-prefix}link--action--underline, %link--action--underline {
+//   @extend %link--action;
+//   border-bottom: 1px dotted rgba($ui-orange, 0.4);
+//   &:hover {
+//     border-bottom-color: $ui-orange;
+//   }
+// }

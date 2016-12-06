@@ -1,0 +1,109 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Element :: Page Header
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+
+// Settings
+// --------------------------------------------
+$page_header_ht:  67px;
+$page_header_bg: $ui-dark-medium;
+$page_header_link_active: lighten($ui-dark-medium, 10%);
+$bp_page_header_filter: 40rem;
+
+
+
+
+// Placeholders
+// --------------------------------------------
+%page-header__pad {
+  padding-top: $space-half;
+  padding-bottom: $space-half;
+}
+
+
+
+
+// Styles
+// --------------------------------------------
+.#{$css-prefix}page-header {
+  @include clearfix;
+  padding-right: $space-one;
+  padding-left: $space-one;
+  background-color: $page_header_bg;
+  line-height: $page_header_ht;
+}
+
+
+.#{$css-prefix}page-header__h {
+  // @extend %display--med;
+  float: left;
+  color: $ui-white;
+  text-transform: uppercase;
+}
+
+
+.#{$css-prefix}page-header__nav {
+  display: none;
+  clear: left;
+  margin-bottom: $space-one;
+
+  @include mq($bp_page_header_filter) {
+    display: block;
+    float: left;
+    clear: none;
+    margin-bottom: 0;
+    margin-left: $space-one;
+  }
+
+  // When Page header is active
+  .page-header__filter--is-active & {
+    display: block;
+  }
+}
+
+
+
+.#{$css-prefix}page-header__items {
+  @include clearfix;
+  // @extend %list__items;
+}
+
+
+
+.#{$css-prefix}page-header__item {
+  line-height: $page_header_ht;
+
+  @include mq($bp_page_header_filter) {
+    float: left;
+  }
+}
+
+
+
+.#{$css-prefix}page-header__link {
+  display: block;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: darken($ui-white, 25%);
+
+  &:hover { color: $ui-white; }
+
+  &--is-active {
+    background-color: $page_header_link_active;
+  }
+}
+
+
+.#{$css-prefix}page-header__trigger {
+  display: block;
+  float: right;
+
+  @include mq($bp_page_header_filter) {
+    display: none;
+  }
+}

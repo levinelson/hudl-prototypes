@@ -1,0 +1,530 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Mixins :: Forms
+//
+// --------------------------------------------
+// --------------------------------------------
+
+
+// Form Size
+// --------------------------------------------
+// Use this in conjunction with the form-size map to add padding and font-size to form elements
+// Additionally, this will automatically set size if a parent size modifier is present
+@mixin form-size( $size: medium, $element: input ) {
+
+  // Variables
+  // ----------------
+  // Set by list maps
+
+
+  // Style
+  // ----------------
+  // By default, the size for an element is medium
+  padding: formSize($size, #{$element}-pad-vert) formSize($size, #{$element}-pad-horiz);
+  font-size: formSize($size, #{$element}-size);
+  border-width: formSize($size, border-width);
+
+
+  // Parent Modifiers
+  // ----------------
+  // These modifiers are added to a parent element, such as the form_
+  // Allows to change the size of an entire form
+  // 1. Small modifier
+  // 2. Medium modifier
+  // 3. Large modifier
+  #{$form-small} & { // 1
+    font-size: formSize(small, #{$element}-size);
+    padding: formSize(small, #{$element}-pad-vert) formSize(small, #{$element}-pad-horiz);
+    border-width: formSize(small, border-width);
+  }
+
+  #{$form-medium} & { // 2
+    font-size: formSize(medium, #{$element}-size);
+    padding: formSize(medium, #{$element}-pad-vert) formSize(medium, #{$element}-pad-horiz);
+    border-width: formSize(medium, border-width);
+  }
+
+  #{$form-large} & { //3
+    font-size: formSize(large, #{$element}-size);
+    padding: formSize(large, #{$element}-pad-vert) formSize(large, #{$element}-pad-horiz);
+    border-width: formSize(large, border-width);
+  }
+
+
+  // Element Modifiers
+  // ----------------
+  // These modifiers change the size of an individual element
+  // The element is determined by what is passed into the mixin
+  // The element must match exactly to a key in the uni-sizes-map
+  // 1. Small
+  // 2. Medium
+  // 3. Large
+  &.#{$css-prefix}form__#{$element}--small { // 1
+    // padding: formSize(small, #{$element}-pad);
+    padding: formSize(small, #{$element}-pad-vert) formSize(small, #{$element}-pad-horiz);
+    font-size: formSize(small, #{$element}-size);
+    border-width: formSize(small, border-width);
+  }
+
+  // Medium
+  &.#{$css-prefix}form__#{$element}--medium { // 2
+    // padding: formSize(medium, #{$element}-pad);
+    padding: formSize(medium, #{$element}-pad-vert) formSize(medium, #{$element}-pad-horiz);
+    font-size: formSize(medium, #{$element}-size);
+    border-width: formSize(medium, border-width);
+  }
+
+  // Large
+  &.#{$css-prefix}form__#{$element}--large { // 3
+    // padding: formSize(large, #{$element}-pad);
+    padding: formSize(large, #{$element}-pad-vert) formSize(large, #{$element}-pad-horiz);
+    font-size: formSize(large, #{$element}-size);
+    border-width: formSize(large, border-width);
+  }
+
+}
+
+
+
+
+
+
+// Form Density
+// --------------------------------------------
+@mixin form-density( $density: standard, $element: input ) {
+
+  // Settings
+  // ----------------
+  // Local Variables, set via maps
+
+
+}
+
+
+
+
+
+
+// Form Disabled
+// --------------------------------------------
+// 1. If disabled attribute is on input
+// 2. If class is added to __input
+// 3. If class is added to __item
+@mixin form-disabled {
+  &:disabled, // 1
+  &.#{$css-prefix}form__input--is-disabled, // 2
+  .#{$css-prefix}form__item--is-disabled & { // 3
+    opacity: 0.2;
+    cursor: default;
+
+    // Theme
+    [class*='t-de'] & { opacity: 0.25; }
+    [class*='t-le'] & { opacity: 0.2; }
+  }
+}
+
+
+
+
+
+
+// Input Range
+// --------------------------------------------
+@mixin input-range( $variant: primary, $bespoke: false) {
+
+
+  // Settings
+  // ----------------
+  // Local Variables, set via maps
+
+  // Style
+  // ----------------
+  width: 100%;
+  // background-color: yellow;
+  // -webkit-appearance: none;
+
+
+  // Focus
+  // ----------------
+  &:focus {
+    outline: $form-input-outline-focus;
+  }
+
+
+  // Webkit
+  // ----------------
+  // &::-webkit-slider-thumb {
+  //   -webkit-appearance: none;
+  //   height: 36px;
+  //   width: 16px;
+  //   border-radius: 3px;
+  //   background: green;
+  //   cursor: pointer;
+  //   margin-top: 0;
+  // }
+
+
+}
+
+
+
+
+@mixin test-values {
+  border-width: formSize(medium, border-width);
+  padding: formSize(medium, input-pad-vert) formSize(medium, input-pad-horiz);
+}
+
+
+// Input Default
+// --------------------------------------------
+@mixin input-default( $variant: primary, $bespoke: null ) {
+
+  // Settings
+  // ----------------
+  // Local Variables, set via maps
+  $placeholder: formColor($variant, placeholder);
+  $placeholder-de: formColor($variant, placeholder-de);
+  $color: formColor($variant, input);
+  $color-de: formColor($variant, input-de);
+  $error: formColor($variant, input-error);
+  $error-de: formColor($variant, input-error-de);
+  $border: formColor($variant, input-border);
+  $border-de: formColor($variant, input-border-de);
+  $bg: formColor($variant, input-bg);
+  $bg-de: formColor($variant, input-bg-de);
+  $disabled: formColor($variant, input-disabled);
+  $disabled-de: formColor($variant, input-disabled-de);
+
+  // // Apply default padding values if users are not creating their own color palette
+  // $padding-vert: formSize(medium, input-pad-vert);
+  // $padding-horiz: formSize(medium, input-pad-horiz);
+
+
+  // Style
+  // ----------------
+  @include theme-color($color, $color-de, false);
+  @include theme-border($border, $border-de, false);
+  @include theme-bg($bg, $bg-de, false);
+  @include form-disabled;
+  @if $bespoke == null {
+    @include form-size;
+  }
+  width: 100%;
+  border-style: solid;
+  // Apply these styles if users are not creating their own bespoke inputs
+  // padding: $padding-vert $padding-horiz;
+  // border-width: $border-width;
+  box-shadow: $form-input-shadow;
+  border-radius: $form-input-bdr-radius;
+  outline: $form-input-outline;
+     -moz-appearance: none;
+  -webkit-appearance: none;
+
+  // Focus
+  // ----------------
+  &:focus {
+    outline: $form-input-outline-focus;
+    @include theme-border($form-input-bdr-color-focus, $form-dark-input-bdr-color-focus, false );
+  }
+
+  // Placeholder
+  // ----------------
+  &::-moz-placeholder { @include theme-color($placeholder, $placeholder-de, false); }
+  &::-webkit-input-placeholder { @include theme-color($placeholder, $placeholder-de, false); }
+  &::-ms-input-placeholder { @include theme-color($placeholder, $placeholder-de, false); }
+
+
+  // Styling Error state placeholder text
+  // Removed :invalid styling due to clash with required attribtue
+  #{$form-item-error} & {
+    &::-moz-placeholder { @include theme-color($error, $error-de, false); }
+    &::-webkit-input-placeholder { @include theme-color($error, $error-de, false); }
+    &::-ms-input-placeholder { @include theme-color($error, $error-de, false); }
+  }
+
+
+  // Styling Error for inputs
+  // Removed :invalid due to clash with require attribute
+  #{$form-item-error} & {
+    @include theme-color($error, $error-de, false);
+    @include theme-border($critical, $critical-tint, false);
+
+    &:focus { }
+  }
+
+  // Disabled
+  // ----------------
+  // &:disabled,
+  // &.#{$css-prefix}form__input--is-disabled,
+  // .#{$css-prefix}form__item--is-disabled & {
+  //   @include theme-color($disabled, $disabled-de, false);
+  //   &::-moz-placeholder { @include theme-color($disabled, $disabled-de, false); }
+  //   &::-webkit-input-placeholder { @include theme-color($disabled, $disabled-de, false);  }
+  //   &::-ms-input-placeholder { @include theme-color($disabled, $disabled-de, false);   }
+  // }
+
+
+}
+
+
+
+
+
+
+// Input Adjust
+// --------------------------------------------
+// This is used to augment the date input, the time input and select elements to ensure they're the same height as all other inputs.
+@mixin input-adjust {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: formSize(medium, height);
+  height: formSize(medium, height);
+
+  #{$form-small} & {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: formSize(small, height);
+    line-height: formSize(small, height);
+  }
+
+  #{$form-medium} & {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: formSize(medium, height);
+    line-height: formSize(medium, height);
+  }
+
+  #{$form-large} & {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: formSize(large, height);
+    line-height: formSize(large, height);
+  }
+}
+
+
+
+
+
+
+// Form Input :: Check + Radio
+// --------------------------------------------
+// This is added to the input element of a custom check or radio
+// Essentially, it just hides the check or radio.
+@mixin form-check($type: check, $color: standard) {
+  // Settings
+  // ----------------
+  // Local Variables
+
+  // Style
+  // ----------------
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+// Form Indicator
+// --------------------------------------------
+// This is added to the span element within a custom check or radio
+@mixin form-indicator($type: check, $variant: primary) {
+
+  // Settings
+  // ----------------
+  // Local Variables
+  $label: formColor($variant, label);
+  $label-de: formColor($variant, label-de);
+  $error: formColor($variant, input-error);
+  $error-de: formColor($variant, input-error-de);
+
+  $trans: 0.2s linear;
+
+  // Style
+  // ----------------
+  position: relative;
+  display: inline-block;
+  margin-right: $form-checkbox-margin;
+
+  background-color: transparent;
+  top: 0.15em;
+  @include theme-color($le-divider, $de-divider, false);
+
+  // If the Indicator is a Check
+  @if $type == check {
+    width: 1em;
+    height: 1em;
+    border-radius: $form-checkbox-radius;
+    // box-shadow: 0 0 0 2px red;
+    // This box-shadow border doesn't render properly in IE9 below.
+    // However, setting a color with it works.
+    // So the issue might be IE lack of support for currentColor using on a box-shadow
+    box-shadow: 0 0 0 2px currentColor;
+    transition: color $trans;
+
+    &::after {
+      position: absolute;
+      top: 30%;
+      left: 15%;
+      content: '';
+      width: 70%;
+      height: 35%;
+      border-bottom: 0.2em solid currentColor;
+      border-left: 0.2em solid currentColor;
+      border-radius: $form-input-bdr-radius;
+      transform: rotate(-45deg);
+      opacity: 0;
+      transition: opacity $trans;
+    }
+  }
+
+  // If the Indicator is a Radio
+  @else {
+    // top: 0.15em;
+    width: 1.15em;
+    height: 1.15em;
+    border-radius: 50%;
+    border-color: currentColor;
+    border-width: 2px;
+    border-style: solid;
+    transition: color $trans;
+      &:after {
+        position: absolute;
+        top: 21%;
+        right: 21%;
+        bottom: 21%;
+        left: 21%;
+        content: '';
+        background-color: currentColor;
+        border-radius: inherit;
+        opacity: 0;
+        transition: opacity $trans;
+      }
+    }
+
+
+
+  // Selected State
+  // ----------------
+  // Checkbox
+  @if $type == check {
+    .uni-form__input--#{$type}:checked + &,
+    .uni-form__input--#{$type}:checked:hover + &  {
+      @include theme-color($form-checkbox-bg, #fff, false);
+      background-color: currentColor;
+
+      &::after {
+        @include theme-color(#fff, $form-checkbox-bg, false);
+        opacity: 1;
+      }
+
+      // If checkbox has error class on __item
+      #{$form-item-error} & {
+        @include theme-color($error, $error-de, false);
+      }
+    }
+  }
+
+  // Radio
+  @else {
+    .uni-form__input--#{$type}:checked + &,
+    .uni-form__input--#{$type}:checked:hover + & {
+      @include theme-color($form-checkbox-bg, #fff, false);
+
+      &::after {
+        @include theme-bg($form-checkbox-bg, #fff, false);
+        opacity: 1;
+      }
+
+      // If radio has error class on __item
+      #{$form-item-error} & {
+        @include theme-color($error, $error-de, false);
+
+        &::after {
+          @include theme-bg($error, $error-de, false);
+        }
+      }
+    }
+  }
+
+
+  // Hover State
+  // ----------------
+  // Checkbox
+  @if $type == check {
+      .uni-form__input--#{$type}:hover + & {
+        @include theme-color($form-checkbox-bg, #fff, false);
+
+        &::after {
+          opacity: 0.4;
+        }
+        // If checkbox has error class on __item
+        #{$form-item-error} & {
+          @include theme-color($error, $error-de, false);
+        }
+
+        // If checkbox has disabled class on __item
+        .#{$css-prefix}form__item--is-disabled & {
+          @include theme-color($le-divider, $de-divider, false);
+
+          &::after {
+            opacity: 0;
+          }
+        }
+      }
+    }
+
+    // Radio
+    @else {
+      .uni-form__input--#{$type}:hover + & {
+        @include theme-color($form-checkbox-bg, #fff, false);
+
+        &::after {
+          @include theme-bg($form-checkbox-bg, #fff, false);
+          opacity: 0.15;
+        }
+        // If radio has error class on __item
+        #{$form-item-error} & {
+          @include theme-color($error, $error-de, false);
+
+          &::after {
+            @include theme-bg($error, $error-de, false);
+          }
+        }
+
+        // If checkbox has disabled class on __item
+        .#{$css-prefix}form__item--is-disabled & {
+          @include theme-color($le-divider, $de-divider, false);
+
+          &::after {
+            opacity: 0;
+          }
+        }
+
+      }
+    }
+
+
+  // Error State
+  // ----------------
+  #{$form-item-error} & {
+    @include theme-color($error, $error-de, false);
+    // @include theme-border($critical, $critical-tint, false);
+
+    &:focus { }
+  }
+
+  // Disabled State
+  // ----------------
+  // .#{$css-prefix}form__item--is-disabled .#{$css-prefix}form__check-group &
+  // .#{$css-prefix}form__item--is-disabled .#{$css-prefix}form__radio-group & {
+  //   cursor: default;
+  // }
+
+
+}

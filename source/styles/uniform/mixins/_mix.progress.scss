@@ -1,0 +1,26 @@
+// --------------------------------------------
+// --------------------------------------------
+//
+// Mixin :: Progress Bars
+//
+// --------------------------------------------
+// --------------------------------------------
+
+@mixin progress-container {
+  @include clearfix;
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid darken($ui-gray-light, 3%);
+  border-radius: 0.25rem;
+  background-color: $ui-gray-light;
+  box-shadow: inset 0 0.05rem 0.05rem rgba(0, 0, 0, 0.1);
+}
+
+
+@mixin progress-meter {
+  display: block;
+  float: left;
+  height: 100%;
+  background-color: $ui-orange;
+  transition: $trans-width;
+}
