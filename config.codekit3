@@ -9,6 +9,18 @@
 	],
 "creatorBuild": "25444",
 "files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/.gitignore",
+		"oF": 0
+		},
+	"\/.nojekyll": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/.nojekyll",
+		"oF": 0
+		},
 	"\/build": {
 		"ft": 65536,
 		"oA": 1,
@@ -1226,7 +1238,7 @@
 	"displayValue": "prototypes",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-yesBaby",
-	"lastBuiltDate": 502729938
+	"lastBuiltDate": 502730567
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
