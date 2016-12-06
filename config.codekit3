@@ -15,90 +15,90 @@
 		"oAP": "\/build\/build",
 		"oF": 0
 		},
-	"\/source\/img\/close.svg": {
+	"\/source\/toast\/img\/close.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 1,
-		"oAP": "\/build\/img\/close.svg",
+		"oAP": "\/build\/toast\/img\/close.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/source\/img\/confirmation.svg": {
+	"\/source\/toast\/img\/Confirmation.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 1,
-		"oAP": "\/build\/img\/confirmation.svg",
+		"oAP": "\/build\/toast\/img\/Confirmation.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/source\/img\/desktop-de-1.jpg": {
+	"\/source\/toast\/img\/desktop-de-1.jpg": {
 		"ft": 16384,
 		"iS": 648564,
 		"oA": 0,
-		"oAP": "\/build\/img\/desktop-de-1.jpg",
+		"oAP": "\/build\/toast\/img\/desktop-de-1.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/source\/img\/desktop-le-1.jpg": {
+	"\/source\/toast\/img\/desktop-le-1.jpg": {
 		"ft": 16384,
 		"iS": 783691,
 		"oA": 0,
-		"oAP": "\/build\/img\/desktop-le-1.jpg",
+		"oAP": "\/build\/toast\/img\/desktop-le-1.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/source\/img\/desktop-le-2.jpg": {
+	"\/source\/toast\/img\/desktop-le-2.jpg": {
 		"ft": 16384,
 		"iS": 718356,
 		"oA": 0,
-		"oAP": "\/build\/img\/desktop-le-2.jpg",
+		"oAP": "\/build\/toast\/img\/desktop-le-2.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/source\/img\/desktop-ve-1.jpg": {
+	"\/source\/toast\/img\/desktop-ve-1.jpg": {
 		"ft": 16384,
 		"iS": 854523,
 		"oA": 0,
-		"oAP": "\/build\/img\/desktop-ve-1.jpg",
+		"oAP": "\/build\/toast\/img\/desktop-ve-1.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/source\/img\/mobile-landscape-ve.jpg": {
+	"\/source\/toast\/img\/mobile-landscape-ve.jpg": {
 		"ft": 16384,
 		"iS": 143546,
 		"oA": 0,
-		"oAP": "\/build\/img\/mobile-landscape-ve.jpg",
+		"oAP": "\/build\/toast\/img\/mobile-landscape-ve.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/source\/img\/mobile-portrait-le.jpg": {
+	"\/source\/toast\/img\/mobile-portrait-le.jpg": {
 		"ft": 16384,
 		"iS": 138360,
 		"oA": 0,
-		"oAP": "\/build\/img\/mobile-portrait-le.jpg",
+		"oAP": "\/build\/toast\/img\/mobile-portrait-le.jpg",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/source\/index.kit": {
+	"\/source\/toast\/index.kit": {
 		"ft": 2048,
 		"oA": 0,
-		"oAP": "\/build\/index.html",
+		"oAP": "\/build\/toast\/index.html",
 		"oF": 0
 		},
-	"\/source\/script.js": {
+	"\/source\/toast\/script.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/script-min.js",
+		"oAP": "\/build\/toast\/script-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/source\/styles\/main.scss": {
+	"\/source\/toast\/styles\/main.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -106,12 +106,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/styles\/main.css",
+		"oAP": "\/build\/toast\/styles\/main.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_badges.scss": {
+	"\/source\/toast\/styles\/uniform\/_badges.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -119,12 +119,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_badges.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_badges.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_banners.scss": {
+	"\/source\/toast\/styles\/uniform\/_banners.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -132,12 +132,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_banners.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_banners.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_buttons.scss": {
+	"\/source\/toast\/styles\/uniform\/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -145,12 +145,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_buttons.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_deprecated.scss": {
+	"\/source\/toast\/styles\/uniform\/_deprecated.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -158,12 +158,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_deprecated.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_deprecated.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_deprecation.scss": {
+	"\/source\/toast\/styles\/uniform\/_deprecation.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -171,12 +171,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_deprecation.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_deprecation.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_forms-deprecate.scss": {
+	"\/source\/toast\/styles\/uniform\/_forms-deprecate.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -184,12 +184,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_forms-deprecate.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_forms-deprecate.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_forms.scss": {
+	"\/source\/toast\/styles\/uniform\/_forms.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -197,12 +197,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_forms.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_forms.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_grid.scss": {
+	"\/source\/toast\/styles\/uniform\/_grid.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -210,12 +210,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_grid.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_grid.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_icons.scss": {
+	"\/source\/toast\/styles\/uniform\/_icons.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -223,12 +223,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_icons.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_icons.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_layouts.scss": {
+	"\/source\/toast\/styles\/uniform\/_layouts.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -236,12 +236,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_layouts.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_layouts.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_links.scss": {
+	"\/source\/toast\/styles\/uniform\/_links.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -249,12 +249,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_links.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_links.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_lint-test.scss": {
+	"\/source\/toast\/styles\/uniform\/_lint-test.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -262,12 +262,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_lint-test.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_lint-test.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_media.scss": {
+	"\/source\/toast\/styles\/uniform\/_media.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -275,12 +275,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_media.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_media.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_micro-layout.scss": {
+	"\/source\/toast\/styles\/uniform\/_micro-layout.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -288,12 +288,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_micro-layout.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_micro-layout.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_modals.scss": {
+	"\/source\/toast\/styles\/uniform\/_modals.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -301,12 +301,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_modals.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_modals.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_navigation.scss": {
+	"\/source\/toast\/styles\/uniform\/_navigation.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -314,12 +314,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_navigation.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_navigation.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_page-header.scss": {
+	"\/source\/toast\/styles\/uniform\/_page-header.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -327,12 +327,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_page-header.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_page-header.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_progress.scss": {
+	"\/source\/toast\/styles\/uniform\/_progress.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -340,12 +340,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_progress.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_progress.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_space.scss": {
+	"\/source\/toast\/styles\/uniform\/_space.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -353,12 +353,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_space.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_space.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_spinners.scss": {
+	"\/source\/toast\/styles\/uniform\/_spinners.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -366,12 +366,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_spinners.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_spinners.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_tables.scss": {
+	"\/source\/toast\/styles\/uniform\/_tables.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -379,12 +379,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_tables.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_tables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_theme.scss": {
+	"\/source\/toast\/styles\/uniform\/_theme.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -392,12 +392,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_theme.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_theme.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_type.scss": {
+	"\/source\/toast\/styles\/uniform\/_type.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -405,12 +405,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_type.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_type.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_unused.scss": {
+	"\/source\/toast\/styles\/uniform\/_unused.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -418,12 +418,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_unused.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_unused.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_utilities.scss": {
+	"\/source\/toast\/styles\/uniform\/_utilities.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -431,12 +431,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_utilities.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_utilities.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_x-proto.scss": {
+	"\/source\/toast\/styles\/uniform\/_x-proto.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -444,12 +444,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_x-proto.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_x-proto.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/_x-testfile.scss": {
+	"\/source\/toast\/styles\/uniform\/_x-testfile.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -457,12 +457,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/_x-testfile.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/_x-testfile.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/functions\/_func.all.compiled.scss": {
+	"\/source\/toast\/styles\/uniform\/functions\/_func.all.compiled.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -470,12 +470,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/functions\/_func.all.compiled.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/functions\/_func.all.compiled.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/functions\/_func.all.scss": {
+	"\/source\/toast\/styles\/uniform\/functions\/_func.all.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -483,12 +483,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/functions\/_func.all.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/functions\/_func.all.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/functions\/_func.buttons.scss": {
+	"\/source\/toast\/styles\/uniform\/functions\/_func.buttons.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -496,12 +496,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/functions\/_func.buttons.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/functions\/_func.buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/functions\/_func.color.scss": {
+	"\/source\/toast\/styles\/uniform\/functions\/_func.color.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -509,12 +509,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/functions\/_func.color.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/functions\/_func.color.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/functions\/_func.forms.scss": {
+	"\/source\/toast\/styles\/uniform\/functions\/_func.forms.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -522,12 +522,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/functions\/_func.forms.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/functions\/_func.forms.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/functions\/_func.type.scss": {
+	"\/source\/toast\/styles\/uniform\/functions\/_func.type.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -535,12 +535,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/functions\/_func.type.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/functions\/_func.type.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.all.compiled.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.all.compiled.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -548,12 +548,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.all.compiled.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.all.compiled.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.all.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.all.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -561,12 +561,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.all.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.all.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.backgrounder.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.backgrounder.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -574,12 +574,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.backgrounder.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.backgrounder.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.buttons.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.buttons.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -587,12 +587,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.buttons.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.clearfix.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.clearfix.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -600,12 +600,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.clearfix.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.clearfix.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.deprecated.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.deprecated.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -613,12 +613,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.deprecated.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.deprecated.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.dont.use.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.dont.use.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -626,12 +626,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.dont.use.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.dont.use.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.font-face.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.font-face.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -639,12 +639,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.font-face.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.font-face.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.forms.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.forms.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -652,12 +652,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.forms.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.forms.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.include-media.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.include-media.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -665,12 +665,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.include-media.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.include-media.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.links.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.links.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -678,12 +678,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.links.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.links.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.media.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.media.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -691,12 +691,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.media.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.media.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.mediaquery.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.mediaquery.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -704,12 +704,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.mediaquery.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.mediaquery.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.microlayout.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.microlayout.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -717,12 +717,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.microlayout.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.microlayout.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.progress.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.progress.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -730,12 +730,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.progress.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.progress.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.space.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.space.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -743,12 +743,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.space.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.space.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.spinners.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.spinners.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -756,12 +756,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.spinners.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.spinners.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.theme.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.theme.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -769,12 +769,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.theme.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.theme.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.type.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.type.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -782,12 +782,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.type.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.type.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/mixins\/_mix.type.size.scss": {
+	"\/source\/toast\/styles\/uniform\/mixins\/_mix.type.size.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -795,12 +795,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/mixins\/_mix.type.size.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/mixins\/_mix.type.size.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/resets\/_res.all.compiled.scss": {
+	"\/source\/toast\/styles\/uniform\/resets\/_res.all.compiled.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -808,12 +808,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/resets\/_res.all.compiled.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/resets\/_res.all.compiled.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/resets\/_res.all.scss": {
+	"\/source\/toast\/styles\/uniform\/resets\/_res.all.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -821,12 +821,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/resets\/_res.all.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/resets\/_res.all.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/resets\/_res.boxsizing.scss": {
+	"\/source\/toast\/styles\/uniform\/resets\/_res.boxsizing.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -834,12 +834,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/resets\/_res.boxsizing.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/resets\/_res.boxsizing.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/resets\/_res.font-face-application.scss": {
+	"\/source\/toast\/styles\/uniform\/resets\/_res.font-face-application.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -847,12 +847,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/resets\/_res.font-face-application.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/resets\/_res.font-face-application.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/resets\/_res.normalize.scss": {
+	"\/source\/toast\/styles\/uniform\/resets\/_res.normalize.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -860,12 +860,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/resets\/_res.normalize.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/resets\/_res.normalize.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/resets\/_res.reset.scss": {
+	"\/source\/toast\/styles\/uniform\/resets\/_res.reset.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -873,12 +873,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/resets\/_res.reset.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/resets\/_res.reset.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/resets\/_res.viewport.scss": {
+	"\/source\/toast\/styles\/uniform\/resets\/_res.viewport.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -886,25 +886,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/resets\/_res.viewport.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/resets\/_res.viewport.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/uniform-ui-ALPHA.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/build\/styles\/uniform\/uniform-ui-ALPHA.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/source\/styles\/uniform\/uniform-ui-dev.scss": {
+	"\/source\/toast\/styles\/uniform\/uniform-ui-ALPHA.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -912,12 +899,25 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/build\/styles\/uniform\/uniform-ui-dev.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/uniform-ui-ALPHA.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/uniform-ui.scss": {
+	"\/source\/toast\/styles\/uniform\/uniform-ui-dev.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/toast\/styles\/uniform\/uniform-ui-dev.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/source\/toast\/styles\/uniform\/uniform-ui.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -925,12 +925,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/uniform-ui.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/uniform-ui.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.all.compiled.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.all.compiled.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -938,12 +938,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.all.compiled.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.all.compiled.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.all.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.all.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -951,12 +951,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.all.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.all.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.borders.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.borders.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -964,12 +964,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.borders.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.borders.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.breakpoints.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.breakpoints.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -977,12 +977,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.breakpoints.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.breakpoints.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.buttons.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.buttons.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -990,12 +990,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.buttons.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.colors-abstractions.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.colors-abstractions.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1003,12 +1003,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.colors-abstractions.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.colors-abstractions.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.colors.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.colors.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1016,12 +1016,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.colors.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.colors.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.deprecated.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.deprecated.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1029,12 +1029,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.deprecated.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.deprecated.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.forms.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.forms.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1042,12 +1042,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.forms.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.forms.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.grid.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.grid.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1055,12 +1055,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.grid.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.grid.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.icons.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.icons.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1068,12 +1068,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.icons.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.icons.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.links.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.links.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1081,12 +1081,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.links.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.links.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.media.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.media.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1094,12 +1094,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.media.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.media.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.microlayout.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.microlayout.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1107,12 +1107,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.microlayout.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.microlayout.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.modals.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.modals.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1120,12 +1120,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.modals.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.modals.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.namespace.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.namespace.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1133,12 +1133,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.namespace.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.namespace.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.space.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.space.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1146,12 +1146,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.space.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.space.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.spinners.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.spinners.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1159,12 +1159,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.spinners.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.spinners.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.tables.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.tables.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1172,12 +1172,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.tables.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.tables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.transitions.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.transitions.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1185,12 +1185,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.transitions.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.transitions.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.type.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.type.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1198,12 +1198,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.type.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.type.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/styles\/uniform\/variables\/_var.zindex.scss": {
+	"\/source\/toast\/styles\/uniform\/variables\/_var.zindex.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1211,7 +1211,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/build\/styles\/uniform\/variables\/_var.zindex.css",
+		"oAP": "\/build\/toast\/styles\/uniform\/variables\/_var.zindex.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1226,7 +1226,7 @@
 	"displayValue": "prototypes",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-yesBaby",
-	"lastBuiltDate": 502411065
+	"lastBuiltDate": 502729938
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
