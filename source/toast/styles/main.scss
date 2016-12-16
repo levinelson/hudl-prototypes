@@ -73,7 +73,8 @@ body {
 
 $toast-padding-mobile: $space-one - $space-quarter;
 $toast-padding-desktop: $space-one;
-$bp-toast-desktop: 40rem;
+$bp-toast-max-width: 30rem;
+$bp-toast-desktop: 50rem;
 
 .toast {
   display: flex;
@@ -82,7 +83,12 @@ $bp-toast-desktop: 40rem;
   overflow: hidden;
   margin: .5rem;
   border-radius: $space-quarter;
+  max-width: 30rem;
   transform: translateY(calc(-100% - 0.5rem));
+
+  @include mq($bp-toast-max-width + 1) {
+    margin: .5rem auto .5rem auto;
+  }
 
   @include mq($bp-toast-desktop) {
     transform: translateY(calc(100% + 1rem));
@@ -138,8 +144,8 @@ $bp-toast-desktop: 40rem;
   }
 
   svg {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
 
     @include mq($bp-toast-desktop) {
       width: 2rem;
@@ -152,7 +158,12 @@ $bp-toast-desktop: 40rem;
   }
 
   .toast--icon-is-hidden & {
-    display: none;
+    padding: 0;
+    width: $space-half;
+    svg {
+      display: none;
+    }
+
   }
 
   .toast--type-default & {
@@ -187,7 +198,7 @@ $bp-toast-desktop: 40rem;
   padding: $toast-padding-mobile $toast-padding-mobile/2 $toast-padding-mobile 0;
   padding-left: 0;
 
-  @include mq(30rem) {
+  @include mq($bp-toast-desktop) {
     padding: $toast-padding-desktop $toast-padding-desktop/2 $toast-padding-desktop 0;
   }
 

@@ -3807,15 +3807,17 @@ body { background-color: #111418; }
 
 .container._mobile-p-le { background-image: url(../img/mobile-portrait-le.jpg); }
 
-.toast { display: -webkit-box; display: -ms-flexbox; display: flex; box-shadow: 0 0.25rem 2rem rgba(25, 31, 36, 0.5); -webkit-transition: -webkit-transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19); transition: -webkit-transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19); transition: transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19); transition: transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19); overflow: hidden; margin: .5rem; border-radius: 0.25rem; -webkit-transform: translateY(calc(-100% - 0.5rem)); transform: translateY(calc(-100% - 0.5rem)); }
+.toast { display: -webkit-box; display: -ms-flexbox; display: flex; box-shadow: 0 0.25rem 2rem rgba(25, 31, 36, 0.5); -webkit-transition: -webkit-transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19); transition: -webkit-transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19); transition: transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19); transition: transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 300ms cubic-bezier(0.55, 0.055, 0.675, 0.19); overflow: hidden; margin: .5rem; border-radius: 0.25rem; max-width: 30rem; -webkit-transform: translateY(calc(-100% - 0.5rem)); transform: translateY(calc(-100% - 0.5rem)); }
 
-@media (min-width: 40rem) { .toast { -webkit-transform: translateY(calc(100% + 1rem)); transform: translateY(calc(100% + 1rem)); width: 30rem; bottom: 1rem; right: 1rem; margin: 0; position: fixed; } }
+@media (min-width: 31rem) { .toast { margin: .5rem auto .5rem auto; } }
+
+@media (min-width: 50rem) { .toast { -webkit-transform: translateY(calc(100% + 1rem)); transform: translateY(calc(100% + 1rem)); width: 30rem; bottom: 1rem; right: 1rem; margin: 0; position: fixed; } }
 
 .toast.toast--is-triggered { -webkit-transform: translateX(0); transform: translateX(0); -webkit-transition: -webkit-transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1); transition: -webkit-transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1); transition: transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1); transition: transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 .toast__message { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 0.75rem; }
 
-@media (min-width: 40rem) { .toast__message { padding: 1rem; } }
+@media (min-width: 50rem) { .toast__message { padding: 1rem; } }
 
 .t-de--ink .toast__message a { color: #c5cacf; text-decoration: none; border-bottom: 1px dotted #c5cacf; }
 
@@ -3823,15 +3825,17 @@ body { background-color: #111418; }
 
 .toast__icon { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0.75rem; -webkit-transition: .25s; transition: .25s; }
 
-@media (min-width: 40rem) { .toast__icon { padding: 1rem; } }
+@media (min-width: 50rem) { .toast__icon { padding: 1rem; } }
 
-.toast__icon svg { width: 1.5rem; height: 1.5rem; }
+.toast__icon svg { width: 1rem; height: 1rem; }
 
-@media (min-width: 40rem) { .toast__icon svg { width: 2rem; height: 2rem; } }
+@media (min-width: 50rem) { .toast__icon svg { width: 2rem; height: 2rem; } }
 
 .toast__icon svg g { fill: #ffffff; }
 
-.toast--icon-is-hidden .toast__icon { display: none; }
+.toast--icon-is-hidden .toast__icon { padding: 0; width: 0.5rem; }
+
+.toast--icon-is-hidden .toast__icon svg { display: none; }
 
 .toast--type-default .toast__icon { background-color: #36404b; }
 
@@ -3847,7 +3851,7 @@ body { background-color: #111418; }
 
 .toast__clear { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0.75rem 0.375rem 0.75rem 0; padding-left: 0; }
 
-@media (min-width: 30rem) { .toast__clear { padding: 1rem 0.5rem 1rem 0; } }
+@media (min-width: 50rem) { .toast__clear { padding: 1rem 0.5rem 1rem 0; } }
 
 .toast__clear svg { width: 1rem; height: 1rem; }
 /*# sourceMappingURL=main.css.map */
