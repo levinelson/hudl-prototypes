@@ -139,6 +139,8 @@ $bp-toast-desktop: 50rem;
   padding: $toast-padding-mobile;
   transition: .25s;
 
+
+
   @include mq($bp-toast-desktop) {
     padding: $toast-padding-desktop;
   }
@@ -147,7 +149,7 @@ $bp-toast-desktop: 50rem;
     width: 1rem;
     height: 1rem;
 
-    @include mq($bp-toast-desktop) {
+    @include mq($bp-toast-max-width) {
       width: 2rem;
       height: 2rem;
     }
