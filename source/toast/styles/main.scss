@@ -184,24 +184,24 @@ $bp-toast-desktop: 40rem;
   flex: 0 0 auto;
   display: flex;
   align-items: center;
-  padding: $toast-padding-mobile;
+  padding: $toast-padding-mobile $toast-padding-mobile/2 $toast-padding-mobile 0;
   padding-left: 0;
 
   @include mq(30rem) {
-    padding: $toast-padding-desktop;
+    padding: $toast-padding-desktop $toast-padding-desktop/2 $toast-padding-desktop 0;
   }
 
   svg {
-    width: .75rem;
-    height: .75rem;
-
-    g {
-      .t-le--clean & {
-        fill: $le-type-typewriter;
-      }
-      .t-de--ink & {
-        fill: $de-type-bright-type;
-      }
-    }
+    width: 1rem;
+    height: 1rem;
+    //
+    // g {
+    //   .t-le--clean & {
+    //     fill: $le-type-typewriter;
+    //   }
+    //   .t-de--ink & {
+    //     fill: $de-type-bright-type;
+    //   }
+    // }
   }
 }

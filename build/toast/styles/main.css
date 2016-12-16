@@ -3845,13 +3845,9 @@ body { background-color: #111418; }
 
 .toast--buttons-are-hidden .toast__message__buttons { display: none; }
 
-.toast__clear { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0.75rem; padding-left: 0; }
+.toast__clear { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0.75rem 0.375rem 0.75rem 0; padding-left: 0; }
 
-@media (min-width: 30rem) { .toast__clear { padding: 1rem; } }
+@media (min-width: 30rem) { .toast__clear { padding: 1rem 0.5rem 1rem 0; } }
 
-.toast__clear svg { width: .75rem; height: .75rem; }
-
-.t-le--clean .toast__clear svg g { fill: #4e5d6c; }
-
-.t-de--ink .toast__clear svg g { fill: #c5cacf; }
+.toast__clear svg { width: 1rem; height: 1rem; }
 /*# sourceMappingURL=main.css.map */
