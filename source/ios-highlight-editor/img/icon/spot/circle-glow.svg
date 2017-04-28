@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>hle/icon/spot/circle-glow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <circle id="path-3" cx="8" cy="8" r="8"></circle>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hle/icon/spot/circle-glow">
+            <g id="CircleGlow">
+                <g id="outer" stroke-dasharray="20">
+                    <g id="path-1-Clipped">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="path-1"></g>
+                        <circle id="path-1" stroke="#FFFFFF" stroke-width="4" mask="url(#mask-2)" cx="12" cy="12" r="12"></circle>
+                    </g>
+                </g>
+                <g id="inner" stroke-dasharray="13" transform="translate(12.000000, 12.000000) rotate(85.000000) translate(-12.000000, -12.000000) translate(4.000000, 4.000000)">
+                    <g id="path-3-Clipped">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="path-3"></g>
+                        <circle id="path-3" stroke="#FFFFFF" stroke-width="2" mask="url(#mask-4)" cx="8" cy="8" r="8"></circle>
+                    </g>
+                </g>
+                <polygon id="flash" fill="#FFFFFF" fill-rule="nonzero" points="14.3413495 10.9556571 14.3420352 10.9551429 12.9628923 10.9551429 14.3420352 6.42857143 10.8939209 10.9551429 9.30769231 13.0443429 10.2738637 13.0443429 10.273178 13.0448571 11.6524923 13.0448571 10.273178 17.5714286 13.7214637 13.0448571 15.3076923 10.9556571"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

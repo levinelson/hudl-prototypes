@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gatorade Lower Third</title>
+    <link href="main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head>
+<body>
+  <div class="editor-container">
+    <nav class="editor-navbar">
+      <span>Cancel</span>
+      <span>Done</span>
+    </nav>
+    <div class="editor-main">
+      <div class="editor-video-and-timeline">
+        <div class="video-container bottom-left">
+          <main class="video-lower-third">
+            <figure class="logo">
+              <img src="gatorade.png" alt="Gatorade Logo">
+            </figure>
+            <figure class="divider"></figure>
+            <div class="content">
+              <textarea id="lower-third-content" rows="1">Tap here</textarea>
+            </div>
+          </main>
+        </div>
+        <div class="editor-timeline">
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+        </div>
+      </div>
+      <ul class="editor-fx-tray-2">
+        <li id="set-overlay-bottom-left" class="_is-active"><!-- @import 'img/icon/overlay-bottom-left.svg' --></li>
+        <li id="set-overlay-bottom-right"><!-- @import 'img/icon/overlay-bottom-right.svg' --></li>
+        <li id="set-overlay-top-left"><!-- @import 'img/icon/overlay-top-left.svg' --></li>
+        <li id="set-overlay-top-right"><!-- @import 'img/icon/overlay-top-right.svg' --></li>
+        <li id="set-overlay-remove"><!-- @import 'img/icon/remove.svg' --></li>
+      </ul>
+      <ul class="editor-fx-tray-1">
+        <li><!-- @import 'img/icon/trim.svg' --></li>
+        <li><!-- @import 'img/icon/spot-shadow.svg' --></li>
+        <li><!-- @import 'img/icon/slowmo.svg' --></li>
+        <li class="_is-active"><!-- @import 'img/icon/text.svg' --></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/autosize/dist/autosize.min.js"></script>
+  <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

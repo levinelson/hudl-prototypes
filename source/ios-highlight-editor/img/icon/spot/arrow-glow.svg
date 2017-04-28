@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>hle/icon/spot/arrow-glow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hle/icon/spot/arrow-glow" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="ArrowGlow">
+                <path d="M7.92373919,10.9746753 L9.42800923,8.50190264 L15.4973148,14.5724668 L13.0078541,16.0868888 L7.92373919,10.9746753 Z M5.65965878,14.6964513 L7.17173561,12.2108456 L11.786049,16.8301535 L9.30526901,18.3392947 L5.65965878,14.6964513 Z" id="Combined-Shape"></path>
+                <polygon id="small-triangle-copy" points="0 24 2.62937271 19.6777435 4.32212658 21.3707063"></polygon>
+                <polygon id="small-triangle-copy" points="10.1785961 7.26806116 11.6881655 4.78657731 19.2496948 12.289769 16.765949 13.8007144"></polygon>
+                <polygon id="1" points="12.4362467 3.55685476 14.6 0 24 9.4 20.4933801 11.5331938"></polygon>
+                <polygon id="small-triangle-copy" points="3.38773794 18.4311157 4.90407001 15.938515 8.05708166 19.0986087 5.57266798 20.6099603"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

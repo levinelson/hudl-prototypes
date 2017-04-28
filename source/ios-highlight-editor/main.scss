@@ -1,0 +1,299 @@
+﻿@import 'uniform-ui';
+
+// Fonts
+
+@font-face {
+  font-family: 'united-sans';
+  font-weight: regular;
+  font-style: normal;
+  src: url('UnitedSansRgBd.otf');
+}
+
+@font-face {
+  font-family: 'vitesse-light';
+  font-weight: light;
+  font-style: normal;
+  src: url('VitesseLight.otf');
+}
+
+// Theming
+$themes: (
+	cool-blue: (light-blue, rgba(0, 143, 214, 1.0)),
+	fruit-punch: (red, rgba(217, 43, 43, 1.0)),
+	frost-glacier-cherry: (gray, rgba(148, 148, 148, 1.0)),
+	fierce-blue-cherry: (blue, rgba(27, 71, 202, 1.0)),
+	fierce-green-apple: (dark-green, rgba(10, 166, 45, 1.0)),
+	orange: (orange, rgba(255, 119, 0, 1.0)),
+	frost-riptide-rush: (purple, rgba(130, 108, 196, 1.0)),
+	lemonade: (yellow, rgba(255, 216, 0, 1.0))
+);
+
+@each $color-name, $color-values in $themes { // for each color, $color-name is the key, $color-values are the two values
+	.theme-#{$color-name},
+	.theme-#{nth($color-values, 1)} { // fancy syntax for returning value at 1st index
+		.background {
+			background-image: url(bg-#{$color-name}.jpg);
+		}
+
+		h1 {
+			color: #{nth($color-values, 2)}; // fancy syntax for returning value at 2nd index
+		}
+
+		.stripe-foreground {
+			background-color: #{nth($color-values, 2)};
+		}
+
+		.stripe-background__theme {
+			background-color: #{nth($color-values, 2)};
+		}
+	}
+}
+
+$color-default-theme: nth(map-get($themes, orange), 2); // default theme is orange
+$color-black: #000;
+$color-white: #fff;
+$color-gray: #6D6D6D;
+$color-gray-2: darken($color-gray, 20%);
+$color-gray-alpha: rgba($color-gray, 0.75);
+$color-gray-2-alpha: rgba($color-gray-2, 0.75);
+$color-orange-accent: #FF4D00; // custom orange color for lower third
+
+$spacer: 16px;
+
+$z-1: 100;
+$z-2: 200;
+$z-3: 300;
+$z-4: 400;
+$z-5: 500;
+
+$skew: 7deg;
+
+@mixin skew-offset() {
+	transform: skewX(-$skew)
+}
+
+body {
+  color: $color-white;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 42px; // hardcode city
+  transform: scale(0.376); // harcode city
+  transform-origin: 0 0;
+
+  width: 1280px;
+  height: 720px;
+	background-image: url(fake-bg.jpg);
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+  overflow: hidden;
+
+	&.bottom-right {
+		align-items: flex-end;
+		justify-content: flex-end;
+	}
+
+	&.bottom-left {
+		align-items: flex-end;
+		justify-content: flex-start;
+	}
+
+	&.top-right {
+		align-items: flex-start;
+		justify-content: flex-end;
+	}
+
+	&.top-left {
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+}
+
+.video-lower-third {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	padding: $spacer*2;
+	transform: skewX($skew);
+}
+
+.logo {
+	height: $spacer*6.25;
+	width: $spacer*6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 auto;
+	background: url(noise.png), radial-gradient(circle at top right, $color-gray-alpha, rgba(black, 0.9));
+	background-size: 100px, auto;
+	background-blend-mode: overlay;
+
+	img {
+		width: $spacer*3;
+		height: auto;
+		@include skew-offset();
+	}
+}
+
+.divider {
+	width: 2px;
+	background-color: $color-white;
+	align-self: stretch;
+	position: relative;
+	flex: 0 0 auto;
+
+	// Divider needs to extend up past the top of the element
+	// This is the least hacky way I could think of
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		width: 2px;
+		height: $spacer;
+		background-color: $color-white;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 2px;
+		height: $spacer;
+		background-color: $color-white;
+	}
+}
+
+.content {
+	display: flex;
+	flex: 1 1 auto;
+	position: relative;
+	margin-top: $spacer;
+	margin-bottom: $spacer;
+	background: url(noise.png), linear-gradient(-35deg, $color-gray-2-alpha 0%, $color-gray-alpha 10%, $color-gray-alpha 20%, rgba(black, 0.9) 70%);
+	background-size: 100px, auto;
+	background-blend-mode: overlay;
+
+	textarea {
+		box-sizing: content-box;
+		padding: $spacer $spacer $spacer/2 $spacer;
+		position: relative;
+		text-transform: uppercase;
+		font-family: "vitesse-light";
+		font-size: 60px;
+		line-height: 60px;
+		height: 56px;
+		min-height: 56px;
+		background: transparent;
+		outline: 0;
+		margin: 0;
+		color: $color-white;
+		border: 0;
+		width: auto;
+		resize: none;
+		max-height: 120px;
+		// background-color: gray;
+		@include skew-offset();
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0;
+		height: $spacer;
+		width: 100%;
+		background: rgba($color-orange-accent, .75);
+	}
+}
+
+// iOS Prototype Code Below This Point
+
+.editor-container {
+	width: 667px;
+	height: 375px;
+	background: $color-de-bg-level0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    fill: $color-white;
+  }
+}
+
+.editor-navbar {
+	background: $color-de-bg-level3;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+  flex: 0 0 auto;
+}
+
+.editor-main {
+	display: flex;
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.editor-video-and-timeline {
+	flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+@mixin editor-fx-tray-base($bg-color) {
+  background-color: $bg-color;
+  flex: 0 0 auto;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    transition: 0.25s;
+  }
+
+  li._is-active {
+    svg {
+      fill: $color-utility-action;
+    }
+  }
+}
+
+.editor-fx-tray-1 {
+  @include editor-fx-tray-base($color-de-bg-level2);
+  // border-left: 1px solid $color-de-bg-level2-accent;
+}
+
+.editor-fx-tray-2 {
+  @include editor-fx-tray-base($color-de-bg-level1);
+  // border-left: 1px solid $color-de-bg-level1-accent;
+
+}
+
+.editor-timeline {
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: $color-de-bg-level1;
+
+  figure {
+    height: 45px;
+    width: 1px;
+    background-color: $color-de-bg-level1-accent;
+  }
+}

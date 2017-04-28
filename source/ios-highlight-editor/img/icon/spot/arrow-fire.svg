@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>hle/icon/spot/arrow-fire</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hle/icon/spot/arrow-fire" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="ArrowFire">
+                <path d="M0,24 L14.6,0 L24,9.4 L0,24 Z M12.4781924,12.9917021 C12.1807593,12.069773 12.4272113,11.0589538 13.115412,10.3772892 C12.87018,10.9970793 12.9644732,11.6998335 13.3643912,12.2330866 C13.7643092,12.7663397 14.4125093,13.0535766 15.0762216,12.9917021 C16.0559293,12.8859927 16.9145897,12.2892094 17.3552925,11.4078908 C17.7959954,10.526485 17.7581736,9.48150418 17.2548991,8.63434725 C17.2108898,9.42590433 16.6953276,10.1134078 15.9476926,10.3772892 C16.572363,8.45648002 15.6269913,6.37654025 13.7690152,5.58419884 C13.7690152,7.40409168 11.2787869,8.56157942 11.1546023,10.3772892 C11.0828802,11.4255816 11.5908606,12.4289062 12.4781924,12.9917021 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
