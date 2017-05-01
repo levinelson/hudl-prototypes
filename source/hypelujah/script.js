@@ -1,3 +1,5 @@
+// @codekit-prepend "../../bower_components/jquery/dist/jquery.min.js";
+
 $(function(){
 
   $('.card--is-selectable').click(function(){
