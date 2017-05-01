@@ -66,6 +66,8 @@ $z-3: 300;
 $z-4: 400;
 $z-5: 500;
 
+$trans-quick: 0.25s;
+
 $skew: 7deg;
 
 @mixin skew-offset() {
@@ -76,11 +78,15 @@ body {
   color: $color-white;
 }
 
+.derp {
+  color: black;
+}
+
 .video-container {
   position: absolute;
   top: 0;
   left: 42px; // hardcode city
-  transform: scale(0.376); // harcode city
+  transform: scale(0.376) translateX(50px); // harcode city
   transform-origin: 0 0;
 
   width: 1280px;
@@ -91,6 +97,11 @@ body {
 	align-items: flex-end;
 	justify-content: flex-end;
   overflow: hidden;
+  transition: $trans-quick;
+
+  &._is-editing {
+    transform: scale(0.376) translateX(0);
+  }
 
 	&.bottom-right {
 		align-items: flex-end;
@@ -119,6 +130,12 @@ body {
 	align-items: flex-start;
 	padding: $spacer*2;
 	transform: skewX($skew);
+  opacity: 0;
+  transition: $trans-quick;
+
+  &._is-active {
+    opacity: 1;
+  }
 }
 
 .logo {
@@ -217,13 +234,29 @@ body {
 .editor-container {
 	width: 667px;
 	height: 375px;
-	background: $color-de-bg-level0;
   position: relative;
   display: flex;
   flex-direction: column;
+  background-image: url(fake-reel.jpg);
+  background-size: 100%;
+  overflow: hidden;
 
   svg {
     fill: $color-white;
+  }
+}
+
+.editor-container-inner {
+  height: 100%;
+  position: absolute;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: $color-de-bg-level0;
+  transition: 0.4s;
+
+  .initial & {
+    transform: translateY(100%);
   }
 }
 
@@ -259,27 +292,36 @@ body {
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
+  position: relative;
+  transition: $trans-quick;
+
+  &._is-inactive {
+    transform: translateX(100%);
+  }
 
   svg {
     width: 24px;
     height: 24px;
-    transition: 0.25s;
+    transition: $trans-quick;
   }
 
-  li._is-active {
-    svg {
+  li {
+    padding: $spacer/2;
+    &._is-active svg {
       fill: $color-utility-action;
     }
   }
 }
 
 .editor-fx-tray-1 {
+  z-index: $z-1;
   @include editor-fx-tray-base($color-de-bg-level2);
   // border-left: 1px solid $color-de-bg-level2-accent;
 }
 
 .editor-fx-tray-2 {
   @include editor-fx-tray-base($color-de-bg-level1);
+  z-index: 0;
   // border-left: 1px solid $color-de-bg-level1-accent;
 
 }
@@ -291,6 +333,7 @@ body {
   justify-content: space-around;
   align-items: flex-end;
   background-color: $color-de-bg-level1;
+  width: calc(100% + 50px); // width of effects tray
 
   .tick {
     height: 45px;
@@ -299,7 +342,7 @@ body {
   }
 }
 
-.editor-trimmer {
+@mixin trimmer-base {
   top: 0;
   left: 20%;
   width: 40%;
@@ -308,6 +351,11 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: rgba($color-utility-action, 0.6);
+  transition: $trans-quick;
+
+  &._is-inactive {
+    opacity: 0;
+  }
 
   svg {
     position: absolute;
@@ -315,6 +363,19 @@ body {
     left: 32px;
     width: 16px;
     height: 16px;
+    transition: $trans-quick;
+  }
+}
+
+.editor-trimmer {
+  @include trimmer-base;
+}
+
+.editor-duration-indication {
+  @include trimmer-base;
+
+  svg {
+    left: 8px;
   }
 }
 
@@ -330,4 +391,13 @@ body {
   height: 60px;
   background-size: 100% 100%;
   background-image: url('img/trim-grip-right.png')
+}
+
+.hotspot {
+  // background-color: rgba(red, .5);
+  position: absolute;
+  bottom: 12px;
+  height: 60px;
+  width: 42px;
+  left: 216px;
 }

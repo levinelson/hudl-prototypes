@@ -7,49 +7,55 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
   </head>
 <body>
-  <div class="editor-container">
-    <nav class="editor-navbar">
-      <span>Cancel</span>
-      <span>Done</span>
-    </nav>
-    <div class="editor-main">
-      <div class="editor-video-and-timeline">
-        <div class="video-container bottom-left">
-          <main class="video-lower-third">
-            <figure class="logo">
-              <img src="gatorade.png" alt="Gatorade Logo">
-            </figure>
-            <figure class="divider"></figure>
-            <div class="content">
-              <textarea id="lower-third-content" rows="1">Tap here</textarea>
-            </div>
-          </main>
-        </div>
-        <div class="editor-timeline">
-          <div class="editor-trimmer">
-            <!-- @import 'img/icon/text.svg' -->
-            <figure class="trim-handle-left"></figure>
-            <figure class="trim-handle-right"></figure>
+  <div class="editor-container initial" id="demo-simple-slider">
+    <div class="hotspot"></div>
+    <div class="editor-container-inner">
+      <nav class="editor-navbar">
+        <span id="cancel">Cancel</span>
+        <span id="done">Done</span>
+      </nav>
+      <div class="editor-main">
+        <div class="editor-video-and-timeline">
+          <div class="video-container bottom-left">
+            <main class="video-lower-third">
+              <figure class="logo">
+                <img src="gatorade.png" alt="Gatorade Logo">
+              </figure>
+              <figure class="divider"></figure>
+              <div class="content">
+                <textarea id="lower-third-content" rows="1">Tap here</textarea>
+              </div>
+            </main>
           </div>
-          <figure class="tick"></figure>
-          <figure class="tick"></figure>
-          <figure class="tick"></figure>
-          <figure class="tick"></figure>
+          <div class="editor-timeline">
+            <div class="editor-trimmer _is-inactive">
+              <!-- @import 'img/icon/text.svg' -->
+              <figure class="trim-handle-left"></figure>
+              <figure class="trim-handle-right"></figure>
+            </div>
+            <div class="editor-duration-indication _is-inactive">
+              <!-- @import 'img/icon/text.svg' -->
+            </div>
+            <figure class="tick"></figure>
+            <figure class="tick"></figure>
+            <figure class="tick"></figure>
+            <figure class="tick"></figure>
+          </div>
         </div>
+        <ul class="editor-fx-tray-2 _is-inactive">
+          <li id="set-overlay-bottom-left" class="_is-active"><!-- @import 'img/icon/overlay-bottom-left.svg' --></li>
+          <li id="set-overlay-bottom-right"><!-- @import 'img/icon/overlay-bottom-right.svg' --></li>
+          <li id="set-overlay-top-left"><!-- @import 'img/icon/overlay-top-left.svg' --></li>
+          <li id="set-overlay-top-right"><!-- @import 'img/icon/overlay-top-right.svg' --></li>
+          <li id="set-overlay-remove"><!-- @import 'img/icon/remove.svg' --></li>
+        </ul>
+        <ul class="editor-fx-tray-1">
+          <li id="add-trim"><!-- @import 'img/icon/trim.svg' --></li>
+          <li id="add-spot"><!-- @import 'img/icon/spot-shadow.svg' --></li>
+          <li id="add-slowmo"><!-- @import 'img/icon/slowmo.svg' --></li>
+          <li id="add-text"><!-- @import 'img/icon/text.svg' --></li>
+        </ul>
       </div>
-      <ul class="editor-fx-tray-2">
-        <li id="set-overlay-bottom-left" class="_is-active"><!-- @import 'img/icon/overlay-bottom-left.svg' --></li>
-        <li id="set-overlay-bottom-right"><!-- @import 'img/icon/overlay-bottom-right.svg' --></li>
-        <li id="set-overlay-top-left"><!-- @import 'img/icon/overlay-top-left.svg' --></li>
-        <li id="set-overlay-top-right"><!-- @import 'img/icon/overlay-top-right.svg' --></li>
-        <li id="set-overlay-remove"><!-- @import 'img/icon/remove.svg' --></li>
-      </ul>
-      <ul class="editor-fx-tray-1">
-        <li><!-- @import 'img/icon/trim.svg' --></li>
-        <li><!-- @import 'img/icon/spot-shadow.svg' --></li>
-        <li><!-- @import 'img/icon/slowmo.svg' --></li>
-        <li class="_is-active"><!-- @import 'img/icon/text.svg' --></li>
-      </ul>
     </div>
 
   </div>
