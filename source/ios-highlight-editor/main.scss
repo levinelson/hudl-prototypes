@@ -216,6 +216,11 @@ body {
 		max-height: 120px;
 		// background-color: gray;
 		@include skew-offset();
+    transition: $trans-quick;
+
+    &:focus {
+      background-color: rgba($color-utility-action, 0.4);
+    }
 	}
 
 	&:after {
