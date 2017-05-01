@@ -1,9 +1,1 @@
-
-(function(){
-  // Simple list
-  Sortable.create(sortableList, {
-    animation: 300,
-    scroll: true
-  });
-
-})();
+!function(){Sortable.create(sortableList,{animation:300,scroll:!0})}();

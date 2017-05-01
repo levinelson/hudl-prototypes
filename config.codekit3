@@ -57,7 +57,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/autosize\/build.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/autosize\/changelog.md": {
@@ -84,16 +84,16 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/autosize\/dist\/autosize.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/autosize\/dist\/autosize.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/bower_components\/autosize\/dist\/autosize.min.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/autosize\/example\/index.html": {
@@ -152,7 +152,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/autosize\/src\/autosize.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/dragdealer\/.bower.json": {
@@ -213,7 +213,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/dragdealer\/Gruntfile.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/dragdealer\/LICENSE": {
@@ -254,7 +254,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/dragdealer\/spec\/apiSpec.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/dragdealer\/spec\/browser-runner.js": {
@@ -263,7 +263,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/dragdealer\/spec\/browser-runner.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/dragdealer\/spec\/callbacksSpec.js": {
@@ -272,7 +272,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/dragdealer\/spec\/callbacksSpec.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/dragdealer\/spec\/draggingSpec.js": {
@@ -281,7 +281,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/dragdealer\/spec\/draggingSpec.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/dragdealer\/spec\/eventsSpec.js": {
@@ -290,7 +290,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/dragdealer\/spec\/eventsSpec.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/dragdealer\/spec\/fixtures\/content-slider.css": {
@@ -395,7 +395,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/dragdealer\/spec\/helpers.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/dragdealer\/spec\/matchers.js": {
@@ -404,7 +404,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/dragdealer\/spec\/matchers.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/dragdealer\/spec\/optionsSpec.js": {
@@ -413,7 +413,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/dragdealer\/spec\/optionsSpec.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/dragdealer\/spec\/phantomjs-setup.js": {
@@ -422,7 +422,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/dragdealer\/spec\/phantomjs-setup.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/dragdealer\/spec\/resizingSpec.js": {
@@ -431,7 +431,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/dragdealer\/spec\/resizingSpec.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/dragdealer\/spec\/setup.js": {
@@ -440,7 +440,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/dragdealer\/spec\/setup.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/dragdealer\/spec\/touchDraggingSpec.js": {
@@ -449,7 +449,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/dragdealer\/spec\/touchDraggingSpec.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/dragdealer\/src\/dragdealer.css": {
@@ -468,7 +468,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/dragdealer\/src\/dragdealer.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/fastclick\/.bower.json": {
@@ -490,10 +490,10 @@
 	"\/bower_components\/fastclick\/lib\/fastclick.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/bower_components\/fastclick\/lib\/fastclick.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/fastclick\/LICENSE": {
@@ -548,7 +548,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/dist\/core.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/dist\/jquery.js": {
@@ -557,16 +557,16 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/dist\/jquery.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/dist\/jquery.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/bower_components\/jquery\/dist\/jquery.min.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/dist\/jquery.min.map": {
@@ -581,7 +581,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/dist\/jquery.slim.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/dist\/jquery.slim.min.js": {
@@ -590,7 +590,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/dist\/jquery.slim.min.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/dist\/jquery.slim.min.map": {
@@ -605,7 +605,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.min.js": {
@@ -614,7 +614,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.min.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/external\/sizzle\/dist\/sizzle.min.map": {
@@ -667,7 +667,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/ajax.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/ajax\/jsonp.js": {
@@ -676,7 +676,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/ajax\/jsonp.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/ajax\/load.js": {
@@ -685,7 +685,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/ajax\/load.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/ajax\/parseXML.js": {
@@ -694,7 +694,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/ajax\/parseXML.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/ajax\/script.js": {
@@ -703,7 +703,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/ajax\/script.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/ajax\/var\/location.js": {
@@ -712,7 +712,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/ajax\/var\/location.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/ajax\/var\/nonce.js": {
@@ -721,7 +721,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/ajax\/var\/nonce.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/ajax\/var\/rquery.js": {
@@ -730,7 +730,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/ajax\/var\/rquery.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/ajax\/xhr.js": {
@@ -739,7 +739,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/ajax\/xhr.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/attributes.js": {
@@ -748,7 +748,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/attributes.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/attributes\/attr.js": {
@@ -757,7 +757,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/attributes\/attr.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/attributes\/classes.js": {
@@ -766,7 +766,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/attributes\/classes.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/attributes\/prop.js": {
@@ -775,7 +775,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/attributes\/prop.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/attributes\/support.js": {
@@ -784,7 +784,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/attributes\/support.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/attributes\/val.js": {
@@ -793,7 +793,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/attributes\/val.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/callbacks.js": {
@@ -802,7 +802,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/callbacks.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/core.js": {
@@ -811,7 +811,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/core.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/core\/access.js": {
@@ -820,7 +820,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/core\/access.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/core\/DOMEval.js": {
@@ -829,7 +829,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/core\/DOMEval.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/core\/init.js": {
@@ -838,7 +838,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/core\/init.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/core\/nodeName.js": {
@@ -847,7 +847,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/core\/nodeName.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/core\/parseHTML.js": {
@@ -856,7 +856,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/core\/parseHTML.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/core\/ready-no-deferred.js": {
@@ -865,7 +865,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/core\/ready-no-deferred.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/core\/ready.js": {
@@ -874,7 +874,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/core\/ready.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/core\/readyException.js": {
@@ -883,7 +883,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/core\/readyException.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/core\/stripAndCollapse.js": {
@@ -892,7 +892,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/core\/stripAndCollapse.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/core\/support.js": {
@@ -901,7 +901,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/core\/support.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/core\/var\/rsingleTag.js": {
@@ -910,7 +910,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/core\/var\/rsingleTag.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/css.js": {
@@ -919,7 +919,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/css.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/css\/addGetHookIf.js": {
@@ -928,7 +928,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/css\/addGetHookIf.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/css\/adjustCSS.js": {
@@ -937,7 +937,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/css\/adjustCSS.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/css\/curCSS.js": {
@@ -946,7 +946,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/css\/curCSS.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/css\/hiddenVisibleSelectors.js": {
@@ -955,7 +955,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/css\/hiddenVisibleSelectors.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/css\/showHide.js": {
@@ -964,7 +964,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/css\/showHide.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/css\/support.js": {
@@ -973,7 +973,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/css\/support.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/css\/var\/cssExpand.js": {
@@ -982,7 +982,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/css\/var\/cssExpand.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/css\/var\/getStyles.js": {
@@ -991,7 +991,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/css\/var\/getStyles.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/css\/var\/isHiddenWithinTree.js": {
@@ -1000,7 +1000,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/css\/var\/isHiddenWithinTree.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/css\/var\/rmargin.js": {
@@ -1009,7 +1009,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/css\/var\/rmargin.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/css\/var\/rnumnonpx.js": {
@@ -1018,7 +1018,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/css\/var\/rnumnonpx.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/css\/var\/swap.js": {
@@ -1027,7 +1027,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/css\/var\/swap.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/data.js": {
@@ -1036,7 +1036,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/data.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/data\/Data.js": {
@@ -1045,7 +1045,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/data\/Data.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/data\/var\/acceptData.js": {
@@ -1054,7 +1054,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/data\/var\/acceptData.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/data\/var\/dataPriv.js": {
@@ -1063,7 +1063,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/data\/var\/dataPriv.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/data\/var\/dataUser.js": {
@@ -1072,7 +1072,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/data\/var\/dataUser.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/deferred.js": {
@@ -1081,7 +1081,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/deferred.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/deferred\/exceptionHook.js": {
@@ -1090,7 +1090,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/deferred\/exceptionHook.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/deprecated.js": {
@@ -1099,7 +1099,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/deprecated.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/dimensions.js": {
@@ -1108,7 +1108,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/dimensions.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/effects.js": {
@@ -1117,7 +1117,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/effects.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/effects\/animatedSelector.js": {
@@ -1126,7 +1126,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/effects\/animatedSelector.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/effects\/Tween.js": {
@@ -1135,7 +1135,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/effects\/Tween.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/event.js": {
@@ -1144,7 +1144,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/event.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/event\/ajax.js": {
@@ -1153,7 +1153,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/event\/ajax.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/event\/alias.js": {
@@ -1162,7 +1162,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/event\/alias.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/event\/focusin.js": {
@@ -1171,7 +1171,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/event\/focusin.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/event\/support.js": {
@@ -1180,7 +1180,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/event\/support.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/event\/trigger.js": {
@@ -1189,7 +1189,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/event\/trigger.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/exports\/amd.js": {
@@ -1198,7 +1198,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/exports\/amd.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/exports\/global.js": {
@@ -1207,7 +1207,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/exports\/global.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/jquery.js": {
@@ -1216,7 +1216,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/jquery.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/manipulation.js": {
@@ -1225,7 +1225,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/manipulation.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/_evalUrl.js": {
@@ -1234,7 +1234,7 @@
 		"oA": 1,
 		"oAP": "\/build\/bower_components\/jquery\/src\/manipulation\/_evalUrl.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/buildFragment.js": {
@@ -1243,7 +1243,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/manipulation\/buildFragment.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/getAll.js": {
@@ -1252,7 +1252,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/manipulation\/getAll.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/setGlobalEval.js": {
@@ -1261,7 +1261,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/manipulation\/setGlobalEval.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/support.js": {
@@ -1270,7 +1270,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/manipulation\/support.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/var\/rcheckableType.js": {
@@ -1279,7 +1279,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/manipulation\/var\/rcheckableType.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/var\/rscriptType.js": {
@@ -1288,7 +1288,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/manipulation\/var\/rscriptType.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/var\/rtagName.js": {
@@ -1297,7 +1297,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/manipulation\/var\/rtagName.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/manipulation\/wrapMap.js": {
@@ -1306,7 +1306,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/manipulation\/wrapMap.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/offset.js": {
@@ -1315,7 +1315,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/offset.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/queue.js": {
@@ -1324,7 +1324,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/queue.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/queue\/delay.js": {
@@ -1333,7 +1333,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/queue\/delay.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/selector-native.js": {
@@ -1342,7 +1342,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/selector-native.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/selector-sizzle.js": {
@@ -1351,7 +1351,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/selector-sizzle.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/selector.js": {
@@ -1360,7 +1360,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/selector.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/serialize.js": {
@@ -1369,7 +1369,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/serialize.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/traversing.js": {
@@ -1378,7 +1378,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/traversing.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/traversing\/findFilter.js": {
@@ -1387,7 +1387,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/traversing\/findFilter.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/traversing\/var\/dir.js": {
@@ -1396,7 +1396,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/traversing\/var\/dir.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/traversing\/var\/rneedsContext.js": {
@@ -1405,7 +1405,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/traversing\/var\/rneedsContext.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/traversing\/var\/siblings.js": {
@@ -1414,7 +1414,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/traversing\/var\/siblings.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/arr.js": {
@@ -1423,7 +1423,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/arr.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/class2type.js": {
@@ -1432,7 +1432,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/class2type.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/concat.js": {
@@ -1441,7 +1441,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/concat.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/document.js": {
@@ -1450,7 +1450,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/document.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/documentElement.js": {
@@ -1459,7 +1459,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/documentElement.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/fnToString.js": {
@@ -1468,7 +1468,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/fnToString.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/getProto.js": {
@@ -1477,7 +1477,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/getProto.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/hasOwn.js": {
@@ -1486,7 +1486,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/hasOwn.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/indexOf.js": {
@@ -1495,7 +1495,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/indexOf.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/ObjectFunctionString.js": {
@@ -1504,7 +1504,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/ObjectFunctionString.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/pnum.js": {
@@ -1513,7 +1513,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/pnum.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/push.js": {
@@ -1522,7 +1522,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/push.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/rcssNum.js": {
@@ -1531,7 +1531,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/rcssNum.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/rnothtmlwhite.js": {
@@ -1540,7 +1540,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/rnothtmlwhite.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/slice.js": {
@@ -1549,7 +1549,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/slice.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/support.js": {
@@ -1558,7 +1558,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/support.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/var\/toString.js": {
@@ -1567,7 +1567,7 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/var\/toString.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/bower_components\/jquery\/src\/wrap.js": {
@@ -1576,14 +1576,8 @@
 		"oA": 2,
 		"oAP": "\/build\/bower_components\/jquery\/src\/wrap.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
-		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
 		},
 	"\/source\/hypelujah\/img\/bg-package\/bball.jpg": {
 		"ft": 16384,
@@ -1794,19 +1788,19 @@
 	"\/source\/hypelujah\/script.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/hypelujah\/script.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/source\/hypelujah\/stylelint.config.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/hypelujah\/stylelint.config.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/source\/hypelujah\/styles\/main.scss": {
@@ -1825,10 +1819,10 @@
 	"\/source\/ios-highlight-editor\/autosize.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/ios-highlight-editor\/autosize.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/source\/ios-highlight-editor\/fake-bg.jpg": {
@@ -2059,7 +2053,7 @@
 		"oAP": "\/build\/ios-highlight-editor\/img\/trim-grip-left.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2070,7 +2064,7 @@
 		"oAP": "\/build\/ios-highlight-editor\/img\/trim-grip-right.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2079,24 +2073,6 @@
 		"oA": 0,
 		"oAP": "\/build\/ios-highlight-editor\/index.html",
 		"oF": 0
-		},
-	"\/source\/ios-highlight-editor\/jquery-1.8.2.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 2,
-		"oAP": "\/build\/ios-highlight-editor\/jquery-1.8.2.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/source\/ios-highlight-editor\/jquery-ui-1.12.1.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 2,
-		"oAP": "\/build\/ios-highlight-editor\/jquery-ui-1.12.1.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
 		},
 	"\/source\/ios-highlight-editor\/main.css": {
 		"aP": 0,
@@ -2135,10 +2111,10 @@
 	"\/source\/ios-highlight-editor\/script.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/ios-highlight-editor\/script.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/source\/ios-highlight-editor\/UnitedSansRgBd.otf": {
@@ -2242,10 +2218,10 @@
 	"\/source\/toast\/script.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/toast\/script.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/source\/toast\/styles\/main.scss": {
@@ -3485,19 +3461,19 @@
 	"\/source\/web-highlight-editor\/script.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/web-highlight-editor\/script.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/source\/web-highlight-editor\/Sortable.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/build\/web-highlight-editor\/Sortable.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 2,
 		"tS": 0
 		},
 	"\/source\/web-highlight-editor\/styles\/main.scss": {
@@ -3523,7 +3499,7 @@
 	"displayValue": "prototypes",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-yesBaby",
-	"lastBuiltDate": 515106156
+	"lastBuiltDate": 515340079
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -5290,7 +5266,7 @@
 		"quality": 100
 		},
 	"languageDefaultsJS": {
-		"autoOutputAction": 2,
+		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.js",
 		"autoOutputPathRelativePath": "\/min",
 		"autoOutputPathReplace1": "",
@@ -5298,7 +5274,7 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 1,
+		"syntaxCheckerStyle": 2,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {
