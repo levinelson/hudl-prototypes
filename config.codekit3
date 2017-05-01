@@ -155,6 +155,322 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/bower_components\/dragdealer\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/dragdealer\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/.gitignore",
+		"oF": 0
+		},
+	"\/bower_components\/dragdealer\/.npmignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/.npmignore",
+		"oF": 0
+		},
+	"\/bower_components\/dragdealer\/.travis.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/.travis.yml",
+		"oF": 0
+		},
+	"\/bower_components\/dragdealer\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/dragdealer\/CHANGELOG.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/CHANGELOG.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/bower_components\/dragdealer\/Gruntfile.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/Gruntfile.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/dragdealer\/LICENSE": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/LICENSE",
+		"oF": 0
+		},
+	"\/bower_components\/dragdealer\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/dragdealer\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/apiSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/apiSpec.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/browser-runner.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/browser-runner.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/callbacksSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/callbacksSpec.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/draggingSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/draggingSpec.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/eventsSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/eventsSpec.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/fixtures\/content-slider.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/fixtures\/content-slider.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/fixtures\/content-slider.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/fixtures\/content-slider.html",
+		"oF": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/fixtures\/custom-handle.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/fixtures\/custom-handle.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/fixtures\/custom-handle.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/fixtures\/custom-handle.html",
+		"oF": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/fixtures\/handle-dom-siblings.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/fixtures\/handle-dom-siblings.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/fixtures\/handle-dom-siblings.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/fixtures\/handle-dom-siblings.html",
+		"oF": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/fixtures\/masked-slider.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/fixtures\/masked-slider.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/fixtures\/masked-slider.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/fixtures\/masked-slider.html",
+		"oF": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/fixtures\/simple-slider.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/fixtures\/simple-slider.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/fixtures\/simple-slider.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/fixtures\/simple-slider.html",
+		"oF": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/fixtures\/square-slider.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/fixtures\/square-slider.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/fixtures\/square-slider.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/fixtures\/square-slider.html",
+		"oF": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/helpers.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/helpers.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/matchers.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/matchers.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/optionsSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/optionsSpec.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/phantomjs-setup.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/phantomjs-setup.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/resizingSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/resizingSpec.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/setup.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/setup.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/dragdealer\/spec\/touchDraggingSpec.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/spec\/touchDraggingSpec.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/dragdealer\/src\/dragdealer.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/src\/dragdealer.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/dragdealer\/src\/dragdealer.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/build\/bower_components\/dragdealer\/src\/dragdealer.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/bower_components\/fastclick\/.bower.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -1735,6 +2051,28 @@
 		"opt": 1,
 		"plM": 3758088191,
 		"prP": 0
+		},
+	"\/source\/ios-highlight-editor\/img\/trim-grip-left.png": {
+		"ft": 32768,
+		"iS": 422,
+		"oA": 0,
+		"oAP": "\/build\/ios-highlight-editor\/img\/trim-grip-left.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/ios-highlight-editor\/img\/trim-grip-right.png": {
+		"ft": 32768,
+		"iS": 385,
+		"oA": 0,
+		"oAP": "\/build\/ios-highlight-editor\/img\/trim-grip-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/source\/ios-highlight-editor\/index.kit": {
 		"ft": 2048,

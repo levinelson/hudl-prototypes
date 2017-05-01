@@ -286,14 +286,48 @@ body {
 
 .editor-timeline {
   height: 60px;
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
   background-color: $color-de-bg-level1;
 
-  figure {
+  .tick {
     height: 45px;
     width: 1px;
     background-color: $color-de-bg-level1-accent;
   }
+}
+
+.editor-trimmer {
+  top: 0;
+  left: 20%;
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba($color-utility-action, 0.6);
+
+  svg {
+    position: absolute;
+    top: 5px;
+    left: 32px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.trim-handle-left {
+  width: 24px;
+  height: 60px;
+  background-size: 100% 100%;
+  background-image: url('img/trim-grip-left.png')
+}
+
+.trim-handle-right {
+  width: 24px;
+  height: 60px;
+  background-size: 100% 100%;
+  background-image: url('img/trim-grip-right.png')
 }
