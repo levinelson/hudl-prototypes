@@ -42,15 +42,15 @@ $(document).ready(function(){
       $('.editor-fx-tray-2').removeClass('_is-inactive');
       $('.video-container').addClass('_is-editing');
       $('.editor-duration-indication').addClass('_is-inactive');
-
     } else {
       $('.editor-trimmer').addClass('_is-inactive');
       $('.editor-fx-tray-2').addClass('_is-inactive');
       $('.video-container').removeClass('_is-editing');
-      if (!$('#lower-third-content').val()) {
+      if (!$('#lower-third-content').val()) { // no text is present
         $('.video-lower-third').removeClass('_is-active');
       } else {
         $('.video-lower-third').addClass('_is-active');
+        $('.editor-duration-indication').removeClass('_is-inactive');
       }
     }
 
