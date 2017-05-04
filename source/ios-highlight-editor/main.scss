@@ -76,6 +76,9 @@ $skew: 7deg;
 
 body {
   color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .derp {
