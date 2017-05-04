@@ -42,16 +42,18 @@ $(document).ready(function(){
       $('.editor-fx-tray-2').removeClass('_is-inactive');
       $('.video-container').addClass('_is-editing');
       $('.editor-duration-indication').addClass('_is-inactive');
-      hasText = true;
+
     } else {
       $('.editor-trimmer').addClass('_is-inactive');
       $('.editor-fx-tray-2').addClass('_is-inactive');
       $('.video-container').removeClass('_is-editing');
-
-      if (hasText) {
-        $('.editor-duration-indication').removeClass('_is-inactive');
+      if (!$('#lower-third-content').val()) {
+        $('.video-lower-third').removeClass('_is-active');
+      } else {
+        $('.video-lower-third').addClass('_is-active');
       }
     }
+
   });
 
   $('#set-overlay-remove').click(function(){

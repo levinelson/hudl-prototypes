@@ -1822,6 +1822,12 @@
 		"oS": 2,
 		"uL": 1
 		},
+	"\/source\/ios-highlight-editor\/clip.mp4": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/ios-highlight-editor\/clip.mp4",
+		"oF": 0
+		},
 	"\/source\/ios-highlight-editor\/fake-bg.jpg": {
 		"ft": 16384,
 		"iS": 100195,
@@ -1886,7 +1892,7 @@
 	"\/source\/ios-highlight-editor\/img\/icon\/overlay-top-right.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/build\/ios-highlight-editor\/img\/icon\/overlay-top-right.svg",
 		"oF": 0,
 		"opt": 1,

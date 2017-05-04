@@ -17,19 +17,21 @@
       <div class="editor-main">
         <div class="editor-video-and-timeline">
           <div class="video-container bottom-left">
+            <video src="clip.mp4" autoplay loop="true" playsinline></video>
             <main class="video-lower-third">
               <figure class="logo">
                 <img src="gatorade.png" alt="Gatorade Logo">
               </figure>
               <figure class="divider"></figure>
               <div class="content">
-                <textarea id="lower-third-content" rows="1">Tap here</textarea>
+                <textarea id="lower-third-content" placeholder="Tap to Edit" rows="1"></textarea>
               </div>
             </main>
           </div>
           <div class="editor-timeline">
             <div class="editor-trimmer _is-inactive">
               <!-- @import 'img/icon/text.svg' -->
+              <figure class="playhead"></figure>
               <figure class="trim-handle-left"></figure>
               <figure class="trim-handle-right"></figure>
             </div>
@@ -46,7 +48,6 @@
           <li id="set-overlay-bottom-left" class="_is-active"><!-- @import 'img/icon/overlay-bottom-left.svg' --></li>
           <li id="set-overlay-bottom-right"><!-- @import 'img/icon/overlay-bottom-right.svg' --></li>
           <li id="set-overlay-top-left"><!-- @import 'img/icon/overlay-top-left.svg' --></li>
-          <li id="set-overlay-top-right"><!-- @import 'img/icon/overlay-top-right.svg' --></li>
           <li id="set-overlay-remove"><!-- @import 'img/icon/remove.svg' --></li>
         </ul>
         <ul class="editor-fx-tray-1">
