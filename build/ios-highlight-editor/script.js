@@ -1855,7 +1855,7 @@ $(document).ready(function(){
       $('.video-lower-third').addClass('_is-active');
       $('.editor-fx-tray-2').removeClass('_is-inactive');
       $('.video-container').addClass('_is-editing');
-      $('.editor-duration-indication').addClass('_is-inactive');
+      $('#text-indication').addClass('_is-inactive');
     } else {
       $('.editor-trimmer').addClass('_is-inactive');
       $('.editor-fx-tray-2').addClass('_is-inactive');

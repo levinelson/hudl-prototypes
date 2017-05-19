@@ -160,7 +160,7 @@ body {
 	background-blend-mode: overlay;
 
 	img {
-		width: $spacer*3;
+		width: $spacer*4;
 		height: auto;
 		@include skew-offset();
 	}
@@ -420,15 +420,48 @@ body {
 
 .editor-trimmer {
   @include trimmer-base;
+  z-index: $z-2;
 }
 
 .editor-duration-indication {
   @include trimmer-base;
   height: 27px;
   border-radius: 2px;
+  background-color: $color-de-bg-level3;
 
   svg {
     left: 8px;
+  }
+}
+
+.editor-shadow-indication {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: $color-white;
+  display: flex;
+  justify-content: center;
+  z-index: $z-1;
+  left: 22%;
+
+  figure {
+    position: relative;
+    top: calc(50% - 12px);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-white;
+    border-radius: 50%;
+    flex: 0 0 auto;
+    // border: 2px solid $color-white;
+
+    svg {
+      fill: $color-de-bg-level3;
+      width: 16px;
+      height: 16px;
+    }
   }
 }
 
