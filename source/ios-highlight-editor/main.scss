@@ -424,6 +424,8 @@ body {
 
 .editor-duration-indication {
   @include trimmer-base;
+  height: 27px;
+  border-radius: 2px;
 
   svg {
     left: 8px;

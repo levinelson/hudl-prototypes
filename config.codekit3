@@ -1579,12 +1579,6 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/source\/hypelujah\/img\/bg-package\/bball.jpg": {
 		"ft": 16384,
 		"iS": 169581,
@@ -1821,12 +1815,6 @@
 		"oF": 0,
 		"oS": 2,
 		"uL": 1
-		},
-	"\/source\/ios-highlight-editor\/clip.mp4": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/ios-highlight-editor\/clip.mp4",
-		"oF": 0
 		},
 	"\/source\/ios-highlight-editor\/fake-bg.jpg": {
 		"ft": 16384,
@@ -3502,7 +3490,7 @@
 	"displayValue": "prototypes",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-yesBaby",
-	"lastBuiltDate": 515349689
+	"lastBuiltDate": 516902456
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
