@@ -358,16 +358,46 @@ body {
 .editor-timeline {
   height: 60px;
   position: relative;
+  background-color: $color-de-bg-level1;
+  width: calc(100% + 50px); // width of effects tray
+}
+
+.editor-timeline-ticks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  background-color: $color-de-bg-level1;
-  width: calc(100% + 50px); // width of effects tray
+  z-index: $z-1;
 
   .tick {
     height: 45px;
     width: 1px;
     background-color: $color-de-bg-level1-accent;
+  }
+}
+
+.editor-timeline-rows {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  z-index: $z-2;
+}
+
+.editor-timeline-row {
+  position: relative;
+  flex: 1 1 auto;
+
+  &:first-child {
+    margin-bottom: 2px;
   }
 }
 
@@ -421,14 +451,14 @@ body {
 
 .editor-trimmer {
   @include trimmer-base;
-  z-index: $z-2;
+  z-index: $z-3;
 }
 
 .editor-duration-indication {
   @include trimmer-base;
-  height: 20px;
+  height: 100%;
   border-radius: 2px;
-  background-color: $color-de-bg-level1-accent;
+  background-color: $color-de-bg-level2-accent;
   display: flex;
   align-items: center;
   padding-left: 4px;
@@ -441,17 +471,16 @@ body {
 
 .editor-shadow-indication {
   position: absolute;
-  height: 100%;
   width: 2px;
-  // background-color: $color-de-divider;
   display: flex;
   justify-content: center;
-  z-index: $z-1;
+  z-index: $z-2;
   left: 20%;
+  top: 50%;
+  margin-top: -12px;
 
   figure {
     position: relative;
-    top: 20%;
     width: 24px;
     height: 24px;
     display: flex;
@@ -461,20 +490,6 @@ body {
     border-radius: 50%;
     flex: 0 0 auto;
 
-    &:before {
-      content: '';
-      z-index: $z-1;
-      position: absolute;
-      width: 0;
-      height: 0;
-      top: 8px;
-      left: 0;
-      border-left: 12px solid transparent;
-      border-right: 12px solid transparent;
-      border-bottom: 24px solid $color-de-bg-level3-accent;
-    }
-
-
     &:after {
       content: '';
       z-index: $z-1;
@@ -482,10 +497,23 @@ body {
       width: 0;
       height: 0;
       top: 8px;
-      left: 0;
-      border-left: 12px solid transparent;
-      border-right: 12px solid transparent;
-      border-top: 24px solid $color-de-bg-level3-accent;
+      left: 4px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 32px solid $color-de-bg-level3-accent;
+    }
+
+    &:before {
+      content: '';
+      z-index: $z-1;
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: 8px;
+      left: 4px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 32px solid $color-de-bg-level3-accent;
     }
 
     svg {
