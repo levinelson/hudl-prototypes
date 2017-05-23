@@ -281,7 +281,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  background: $color-de-bg-level0;
+  background: #000;
   transition: 0.4s;
 
   .initial & {
@@ -358,7 +358,7 @@ body {
 .editor-timeline {
   height: 60px;
   position: relative;
-  background-color: $color-de-bg-level1;
+  background-color: $color-de-bg-level0;
   width: calc(100% + 50px); // width of effects tray
 }
 
@@ -374,9 +374,21 @@ body {
   z-index: $z-1;
 
   .tick {
-    height: 45px;
+    height: 100%;
     width: 1px;
     background-color: $color-de-bg-level1-accent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: $color-de-text-nonessential;
+    font-size: 12px;
+  }
+
+  span {
+    display: block;
+    padding: $space-quarter;
+    background-color: $color-de-bg-level0;
   }
 }
 
@@ -458,7 +470,8 @@ body {
   @include trimmer-base;
   height: 100%;
   border-radius: 2px;
-  background-color: $color-de-bg-level2-accent;
+  background-color: rgba($color-de-bg-level2, 0.8);
+  // border: 1px solid $color-de-divider;
   display: flex;
   align-items: center;
   padding-left: 4px;
@@ -489,6 +502,7 @@ body {
     background-color: $color-de-bg-level3-accent;
     border-radius: 50%;
     flex: 0 0 auto;
+    z-index: $z-4;
 
     &:after {
       content: '';
@@ -523,6 +537,19 @@ body {
       width: 16px;
       height: 16px;
     }
+  }
+
+  &._is-active {
+    figure {
+      background-color: $color-utility-action;
+      &:after {
+        border-top-color: $color-utility-action;
+      }
+      &:before {
+        border-bottom-color: $color-utility-action;
+      }
+    }
+
   }
 }
 

@@ -42,7 +42,12 @@ $(document).ready(function(){
       $('.editor-fx-tray-2').removeClass('_is-inactive');
       $('.video-container').addClass('_is-editing');
       $('#text-indication').addClass('_is-inactive');
+    } else if (state === 2) {
+      $('#spot-shadow-indication').addClass('_is-active');
+      $('.editor-fx-tray-2').removeClass('_is-inactive');
+      $('.video-container').addClass('_is-editing');
     } else {
+      $('#spot-shadow-indication').removeClass('_is-active');
       $('.editor-trimmer').addClass('_is-inactive');
       $('.editor-fx-tray-2').addClass('_is-inactive');
       $('.video-container').removeClass('_is-editing');
