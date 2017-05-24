@@ -371,11 +371,11 @@ body {
   height: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: flex-start;
   z-index: $z-1;
 
   .tick {
-    height: 100%;
+    height: calc(100% - #{$space-quarter});
     width: 1px;
     background-color: $color-de-bg-level1-accent;
     display: flex;
@@ -395,10 +395,10 @@ body {
 
 .editor-timeline-rows {
   position: absolute;
-  top: 0;
+  top: $space-one;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% - #{$space-one});
   display: flex;
   flex-direction: column;
   padding: 2px;
@@ -451,14 +451,17 @@ body {
     opacity: 0;
   }
 
-  svg {
+  .effect-indicator-icon {
     position: absolute;
-    top: 5px;
-    left: 32px;
-    width: 16px;
-    height: 16px;
-    transition: $trans-quick;
-    fill: $color-de-text-subtle;
+    top: $space-quarter;
+    left: $space-two;
+
+    svg {
+      width: $space-one;
+      height: $space-one;
+      transition: $trans-quick;
+      fill: $color-de-text-subtle;
+    }
   }
 }
 
@@ -470,16 +473,27 @@ body {
 .editor-duration-indication {
   @include trimmer-base;
   height: 100%;
+  top: 0;
   border-radius: 2px;
   background-color: rgba($color-de-bg-level2, 0.8);
-  // border: 1px solid $color-de-divider;
   display: flex;
   align-items: center;
-  padding-left: 4px;
+  padding-left: $space-quarter;
 
-  svg {
+  &._text {
+    // background-color: rgba($color-identity-purple, .5);
+  }
+
+  &._slowmo {
+    // background-color: rgba($color-identity-scarlet, .5);
+  }
+
+  .effect-indicator-icon {
     position: static;
-    left: 8px;
+    border-radius: 50%;
+    // padding: $space-quarter;
+    // border: 1px solid $color-identity-sky;
+    // left: $space-half;
   }
 }
 
@@ -490,8 +504,8 @@ body {
   justify-content: center;
   z-index: $z-2;
   left: 20%;
-  top: 50%;
-  margin-top: -12px;
+  top: 0;
+  // margin-top: -12px;
 
   figure {
     position: relative;
@@ -511,25 +525,25 @@ body {
       position: absolute;
       width: 0;
       height: 0;
-      top: 8px;
-      left: 4px;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-top: 32px solid $color-de-bg-level3-accent;
+      top: 14px;
+      left: 0px;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 44px solid $color-de-bg-level3-accent;
     }
 
-    &:before {
-      content: '';
-      z-index: $z-1;
-      position: absolute;
-      width: 0;
-      height: 0;
-      bottom: 8px;
-      left: 4px;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-bottom: 32px solid $color-de-bg-level3-accent;
-    }
+    // &:before {
+    //   content: '';
+    //   z-index: $z-1;
+    //   position: absolute;
+    //   width: 0;
+    //   height: 0;
+    //   bottom: 8px;
+    //   left: 4px;
+    //   border-left: 8px solid transparent;
+    //   border-right: 8px solid transparent;
+    //   border-bottom: 32px solid $color-identity-orange;
+    // }
 
     svg {
       position: relative;

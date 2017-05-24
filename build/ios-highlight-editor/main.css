@@ -9287,13 +9287,13 @@ body { color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; -
 
 .editor-timeline { height: 60px; position: relative; background-color: #101417; width: calc(100% + 50px); }
 
-.editor-timeline-ticks { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; z-index: 100; }
+.editor-timeline-ticks { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; z-index: 100; }
 
-.editor-timeline-ticks .tick { height: 100%; width: 1px; background-color: #2c353e; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+.editor-timeline-ticks .tick { height: calc(100% - 0.25rem); width: 1px; background-color: #2c353e; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 
 .editor-timeline-ticks span { text-align: center; color: rgba(230, 242, 255, 0.4); font-size: 10px; display: block; padding: 0.25rem; background-color: #101417; }
 
-.editor-timeline-rows { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 2px; z-index: 200; }
+.editor-timeline-rows { position: absolute; top: 1rem; left: 0; width: 100%; height: calc(100% - 1rem); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 2px; z-index: 200; }
 
 .editor-timeline-row { position: relative; -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; }
 
@@ -9311,25 +9311,27 @@ body { color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; -
 
 .editor-trimmer._is-inactive { opacity: 0; }
 
-.editor-trimmer svg { position: absolute; top: 5px; left: 32px; width: 16px; height: 16px; -webkit-transition: 0.25s; transition: 0.25s; fill: rgba(230, 242, 255, 0.65); }
+.editor-trimmer .effect-indicator-icon { position: absolute; top: 0.25rem; left: 2rem; }
 
-.editor-duration-indication { top: 0; left: 0%; width: 60%; height: 100%; position: absolute; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; background-color: rgba(0, 156, 227, 0.6); -webkit-transition: 0.25s; transition: 0.25s; height: 100%; border-radius: 2px; background-color: rgba(35, 42, 49, 0.8); display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-left: 4px; }
+.editor-trimmer .effect-indicator-icon svg { width: 1rem; height: 1rem; -webkit-transition: 0.25s; transition: 0.25s; fill: rgba(230, 242, 255, 0.65); }
+
+.editor-duration-indication { top: 0; left: 0%; width: 60%; height: 100%; position: absolute; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; background-color: rgba(0, 156, 227, 0.6); -webkit-transition: 0.25s; transition: 0.25s; height: 100%; top: 0; border-radius: 2px; background-color: rgba(35, 42, 49, 0.8); display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-left: 0.25rem; }
 
 .editor-duration-indication .playhead { height: 100%; width: 1px; background-color: #fff; position: absolute; left: 0; top: 0; -webkit-animation-name: playhead; animation-name: playhead; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-timing-function: linear; animation-timing-function: linear; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
 
 .editor-duration-indication._is-inactive { opacity: 0; }
 
-.editor-duration-indication svg { position: absolute; top: 5px; left: 32px; width: 16px; height: 16px; -webkit-transition: 0.25s; transition: 0.25s; fill: rgba(230, 242, 255, 0.65); }
+.editor-duration-indication .effect-indicator-icon { position: absolute; top: 0.25rem; left: 2rem; }
 
-.editor-duration-indication svg { position: static; left: 8px; }
+.editor-duration-indication .effect-indicator-icon svg { width: 1rem; height: 1rem; -webkit-transition: 0.25s; transition: 0.25s; fill: rgba(230, 242, 255, 0.65); }
 
-.editor-shadow-indication { position: absolute; width: 2px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; z-index: 200; left: 20%; top: 50%; margin-top: -12px; }
+.editor-duration-indication .effect-indicator-icon { position: static; border-radius: 50%; }
+
+.editor-shadow-indication { position: absolute; width: 2px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; z-index: 200; left: 20%; top: 0; }
 
 .editor-shadow-indication figure { position: relative; width: 24px; height: 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: #45525e; border-radius: 50%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; z-index: 400; }
 
-.editor-shadow-indication figure:after { content: ''; z-index: 100; position: absolute; width: 0; height: 0; top: 8px; left: 4px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 32px solid #45525e; }
-
-.editor-shadow-indication figure:before { content: ''; z-index: 100; position: absolute; width: 0; height: 0; bottom: 8px; left: 4px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 32px solid #45525e; }
+.editor-shadow-indication figure:after { content: ''; z-index: 100; position: absolute; width: 0; height: 0; top: 14px; left: 0px; border-left: 12px solid transparent; border-right: 12px solid transparent; border-top: 44px solid #45525e; }
 
 .editor-shadow-indication figure svg { position: relative; z-index: 200; fill: rgba(230, 242, 255, 0.65); width: 16px; height: 16px; }
 
