@@ -378,15 +378,15 @@ body {
     height: 100%;
     width: 1px;
     background-color: $color-de-bg-level1-accent;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    color: $color-de-text-nonessential;
-    font-size: 12px;
   }
 
   span {
+    text-align: center;
+    color: $color-de-text-nonessential;
+    font-size: 10px;
     display: block;
     padding: $space-quarter;
     background-color: $color-de-bg-level0;
