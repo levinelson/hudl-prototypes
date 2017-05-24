@@ -1,7 +1,7 @@
 // @codekit-prepend '../../bower_components/jquery/dist/jquery.min.js';
 // @codekit-prepend '../../bower_components/autosize/dist/autosize.min.js';
 // @codekit-prepend '../../bower_components/fastclick/lib/fastclick.js';
-// @codekit-prepend "../../bower_components/dragdealer/src/dragdealer.js";
+// "../../bower_components/dragdealer/src/dragdealer.js";
 
 $(document).ready(function(){
 
