@@ -403,58 +403,55 @@ body {
   flex-direction: column;
   padding: 2px;
   z-index: $z-2;
+
+  ._is-trimming & {
+    z-index: $z-4;
+  }
 }
 
 .editor-timeline-row {
   position: relative;
   flex: 1 1 auto;
+  transition: $trans-quick;
 
   &:first-child {
     margin-bottom: 2px;
   }
 }
 
-@keyframes playhead {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(300px)
-  }
-}
-
-@mixin trimmer-base {
-  top: 0;
+.editor-duration-indication {
   left: 0%;
   width: 60%;
   height: 100%;
   position: absolute;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba($color-utility-action, 0.6);
   transition: $trans-quick;
-
-  .playhead {
-    height: 100%;
-    width: 1px;
-    background-color: $color-white;
-    position: absolute;
-    left: 0;
-    top: 0;
-    animation-name: playhead;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
+  transition-delay: $trans-quick/2;
+  top: 0;
+  border-radius: 2px;
+  background-color: rgba($color-de-bg-level3, 0.6);
+  backface-visibility: hidden;
 
   &._is-inactive {
     opacity: 0;
   }
 
+  &._text {
+    z-index: $z-4;
+    ._is-trimming & {
+      background-color: rgba($color-utility-action, 0.6);
+      border-radius: 0;
+      height: 60px;
+      transition-delay: 0;
+      transform: translateY(-1.125rem);
+    }
+  }
+
   .effect-indicator-icon {
     position: absolute;
-    top: $space-quarter;
-    left: $space-two;
+    top: 1px;
+    left: 4px;
+    backface-visibility: hidden;
+    transform: translateX(0);
 
     svg {
       width: $space-one;
@@ -462,38 +459,6 @@ body {
       transition: $trans-quick;
       fill: $color-de-text-subtle;
     }
-  }
-}
-
-.editor-trimmer {
-  @include trimmer-base;
-  z-index: $z-3;
-}
-
-.editor-duration-indication {
-  @include trimmer-base;
-  height: 100%;
-  top: 0;
-  border-radius: 2px;
-  background-color: rgba($color-de-bg-level2, 0.8);
-  display: flex;
-  align-items: center;
-  padding-left: $space-quarter;
-
-  &._text {
-    // background-color: rgba($color-identity-purple, .5);
-  }
-
-  &._slowmo {
-    // background-color: rgba($color-identity-scarlet, .5);
-  }
-
-  .effect-indicator-icon {
-    position: static;
-    border-radius: 50%;
-    // padding: $space-quarter;
-    // border: 1px solid $color-identity-sky;
-    // left: $space-half;
   }
 }
 
@@ -551,6 +516,7 @@ body {
       fill: $color-de-text-subtle;
       width: 16px;
       height: 16px;
+      transform: translateX(0);
     }
   }
 
@@ -568,18 +534,51 @@ body {
   }
 }
 
-.trim-handle-left {
+@mixin trim-handle-base {
+  position: absolute;
   width: 24px;
   height: 60px;
   background-size: 100% 100%;
-  background-image: url('img/trim-grip-left.png')
+  overflow: hidden;
+
+  .trim-inner {
+    width: 24px;
+    height: 60px;
+    background-size: 100% 100%;
+    transition: $trans-quick;
+
+    ._is-trimming & {
+      transition-delay: $trans-quick/2;
+    }
+  }
+}
+
+.trim-handle-left {
+  @include trim-handle-base();
+  right: 100%;
+
+  .trim-inner {
+    transform: translateX(100%);
+    background-image: url('img/trim-grip-left.png');
+
+    ._is-trimming & {
+      transform: translateX(0);
+    }
+  }
 }
 
 .trim-handle-right {
-  width: 24px;
-  height: 60px;
-  background-size: 100% 100%;
-  background-image: url('img/trim-grip-right.png')
+  @include trim-handle-base();
+  left: 100%;
+
+  .trim-inner {
+    transform: translateX(-100%);
+    background-image: url('img/trim-grip-right.png');
+
+    ._is-trimming & {
+      transform: translateX(0);
+    }
+  }
 }
 
 .hotspot {
