@@ -1,0 +1,106 @@
+﻿@import 'uniform-ui';
+
+$color-le-selection-bg: rgba(230, 247, 255, 1);     // #e6f7ff
+$color-le-selection-bg-hover: rgba(240, 250, 255, 1);     // #f0faff
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-de-bg-level1;
+}
+
+.fake-modal {
+  width: 30rem;
+  background-color: $color-le-bg-level0;
+  padding: $space-two 0;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: $space-half $space-one-and-half;
+  border-top: 1px solid $color-le-divider;
+  cursor: pointer;
+  position: relative;
+
+  &:last-child {
+    border-bottom: 1px solid $color-le-divider;
+  }
+
+  &:hover {
+    background-color: $color-le-selection-bg-hover;
+  }
+
+  &.is-selected {
+    background-color: $color-le-selection-bg;
+    border-color: transparent;
+
+    &:before {
+      z-index: $zindex-1;
+      content: '';
+      height: 2px;
+      top: -1px;
+      left: 0;
+      width: 100%;
+      position: absolute;
+      background-color: $color-le-bg-level0;
+    }
+
+    &:after {
+      z-index: $zindex-1;
+      content: '';
+      height: 2px;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      position: absolute;
+      background-color: $color-le-bg-level0;
+    }
+
+    & + .list-item {
+      border-color: transparent;
+    }
+  }
+}
+
+.select {
+  flex: 0 0 auto;
+}
+
+.label {
+  flex: 0 0 3rem;
+  text-align: right;
+  color: $color-le-text-subtle;
+
+  .is-selected & {
+    color: $color-le-text-default;
+  }
+}
+
+.name {
+  flex: 1 1 auto;
+  padding-left: $space-half;
+  color: $color-le-text-default;
+
+  .is-selected & {
+    color: $color-le-text-contrast;
+  }
+}
+
+.avatar {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

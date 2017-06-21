@@ -2132,6 +2132,184 @@
 		"oAP": "\/build\/ios-highlight-editor\/VitesseLight.otf",
 		"oF": 0
 		},
+	"\/source\/multi-select-list\/img\/avatar\/image-1.png": {
+		"ft": 32768,
+		"iS": 73274,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/multi-select-list\/img\/avatar\/image-10.png": {
+		"ft": 32768,
+		"iS": 61480,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-10.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/multi-select-list\/img\/avatar\/image-2.png": {
+		"ft": 32768,
+		"iS": 41656,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/multi-select-list\/img\/avatar\/image-3.png": {
+		"ft": 32768,
+		"iS": 63027,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/multi-select-list\/img\/avatar\/image-4.png": {
+		"ft": 32768,
+		"iS": 55454,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/multi-select-list\/img\/avatar\/image-5.png": {
+		"ft": 32768,
+		"iS": 60465,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/multi-select-list\/img\/avatar\/image-6.png": {
+		"ft": 32768,
+		"iS": 67640,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-6.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/multi-select-list\/img\/avatar\/image-7.png": {
+		"ft": 32768,
+		"iS": 73589,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-7.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/multi-select-list\/img\/avatar\/image-8.png": {
+		"ft": 32768,
+		"iS": 59368,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-8.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/multi-select-list\/img\/avatar\/image-9.png": {
+		"ft": 32768,
+		"iS": 65736,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-9.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/source\/multi-select-list\/img\/icon\/le-select-hover.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/icon\/le-select-hover.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088191,
+		"prP": 0
+		},
+	"\/source\/multi-select-list\/img\/icon\/le-selected.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/icon\/le-selected.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088191,
+		"prP": 0
+		},
+	"\/source\/multi-select-list\/img\/icon\/le-unselected.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/icon\/le-unselected.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088191,
+		"prP": 0
+		},
+	"\/source\/multi-select-list\/index.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/index.html",
+		"oF": 0
+		},
+	"\/source\/multi-select-list\/main.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/build\/multi-select-list\/main-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/source\/multi-select-list\/main.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/main.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/source\/multi-select-list\/script.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/script.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/source\/toast\/img\/close.svg": {
 		"ft": 2097152,
 		"miP": 0,
