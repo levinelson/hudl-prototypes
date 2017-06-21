@@ -38,7 +38,7 @@ $(document).ready(function() {
     '<figure class="select">' + iconUnselected + '</figure>' +
     '<span class="label">' + item.number + '</span>' +
     '<span class="name">'+ item.name + '</span>' +
-    '<figure class="avatar"><img src="img/avatar/image-' + item.id + '.png" alt=""></figure>' +
+    '<figure class="avatar"><img src="img/avatar/image-' + item.id + '.jpg" alt=""></figure>' +
     '</li>');
   });
 

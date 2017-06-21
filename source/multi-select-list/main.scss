@@ -1,7 +1,10 @@
 ﻿@import 'uniform-ui';
 
+// Including because these aren't actually in uniCSS yet
 $color-le-selection-bg: rgba(230, 247, 255, 1);     // #e6f7ff
 $color-le-selection-bg-hover: rgba(240, 250, 255, 1);     // #f0faff
+
+// Just prototyping
 
 body {
   display: flex;
@@ -16,20 +19,25 @@ body {
   padding: $space-two 0;
 }
 
+
+// Actual list CSS below this point
+
 .list {
   list-style-type: none;
 }
 
+$msl-divider-color: $color-le-bg-level1-accent;
+
 .list-item {
   display: flex;
   align-items: center;
-  padding: $space-half $space-one-and-half;
-  border-top: 1px solid $color-le-divider;
+  padding: $space-half $space-one;
+  border-top: 1px solid $msl-divider-color;
   cursor: pointer;
   position: relative;
 
   &:last-child {
-    border-bottom: 1px solid $color-le-divider;
+    border-bottom: 1px solid $msl-divider-color;
   }
 
   &:hover {
@@ -38,32 +46,10 @@ body {
 
   &.is-selected {
     background-color: $color-le-selection-bg;
-    border-color: $color-le-bg-level0;
-
-    // &:before {
-    //   z-index: $zindex-1;
-    //   content: '';
-    //   height: 2px;
-    //   top: -1px;
-    //   left: 0;
-    //   width: 100%;
-    //   position: absolute;
-    //   background-color: $color-le-bg-level0;
-    // }
-
-    // &:after {
-    //   z-index: $zindex-1;
-    //   content: '';
-    //   height: 2px;
-    //   bottom: -1px;
-    //   left: 0;
-    //   width: 100%;
-    //   position: absolute;
-    //   background-color: $color-le-bg-level0;
-    // }
+    border-color: $color-le-selection-bg;
 
     & + .list-item {
-      border-color: $color-le-bg-level0;
+      border-color: $color-le-selection-bg;
     }
   }
 }
@@ -94,8 +80,8 @@ body {
 
 .avatar {
   flex: 0 0 auto;
-  width: 28px;
-  height: 28px;
+  width: 1.75rem;
+  height: 1.75rem;
   border-radius: 50%;
   overflow: hidden;
 

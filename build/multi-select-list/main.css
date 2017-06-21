@@ -9193,15 +9193,15 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-al
 
 .list { list-style-type: none; }
 
-.list-item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0.5rem 1.5rem; border-top: 1px solid rgba(167, 174, 181, 0.6); cursor: pointer; position: relative; }
+.list-item { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0.5rem 1rem; border-top: 1px solid #e4e7eb; cursor: pointer; position: relative; }
 
-.list-item:last-child { border-bottom: 1px solid rgba(167, 174, 181, 0.6); }
+.list-item:last-child { border-bottom: 1px solid #e4e7eb; }
 
 .list-item:hover { background-color: #f0faff; }
 
-.list-item.is-selected { background-color: #e6f7ff; border-color: white; }
+.list-item.is-selected { background-color: #e6f7ff; border-color: #e6f7ff; }
 
-.list-item.is-selected + .list-item { border-color: white; }
+.list-item.is-selected + .list-item { border-color: #e6f7ff; }
 
 .select { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
 
@@ -9213,7 +9213,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-al
 
 .is-selected .name { color: #13293f; }
 
-.avatar { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; width: 28px; height: 28px; border-radius: 50%; overflow: hidden; }
+.avatar { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; width: 1.75rem; height: 1.75rem; border-radius: 50%; overflow: hidden; }
 
 .avatar img { width: 100%; height: auto; }
 /*# sourceMappingURL=main.css.map */

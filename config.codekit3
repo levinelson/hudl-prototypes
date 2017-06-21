@@ -2132,114 +2132,104 @@
 		"oAP": "\/build\/ios-highlight-editor\/VitesseLight.otf",
 		"oF": 0
 		},
-	"\/source\/multi-select-list\/img\/avatar\/image-1.png": {
-		"ft": 32768,
-		"iS": 73274,
+	"\/source\/multi-select-list\/img\/avatar\/image-1.jpg": {
+		"ft": 16384,
+		"iS": 141335,
 		"oA": 0,
-		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-1.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/source\/multi-select-list\/img\/avatar\/image-10.png": {
-		"ft": 32768,
-		"iS": 61480,
-		"oA": 0,
-		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-10.png",
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"\/source\/multi-select-list\/img\/avatar\/image-2.png": {
-		"ft": 32768,
-		"iS": 41656,
+	"\/source\/multi-select-list\/img\/avatar\/image-10.jpg": {
+		"ft": 16384,
+		"iS": 97739,
 		"oA": 0,
-		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-2.png",
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-10.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"\/source\/multi-select-list\/img\/avatar\/image-3.png": {
-		"ft": 32768,
-		"iS": 63027,
+	"\/source\/multi-select-list\/img\/avatar\/image-2.jpg": {
+		"ft": 16384,
+		"iS": 139974,
 		"oA": 0,
-		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-3.png",
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"\/source\/multi-select-list\/img\/avatar\/image-4.png": {
-		"ft": 32768,
-		"iS": 55454,
+	"\/source\/multi-select-list\/img\/avatar\/image-3.jpg": {
+		"ft": 16384,
+		"iS": 110640,
 		"oA": 0,
-		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-4.png",
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-3.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"\/source\/multi-select-list\/img\/avatar\/image-5.png": {
-		"ft": 32768,
-		"iS": 60465,
+	"\/source\/multi-select-list\/img\/avatar\/image-4.jpg": {
+		"ft": 16384,
+		"iS": 99496,
 		"oA": 0,
-		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-5.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/source\/multi-select-list\/img\/avatar\/image-6.png": {
-		"ft": 32768,
-		"iS": 67640,
-		"oA": 0,
-		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-6.png",
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-4.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"\/source\/multi-select-list\/img\/avatar\/image-7.png": {
-		"ft": 32768,
-		"iS": 73589,
+	"\/source\/multi-select-list\/img\/avatar\/image-5.jpg": {
+		"ft": 16384,
+		"iS": 114997,
 		"oA": 0,
-		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-7.png",
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-5.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"\/source\/multi-select-list\/img\/avatar\/image-8.png": {
-		"ft": 32768,
-		"iS": 59368,
+	"\/source\/multi-select-list\/img\/avatar\/image-6.jpg": {
+		"ft": 16384,
+		"iS": 80297,
 		"oA": 0,
-		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-8.png",
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-6.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
-	"\/source\/multi-select-list\/img\/avatar\/image-9.png": {
-		"ft": 32768,
-		"iS": 65736,
+	"\/source\/multi-select-list\/img\/avatar\/image-7.jpg": {
+		"ft": 16384,
+		"iS": 151464,
 		"oA": 0,
-		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-9.png",
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-7.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
+		"q": 100
+		},
+	"\/source\/multi-select-list\/img\/avatar\/image-8.jpg": {
+		"ft": 16384,
+		"iS": 129416,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/source\/multi-select-list\/img\/avatar\/image-9.jpg": {
+		"ft": 16384,
+		"iS": 107273,
+		"oA": 0,
+		"oAP": "\/build\/multi-select-list\/img\/avatar\/image-9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/source\/multi-select-list\/img\/icon\/le-select-hover.svg": {
