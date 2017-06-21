@@ -9199,13 +9199,9 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-al
 
 .list-item:hover { background-color: #f0faff; }
 
-.list-item.is-selected { background-color: #e6f7ff; border-color: transparent; }
+.list-item.is-selected { background-color: #e6f7ff; border-color: white; }
 
-.list-item.is-selected:before { z-index: 100; content: ''; height: 2px; top: -1px; left: 0; width: 100%; position: absolute; background-color: white; }
-
-.list-item.is-selected:after { z-index: 100; content: ''; height: 2px; bottom: -1px; left: 0; width: 100%; position: absolute; background-color: white; }
-
-.list-item.is-selected + .list-item { border-color: transparent; }
+.list-item.is-selected + .list-item { border-color: white; }
 
 .select { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
 

@@ -38,32 +38,32 @@ body {
 
   &.is-selected {
     background-color: $color-le-selection-bg;
-    border-color: transparent;
+    border-color: $color-le-bg-level0;
 
-    &:before {
-      z-index: $zindex-1;
-      content: '';
-      height: 2px;
-      top: -1px;
-      left: 0;
-      width: 100%;
-      position: absolute;
-      background-color: $color-le-bg-level0;
-    }
+    // &:before {
+    //   z-index: $zindex-1;
+    //   content: '';
+    //   height: 2px;
+    //   top: -1px;
+    //   left: 0;
+    //   width: 100%;
+    //   position: absolute;
+    //   background-color: $color-le-bg-level0;
+    // }
 
-    &:after {
-      z-index: $zindex-1;
-      content: '';
-      height: 2px;
-      bottom: -1px;
-      left: 0;
-      width: 100%;
-      position: absolute;
-      background-color: $color-le-bg-level0;
-    }
+    // &:after {
+    //   z-index: $zindex-1;
+    //   content: '';
+    //   height: 2px;
+    //   bottom: -1px;
+    //   left: 0;
+    //   width: 100%;
+    //   position: absolute;
+    //   background-color: $color-le-bg-level0;
+    // }
 
     & + .list-item {
-      border-color: transparent;
+      border-color: $color-le-bg-level0;
     }
   }
 }
